@@ -16,6 +16,11 @@ public class findCamera : MonoBehaviour
     [SerializeField]
     Vector3 targetpos;
 
+    [SerializeField]
+    GameObject newParent;
+
+    [SerializeField]
+    float amountdone;
     private void Start()
     {
         parent = gameObject.transform.parent.transform.parent.gameObject;
@@ -28,8 +33,22 @@ public class findCamera : MonoBehaviour
         if (isSeen)
         {
             RaycastStuff();
+
+            if (newParent != null && Input.GetKey(KeyCode.Return))
+            {
+
+                transform.localPosition = Vector3.MoveTowards(transform.localPosition, targetpos, Time.deltaTime);
+
+                amountdone += Time.deltaTime;
+
+            }
+
         }
 
+        if (amountdone >= 11f)
+        { 
+            print("All bought together");
+        }
     }
 
     void RaycastStuff()
@@ -48,7 +67,8 @@ public class findCamera : MonoBehaviour
 
             transform.parent = hit.transform;
 
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, targetpos, Time.deltaTime);
+            newParent = transform.parent.gameObject;
+
         }
     }
 }

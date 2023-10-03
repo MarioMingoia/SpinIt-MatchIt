@@ -238,6 +238,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &21641169
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +356,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &27703437
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +519,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &54901187
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,6 +637,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &75393327
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +755,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &177373231
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,6 +873,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &180865648
 GameObject:
   m_ObjectHideFlags: 0
@@ -868,6 +886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 180865650}
   - component: {fileID: 180865649}
+  - component: {fileID: 180865651}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -916,6 +935,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &180865651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180865648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c8ce137eb79b494f873ae662a04330b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  takeThePhoto: 0
 --- !u!1 &214457165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1261,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &295544670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1379,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &322111633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1497,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &322993508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,6 +1733,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &406284440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,6 +1851,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &415436909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1922,6 +1969,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &452137382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,6 +2205,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &495506940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,6 +2323,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &594048666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2385,6 +2441,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &607632159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2500,6 +2559,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &643280573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2615,6 +2677,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &683995882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,6 +2795,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -2939,6 +3007,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &747182689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3054,6 +3125,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &750027332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,6 +3243,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &751384549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,6 +3361,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &786754235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3399,6 +3479,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &842764978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3514,6 +3597,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &852328029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3629,6 +3715,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &882958812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,6 +4134,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1007338740
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,6 +4252,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1013870098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4275,6 +4370,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1021850433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4706,6 +4804,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1093382488
 GameObject:
   m_ObjectHideFlags: 0
@@ -4939,6 +5040,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1237011937
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,6 +5158,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1290772478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5268,6 +5375,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1313812700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5383,6 +5493,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1325439207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,6 +5611,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1412918853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5613,6 +5729,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1428275543
 GameObject:
   m_ObjectHideFlags: 0
@@ -5728,6 +5847,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1469248409
 GameObject:
   m_ObjectHideFlags: 0
@@ -5843,6 +5965,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1472357614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5958,6 +6083,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1477777786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6290,6 +6418,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1544584541
 GameObject:
   m_ObjectHideFlags: 0
@@ -6504,6 +6635,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1553984117
 GameObject:
   m_ObjectHideFlags: 0
@@ -6619,6 +6753,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1585569583
 GameObject:
   m_ObjectHideFlags: 0
@@ -6852,6 +6989,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1725354065
 GameObject:
   m_ObjectHideFlags: 0
@@ -6967,6 +7107,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1744563535
 GameObject:
   m_ObjectHideFlags: 0
@@ -7200,6 +7343,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1834730577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7315,6 +7461,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1894931069
 GameObject:
   m_ObjectHideFlags: 0
@@ -7529,6 +7678,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1949541264
 GameObject:
   m_ObjectHideFlags: 0
@@ -7644,6 +7796,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1959709438
 GameObject:
   m_ObjectHideFlags: 0
@@ -7759,6 +7914,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &1991412704
 GameObject:
   m_ObjectHideFlags: 0
@@ -7874,6 +8032,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &2003373443
 GameObject:
   m_ObjectHideFlags: 0
@@ -8107,6 +8268,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &2072416608
 GameObject:
   m_ObjectHideFlags: 0
@@ -8222,6 +8386,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &2078437969
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,6 +8504,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &2109292019
 GameObject:
   m_ObjectHideFlags: 0
@@ -8452,6 +8622,9 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
 --- !u!1 &2110949064
 GameObject:
   m_ObjectHideFlags: 0
@@ -8567,3 +8740,6 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 0}
+  amountdone: 0
+  gm: {fileID: 180865648}
