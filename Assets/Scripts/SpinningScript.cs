@@ -8,19 +8,27 @@ public class SpinningScript : MonoBehaviour
     float rotateX;
     [SerializeField]
     float rotateY;
+
     bool enterPressed;
 
+    [SerializeField]
+    Vector3 direction;
+
+    [SerializeField]
+    float speedofRotation;
     // Start is called before the first frame update
     void Start()
     {
+        direction = new Vector3(rotateX, rotateY, 0);
 
+        speedofRotation = Random.Range(50, 200);
     }
 
     // Update is called once per frame
     void Update()
     {
         if (!enterPressed)
-            transform.Rotate(rotateX, rotateY, 0);
+             transform.RotateAround(transform.position, direction, speedofRotation * Time.deltaTime) ;
 
         if (enterPressed)
         {
