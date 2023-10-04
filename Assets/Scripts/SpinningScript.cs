@@ -19,7 +19,6 @@ public class SpinningScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        direction = new Vector3(rotateX, rotateY, 0);
 
         speedofRotation = Random.Range(50, 200);
     }
@@ -27,6 +26,8 @@ public class SpinningScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        direction = new Vector3(rotateX, rotateY, 0);
+
         if (!enterPressed)
              transform.RotateAround(transform.position, direction, speedofRotation * Time.deltaTime) ;
 
