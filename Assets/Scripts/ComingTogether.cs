@@ -24,11 +24,12 @@ public class ComingTogether : MonoBehaviour
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, Time.deltaTime);
         amountdone += Time.deltaTime;
 
+        //if we do want there to be an input to bring them all together, don't comment the below line out and make sure the uiStuff script is enabled
         transform.parent.GetComponent<uiStuff>().onValueChange(amountdone);
 
         transform.localEulerAngles = new Vector3(-90, 0, 0);
 
-        if (amountdone >= 11.5f)
+        if (amountdone >= 11.01f)
         {
             //this is where we want to call the code to take a screenshot
             //if we want the screenshot to be taken, i think it would be a good idea to ask the player before it being taken
