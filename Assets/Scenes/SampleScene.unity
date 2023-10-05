@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 519365}
   - component: {fileID: 519363}
   - component: {fileID: 519362}
+  - component: {fileID: 519367}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -170,7 +171,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &519363
@@ -254,6 +255,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &519367
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519360}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &21641169
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,6 +286,7 @@ GameObject:
   - component: {fileID: 21641174}
   - component: {fileID: 21641172}
   - component: {fileID: 21641171}
+  - component: {fileID: 21641176}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -301,7 +320,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &21641172
@@ -385,6 +404,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &21641176
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21641169}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &27703437
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +480,7 @@ GameObject:
   - component: {fileID: 32682765}
   - component: {fileID: 32682763}
   - component: {fileID: 32682762}
+  - component: {fileID: 32682767}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -477,7 +514,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &32682763
@@ -561,6 +598,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &32682767
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32682760}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &54901187
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +629,7 @@ GameObject:
   - component: {fileID: 54901192}
   - component: {fileID: 54901190}
   - component: {fileID: 54901189}
+  - component: {fileID: 54901194}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -608,7 +663,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &54901190
@@ -692,6 +747,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &54901194
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54901187}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &75393327
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,6 +778,7 @@ GameObject:
   - component: {fileID: 75393332}
   - component: {fileID: 75393330}
   - component: {fileID: 75393329}
+  - component: {fileID: 75393334}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -739,7 +812,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &75393330
@@ -823,6 +896,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &75393334
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75393327}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &177373231
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +927,7 @@ GameObject:
   - component: {fileID: 177373236}
   - component: {fileID: 177373234}
   - component: {fileID: 177373233}
+  - component: {fileID: 177373238}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -870,7 +961,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &177373234
@@ -954,6 +1045,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &177373238
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177373231}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &180865648
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1346,7 @@ GameObject:
   - component: {fileID: 286259228}
   - component: {fileID: 286259226}
   - component: {fileID: 286259225}
+  - component: {fileID: 286259230}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -1271,7 +1380,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &286259226
@@ -1355,6 +1464,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &286259230
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286259223}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &295544670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1369,6 +1495,7 @@ GameObject:
   - component: {fileID: 295544675}
   - component: {fileID: 295544673}
   - component: {fileID: 295544672}
+  - component: {fileID: 295544677}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -1402,7 +1529,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &295544673
@@ -1486,6 +1613,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &295544677
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 295544670}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &322111633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,6 +1644,7 @@ GameObject:
   - component: {fileID: 322111638}
   - component: {fileID: 322111636}
   - component: {fileID: 322111635}
+  - component: {fileID: 322111640}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -1533,7 +1678,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &322111636
@@ -1617,6 +1762,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &322111640
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322111633}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &322993508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,7 +1869,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322993508}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -1720,7 +1882,7 @@ Transform:
   - {fileID: 460221419}
   m_Father: {fileID: 1290772479}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &322993513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1751,6 +1913,7 @@ GameObject:
   - component: {fileID: 402552481}
   - component: {fileID: 402552479}
   - component: {fileID: 402552478}
+  - component: {fileID: 402552483}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -1784,7 +1947,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &402552479
@@ -1868,6 +2031,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &402552483
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402552476}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &406284440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,6 +2062,7 @@ GameObject:
   - component: {fileID: 406284445}
   - component: {fileID: 406284443}
   - component: {fileID: 406284442}
+  - component: {fileID: 406284447}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -1915,7 +2096,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &406284443
@@ -1999,6 +2180,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &406284447
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406284440}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &415436909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,6 +2211,7 @@ GameObject:
   - component: {fileID: 415436914}
   - component: {fileID: 415436912}
   - component: {fileID: 415436911}
+  - component: {fileID: 415436916}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -2046,7 +2245,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &415436912
@@ -2130,6 +2329,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &415436916
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415436909}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &452137382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,7 +2436,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452137382}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -2233,7 +2449,7 @@ Transform:
   - {fileID: 75393328}
   m_Father: {fileID: 214457166}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &452137387
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,6 +2480,7 @@ GameObject:
   - component: {fileID: 460221423}
   - component: {fileID: 460221421}
   - component: {fileID: 460221420}
+  - component: {fileID: 460221425}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -2297,7 +2514,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &460221421
@@ -2381,6 +2598,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &460221425
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 460221418}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &495506940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,6 +2629,7 @@ GameObject:
   - component: {fileID: 495506945}
   - component: {fileID: 495506943}
   - component: {fileID: 495506942}
+  - component: {fileID: 495506947}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -2428,7 +2663,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &495506943
@@ -2512,6 +2747,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &495506947
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 495506940}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &594048666
 GameObject:
   m_ObjectHideFlags: 0
@@ -2526,6 +2778,7 @@ GameObject:
   - component: {fileID: 594048671}
   - component: {fileID: 594048669}
   - component: {fileID: 594048668}
+  - component: {fileID: 594048673}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -2559,7 +2812,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &594048669
@@ -2643,6 +2896,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &594048673
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 594048666}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &607632159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2927,7 @@ GameObject:
   - component: {fileID: 607632164}
   - component: {fileID: 607632162}
   - component: {fileID: 607632161}
+  - component: {fileID: 607632166}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -2690,7 +2961,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &607632162
@@ -2774,6 +3045,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &607632166
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607632159}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &643280573
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,6 +3076,7 @@ GameObject:
   - component: {fileID: 643280578}
   - component: {fileID: 643280576}
   - component: {fileID: 643280575}
+  - component: {fileID: 643280580}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -2821,7 +3110,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &643280576
@@ -2905,6 +3194,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &643280580
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643280573}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &683995882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2919,6 +3225,7 @@ GameObject:
   - component: {fileID: 683995887}
   - component: {fileID: 683995885}
   - component: {fileID: 683995884}
+  - component: {fileID: 683995889}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -2952,7 +3259,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &683995885
@@ -3036,6 +3343,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &683995889
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683995882}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3144,6 +3468,7 @@ GameObject:
   - component: {fileID: 732840349}
   - component: {fileID: 732840347}
   - component: {fileID: 732840346}
+  - component: {fileID: 732840351}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -3177,7 +3502,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &732840347
@@ -3261,6 +3586,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &732840351
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732840344}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &747182689
 GameObject:
   m_ObjectHideFlags: 0
@@ -3275,6 +3617,7 @@ GameObject:
   - component: {fileID: 747182694}
   - component: {fileID: 747182692}
   - component: {fileID: 747182691}
+  - component: {fileID: 747182696}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -3308,7 +3651,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &747182692
@@ -3392,6 +3735,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &747182696
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747182689}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &750027332
 GameObject:
   m_ObjectHideFlags: 0
@@ -3406,6 +3766,7 @@ GameObject:
   - component: {fileID: 750027337}
   - component: {fileID: 750027335}
   - component: {fileID: 750027334}
+  - component: {fileID: 750027339}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -3439,7 +3800,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &750027335
@@ -3523,6 +3884,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &750027339
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750027332}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &751384549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3537,6 +3915,7 @@ GameObject:
   - component: {fileID: 751384554}
   - component: {fileID: 751384552}
   - component: {fileID: 751384551}
+  - component: {fileID: 751384556}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -3570,7 +3949,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &751384552
@@ -3654,6 +4033,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &751384556
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751384549}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &786754235
 GameObject:
   m_ObjectHideFlags: 0
@@ -3668,6 +4064,7 @@ GameObject:
   - component: {fileID: 786754240}
   - component: {fileID: 786754238}
   - component: {fileID: 786754237}
+  - component: {fileID: 786754242}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -3701,7 +4098,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &786754238
@@ -3785,6 +4182,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &786754242
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786754235}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &842764978
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +4213,7 @@ GameObject:
   - component: {fileID: 842764983}
   - component: {fileID: 842764981}
   - component: {fileID: 842764980}
+  - component: {fileID: 842764985}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -3832,7 +4247,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &842764981
@@ -3916,6 +4331,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &842764985
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842764978}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &852328029
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +4362,7 @@ GameObject:
   - component: {fileID: 852328034}
   - component: {fileID: 852328032}
   - component: {fileID: 852328031}
+  - component: {fileID: 852328036}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -3963,7 +4396,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &852328032
@@ -4047,6 +4480,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &852328036
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852328029}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &882958812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4137,7 +4587,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882958812}
-  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.62806153, z: 0.62806153}
   m_ConstrainProportionsScale: 0
@@ -4150,7 +4600,7 @@ Transform:
   - {fileID: 1834730578}
   m_Father: {fileID: 1043232030}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &882958817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4163,7 +4613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a78b937e0c0af3146a083d25633a1f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateX: -1
+  rotateX: 1
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
@@ -4364,6 +4814,7 @@ GameObject:
   - component: {fileID: 983196696}
   - component: {fileID: 983196694}
   - component: {fileID: 983196693}
+  - component: {fileID: 983196698}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -4397,7 +4848,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &983196694
@@ -4481,6 +4932,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &983196698
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983196691}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1007338740
 GameObject:
   m_ObjectHideFlags: 0
@@ -4495,6 +4963,7 @@ GameObject:
   - component: {fileID: 1007338745}
   - component: {fileID: 1007338743}
   - component: {fileID: 1007338742}
+  - component: {fileID: 1007338747}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -4528,7 +4997,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1007338743
@@ -4612,6 +5081,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &1007338747
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007338740}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1013870098
 GameObject:
   m_ObjectHideFlags: 0
@@ -4626,6 +5112,7 @@ GameObject:
   - component: {fileID: 1013870103}
   - component: {fileID: 1013870101}
   - component: {fileID: 1013870100}
+  - component: {fileID: 1013870105}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -4659,7 +5146,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1013870101
@@ -4743,6 +5230,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &1013870105
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013870098}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1021850433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5031,7 +5535,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1066097726}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -5044,7 +5548,7 @@ Transform:
   - {fileID: 683995883}
   m_Father: {fileID: 1492193079}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1066097731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5075,6 +5579,7 @@ GameObject:
   - component: {fileID: 1079061756}
   - component: {fileID: 1079061754}
   - component: {fileID: 1079061753}
+  - component: {fileID: 1079061758}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -5108,7 +5613,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1079061754
@@ -5192,6 +5697,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &1079061758
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079061751}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1093382488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5282,7 +5804,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093382488}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -5295,7 +5817,7 @@ Transform:
   - {fileID: 295544671}
   m_Father: {fileID: 226296489}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1093382493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5326,6 +5848,7 @@ GameObject:
   - component: {fileID: 1141670146}
   - component: {fileID: 1141670144}
   - component: {fileID: 1141670143}
+  - component: {fileID: 1141670148}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -5359,7 +5882,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1141670144
@@ -5443,6 +5966,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &1141670148
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141670141}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1237011937
 GameObject:
   m_ObjectHideFlags: 0
@@ -5457,6 +5997,7 @@ GameObject:
   - component: {fileID: 1237011942}
   - component: {fileID: 1237011940}
   - component: {fileID: 1237011939}
+  - component: {fileID: 1237011944}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -5490,7 +6031,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1237011940
@@ -5574,6 +6115,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &1237011944
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237011937}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1290772478
 GameObject:
   m_ObjectHideFlags: 0
@@ -5687,6 +6245,7 @@ GameObject:
   - component: {fileID: 1310239860}
   - component: {fileID: 1310239858}
   - component: {fileID: 1310239857}
+  - component: {fileID: 1310239862}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -5720,7 +6279,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1310239858
@@ -5804,6 +6363,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &1310239862
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310239855}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1313812700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5818,6 +6394,7 @@ GameObject:
   - component: {fileID: 1313812705}
   - component: {fileID: 1313812703}
   - component: {fileID: 1313812702}
+  - component: {fileID: 1313812707}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -5851,7 +6428,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1313812703
@@ -5935,6 +6512,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &1313812707
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313812700}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1325439207
 GameObject:
   m_ObjectHideFlags: 0
@@ -5949,6 +6543,7 @@ GameObject:
   - component: {fileID: 1325439212}
   - component: {fileID: 1325439210}
   - component: {fileID: 1325439209}
+  - component: {fileID: 1325439214}
   m_Layer: 0
   m_Name: face2
   m_TagString: Untagged
@@ -5982,7 +6577,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1325439210
@@ -6066,6 +6661,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face1
+--- !u!54 &1325439214
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325439207}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1412918853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6080,6 +6692,7 @@ GameObject:
   - component: {fileID: 1412918858}
   - component: {fileID: 1412918856}
   - component: {fileID: 1412918855}
+  - component: {fileID: 1412918860}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -6113,7 +6726,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1412918856
@@ -6197,6 +6810,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &1412918860
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412918853}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1428275543
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,6 +6841,7 @@ GameObject:
   - component: {fileID: 1428275548}
   - component: {fileID: 1428275546}
   - component: {fileID: 1428275545}
+  - component: {fileID: 1428275550}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -6244,7 +6875,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1428275546
@@ -6328,6 +6959,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &1428275550
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1428275543}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1469248409
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,6 +6990,7 @@ GameObject:
   - component: {fileID: 1469248414}
   - component: {fileID: 1469248412}
   - component: {fileID: 1469248411}
+  - component: {fileID: 1469248416}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -6375,7 +7024,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1469248412
@@ -6459,6 +7108,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &1469248416
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469248409}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1472357614
 GameObject:
   m_ObjectHideFlags: 0
@@ -6473,6 +7139,7 @@ GameObject:
   - component: {fileID: 1472357619}
   - component: {fileID: 1472357617}
   - component: {fileID: 1472357616}
+  - component: {fileID: 1472357621}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -6506,7 +7173,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1472357617
@@ -6590,6 +7257,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &1472357621
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472357614}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1477777786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6680,7 +7364,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477777786}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -6693,7 +7377,7 @@ Transform:
   - {fileID: 983196692}
   m_Father: {fileID: 1544584542}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1477777791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6823,6 +7507,7 @@ GameObject:
   - component: {fileID: 1510912516}
   - component: {fileID: 1510912514}
   - component: {fileID: 1510912513}
+  - component: {fileID: 1510912518}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -6856,7 +7541,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1510912514
@@ -6940,6 +7625,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &1510912518
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510912511}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1544584541
 GameObject:
   m_ObjectHideFlags: 0
@@ -7053,6 +7755,7 @@ GameObject:
   - component: {fileID: 1550645080}
   - component: {fileID: 1550645078}
   - component: {fileID: 1550645077}
+  - component: {fileID: 1550645082}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -7086,7 +7789,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1550645078
@@ -7170,6 +7873,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &1550645082
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550645075}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1553984117
 GameObject:
   m_ObjectHideFlags: 0
@@ -7184,6 +7904,7 @@ GameObject:
   - component: {fileID: 1553984122}
   - component: {fileID: 1553984120}
   - component: {fileID: 1553984119}
+  - component: {fileID: 1553984124}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -7217,7 +7938,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1553984120
@@ -7301,6 +8022,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &1553984124
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553984117}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1585569583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7391,7 +8129,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1585569583}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -7404,7 +8142,7 @@ Transform:
   - {fileID: 402552477}
   m_Father: {fileID: 1894931070}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1585569588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7435,6 +8173,7 @@ GameObject:
   - component: {fileID: 1701604035}
   - component: {fileID: 1701604033}
   - component: {fileID: 1701604032}
+  - component: {fileID: 1701604037}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -7468,7 +8207,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1701604033
@@ -7552,6 +8291,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &1701604037
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701604030}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1725354065
 GameObject:
   m_ObjectHideFlags: 0
@@ -7566,6 +8322,7 @@ GameObject:
   - component: {fileID: 1725354070}
   - component: {fileID: 1725354068}
   - component: {fileID: 1725354067}
+  - component: {fileID: 1725354072}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -7599,7 +8356,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1725354068
@@ -7683,6 +8440,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &1725354072
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725354065}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1744563535
 GameObject:
   m_ObjectHideFlags: 0
@@ -7773,7 +8547,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1744563535}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -7786,7 +8560,7 @@ Transform:
   - {fileID: 54901188}
   m_Father: {fileID: 1021850434}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1744563540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7817,6 +8591,7 @@ GameObject:
   - component: {fileID: 1812404195}
   - component: {fileID: 1812404193}
   - component: {fileID: 1812404192}
+  - component: {fileID: 1812404197}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -7850,7 +8625,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1812404193
@@ -7934,6 +8709,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &1812404197
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1812404190}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1834730577
 GameObject:
   m_ObjectHideFlags: 0
@@ -7948,6 +8740,7 @@ GameObject:
   - component: {fileID: 1834730582}
   - component: {fileID: 1834730580}
   - component: {fileID: 1834730579}
+  - component: {fileID: 1834730584}
   m_Layer: 0
   m_Name: face6
   m_TagString: Untagged
@@ -7981,7 +8774,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1834730580
@@ -8065,6 +8858,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face5
+--- !u!54 &1834730584
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834730577}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1894931069
 GameObject:
   m_ObjectHideFlags: 0
@@ -8178,6 +8988,7 @@ GameObject:
   - component: {fileID: 1910779984}
   - component: {fileID: 1910779982}
   - component: {fileID: 1910779981}
+  - component: {fileID: 1910779986}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -8211,7 +9022,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1910779982
@@ -8295,6 +9106,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &1910779986
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910779979}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1949541264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8309,6 +9137,7 @@ GameObject:
   - component: {fileID: 1949541269}
   - component: {fileID: 1949541267}
   - component: {fileID: 1949541266}
+  - component: {fileID: 1949541271}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -8342,7 +9171,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1949541267
@@ -8426,6 +9255,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &1949541271
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949541264}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1959709438
 GameObject:
   m_ObjectHideFlags: 0
@@ -8440,6 +9286,7 @@ GameObject:
   - component: {fileID: 1959709443}
   - component: {fileID: 1959709441}
   - component: {fileID: 1959709440}
+  - component: {fileID: 1959709445}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -8473,7 +9320,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1959709441
@@ -8557,6 +9404,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &1959709445
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959709438}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1991412704
 GameObject:
   m_ObjectHideFlags: 0
@@ -8571,6 +9435,7 @@ GameObject:
   - component: {fileID: 1991412709}
   - component: {fileID: 1991412707}
   - component: {fileID: 1991412706}
+  - component: {fileID: 1991412711}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -8604,7 +9469,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1991412707
@@ -8688,6 +9553,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &1991412711
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991412704}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2003373443
 GameObject:
   m_ObjectHideFlags: 0
@@ -8778,7 +9660,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003373443}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6280618, y: 0.6280617, z: 0.6280617}
   m_ConstrainProportionsScale: 0
@@ -8791,7 +9673,7 @@ Transform:
   - {fileID: 415436910}
   m_Father: {fileID: 943530032}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2003373448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8822,6 +9704,7 @@ GameObject:
   - component: {fileID: 2068976320}
   - component: {fileID: 2068976318}
   - component: {fileID: 2068976317}
+  - component: {fileID: 2068976322}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -8855,7 +9738,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2068976318
@@ -8939,6 +9822,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &2068976322
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068976315}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2072416608
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,6 +9853,7 @@ GameObject:
   - component: {fileID: 2072416613}
   - component: {fileID: 2072416611}
   - component: {fileID: 2072416610}
+  - component: {fileID: 2072416615}
   m_Layer: 0
   m_Name: face4
   m_TagString: Untagged
@@ -8986,7 +9887,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2072416611
@@ -9070,6 +9971,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face3
+--- !u!54 &2072416615
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072416608}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2078437969
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,6 +10002,7 @@ GameObject:
   - component: {fileID: 2078437974}
   - component: {fileID: 2078437972}
   - component: {fileID: 2078437971}
+  - component: {fileID: 2078437976}
   m_Layer: 0
   m_Name: face1
   m_TagString: Untagged
@@ -9117,7 +10036,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2078437972
@@ -9201,6 +10120,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face2
+--- !u!54 &2078437976
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078437969}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2109292019
 GameObject:
   m_ObjectHideFlags: 0
@@ -9215,6 +10151,7 @@ GameObject:
   - component: {fileID: 2109292024}
   - component: {fileID: 2109292022}
   - component: {fileID: 2109292021}
+  - component: {fileID: 2109292026}
   m_Layer: 0
   m_Name: face5
   m_TagString: Untagged
@@ -9248,7 +10185,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2109292022
@@ -9332,6 +10269,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face6
+--- !u!54 &2109292026
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109292019}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2110949064
 GameObject:
   m_ObjectHideFlags: 0
@@ -9346,6 +10300,7 @@ GameObject:
   - component: {fileID: 2110949069}
   - component: {fileID: 2110949067}
   - component: {fileID: 2110949066}
+  - component: {fileID: 2110949071}
   m_Layer: 0
   m_Name: face3
   m_TagString: Untagged
@@ -9379,7 +10334,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2110949067
@@ -9463,3 +10418,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gm: {fileID: 180865648}
   amountdone: 0
+  hazardName: face4
+--- !u!54 &2110949071
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110949064}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0

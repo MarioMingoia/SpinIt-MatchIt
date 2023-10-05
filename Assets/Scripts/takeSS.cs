@@ -25,7 +25,7 @@ public class takeSS : MonoBehaviour
 
                 //string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
                 //ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
-                //takenPhoto = true;
+                takenPhoto = true;
             }
         }
     }

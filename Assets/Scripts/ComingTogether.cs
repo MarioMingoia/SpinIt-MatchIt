@@ -10,9 +10,17 @@ public class ComingTogether : MonoBehaviour
     [SerializeField]
     float amountdone;
 
+    [SerializeField]
+    string hazardName;
+
+    [SerializeField]
+    bool hazards;
+
     //I think in this script is where we want to handle hazards
-    public void bringEverythingTogether(Vector3 target)
+    public void bringEverythingTogether(Vector3 target, bool detectHazards)
     {
+        hazards = detectHazards;
+
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, Time.deltaTime);
         amountdone += Time.deltaTime;
 
@@ -23,5 +31,11 @@ public class ComingTogether : MonoBehaviour
             //i.e. "do you want a photo taken?"
             gm.GetComponent<takeSS>().changeBool();
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == hazardName && hazards)
+            print("Collided with hazard " + hazardName + " " + gameObject.name);
     }
 }

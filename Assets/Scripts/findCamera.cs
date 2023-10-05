@@ -22,10 +22,10 @@ public class findCamera : MonoBehaviour
 
 
 
-
     private void Start()
     {
         parent = gameObject.transform.parent.transform.parent.gameObject;
+
 
     }
     public void Update()
@@ -38,7 +38,8 @@ public class findCamera : MonoBehaviour
 
             if (newParent != null && Input.GetKey(KeyCode.Return))
             {
-                GetComponent<ComingTogether>().bringEverythingTogether(targetpos);
+                //if we want there to be an input to bring everything together
+                GetComponent<ComingTogether>().bringEverythingTogether(targetpos, true);
 
 
             }
@@ -67,6 +68,8 @@ public class findCamera : MonoBehaviour
 
             newParent = transform.parent.gameObject;
 
+            //if we want them to be bought together automatically
+            //GetComponent<ComingTogether>().bringEverythingTogether(targetpos);
         }
     }
 }
