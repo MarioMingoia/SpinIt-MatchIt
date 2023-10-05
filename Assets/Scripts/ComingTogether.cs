@@ -24,7 +24,11 @@ public class ComingTogether : MonoBehaviour
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, Time.deltaTime);
         amountdone += Time.deltaTime;
 
-        if (amountdone >= 11f)
+        transform.parent.GetComponent<uiStuff>().onValueChange(amountdone);
+
+        transform.localEulerAngles = new Vector3(-90, 0, 0);
+
+        if (amountdone >= 11.5f)
         {
             //this is where we want to call the code to take a screenshot
             //if we want the screenshot to be taken, i think it would be a good idea to ask the player before it being taken
