@@ -36,12 +36,6 @@ public class findCamera : MonoBehaviour
         {
             RaycastStuff();
 
-            //if we want there to be an input to bring everything together
-            if (newParent != null && Input.GetKey(KeyCode.Return))
-            {
-                GetComponent<ComingTogether>().bringEverythingTogether(targetpos, true);
-            }
-
         }
 
         
@@ -66,8 +60,7 @@ public class findCamera : MonoBehaviour
 
             newParent = transform.parent.gameObject;
 
-            //if we want them to be bought together automatically
-            //GetComponent<ComingTogether>().bringEverythingTogether(targetpos, true);
+            GetComponent<ComingTogether>().bringEverythingTogether(targetpos, true);
         }
     }
 }
