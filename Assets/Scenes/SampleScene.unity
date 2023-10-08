@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519361}
   - component: {fileID: 519364}
-  - component: {fileID: 519366}
   - component: {fileID: 519365}
   - component: {fileID: 519363}
   - component: {fileID: 519362}
@@ -231,7 +230,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -240,23 +239,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &519366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519360}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &519367
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -283,7 +266,6 @@ GameObject:
   m_Component:
   - component: {fileID: 21641170}
   - component: {fileID: 21641173}
-  - component: {fileID: 21641175}
   - component: {fileID: 21641174}
   - component: {fileID: 21641172}
   - component: {fileID: 21641171}
@@ -381,7 +363,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 21641169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -390,23 +372,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &21641175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21641169}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &21641176
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -478,7 +444,6 @@ GameObject:
   m_Component:
   - component: {fileID: 32682761}
   - component: {fileID: 32682764}
-  - component: {fileID: 32682766}
   - component: {fileID: 32682765}
   - component: {fileID: 32682763}
   - component: {fileID: 32682762}
@@ -576,7 +541,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32682760}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -585,23 +550,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &32682766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 32682760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &32682767
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -628,7 +577,6 @@ GameObject:
   m_Component:
   - component: {fileID: 54901188}
   - component: {fileID: 54901191}
-  - component: {fileID: 54901193}
   - component: {fileID: 54901192}
   - component: {fileID: 54901190}
   - component: {fileID: 54901189}
@@ -726,7 +674,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54901187}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -735,23 +683,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &54901193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54901187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &54901194
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -778,7 +710,6 @@ GameObject:
   m_Component:
   - component: {fileID: 75393328}
   - component: {fileID: 75393331}
-  - component: {fileID: 75393333}
   - component: {fileID: 75393332}
   - component: {fileID: 75393330}
   - component: {fileID: 75393329}
@@ -876,7 +807,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75393327}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -885,23 +816,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &75393333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75393327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &75393334
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -928,7 +843,6 @@ GameObject:
   m_Component:
   - component: {fileID: 177373232}
   - component: {fileID: 177373235}
-  - component: {fileID: 177373237}
   - component: {fileID: 177373236}
   - component: {fileID: 177373234}
   - component: {fileID: 177373233}
@@ -1026,7 +940,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 177373231}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -1035,23 +949,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &177373237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 177373231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &177373238
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1348,7 +1246,6 @@ GameObject:
   m_Component:
   - component: {fileID: 286259224}
   - component: {fileID: 286259227}
-  - component: {fileID: 286259229}
   - component: {fileID: 286259228}
   - component: {fileID: 286259226}
   - component: {fileID: 286259225}
@@ -1446,7 +1343,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286259223}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -1455,23 +1352,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &286259229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 286259223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &286259230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1498,7 +1379,6 @@ GameObject:
   m_Component:
   - component: {fileID: 295544671}
   - component: {fileID: 295544674}
-  - component: {fileID: 295544676}
   - component: {fileID: 295544675}
   - component: {fileID: 295544673}
   - component: {fileID: 295544672}
@@ -1596,7 +1476,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295544670}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -1605,23 +1485,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &295544676
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295544670}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &295544677
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1648,7 +1512,6 @@ GameObject:
   m_Component:
   - component: {fileID: 322111634}
   - component: {fileID: 322111637}
-  - component: {fileID: 322111639}
   - component: {fileID: 322111638}
   - component: {fileID: 322111636}
   - component: {fileID: 322111635}
@@ -1746,7 +1609,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 322111633}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -1755,23 +1618,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &322111639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322111633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &322111640
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1801,6 +1648,8 @@ GameObject:
   - component: {fileID: 322993510}
   - component: {fileID: 322993513}
   - component: {fileID: 322993509}
+  - component: {fileID: 322993514}
+  - component: {fileID: 322993515}
   m_Layer: 0
   m_Name: Legs
   m_TagString: Untagged
@@ -1908,6 +1757,37 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &322993514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322993508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &322993515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322993508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: -0.03, y: -10, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &402552476
 GameObject:
   m_ObjectHideFlags: 0
@@ -1918,7 +1798,6 @@ GameObject:
   m_Component:
   - component: {fileID: 402552477}
   - component: {fileID: 402552480}
-  - component: {fileID: 402552482}
   - component: {fileID: 402552481}
   - component: {fileID: 402552479}
   - component: {fileID: 402552478}
@@ -2016,7 +1895,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402552476}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -2025,23 +1904,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &402552482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402552476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &402552483
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2068,7 +1931,6 @@ GameObject:
   m_Component:
   - component: {fileID: 406284441}
   - component: {fileID: 406284444}
-  - component: {fileID: 406284446}
   - component: {fileID: 406284445}
   - component: {fileID: 406284443}
   - component: {fileID: 406284442}
@@ -2166,7 +2028,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 406284440}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -2175,23 +2037,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &406284446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 406284440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &406284447
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2218,7 +2064,6 @@ GameObject:
   m_Component:
   - component: {fileID: 415436910}
   - component: {fileID: 415436913}
-  - component: {fileID: 415436915}
   - component: {fileID: 415436914}
   - component: {fileID: 415436912}
   - component: {fileID: 415436911}
@@ -2316,7 +2161,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415436909}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -2325,23 +2170,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &415436915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415436909}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &415436916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2371,6 +2200,8 @@ GameObject:
   - component: {fileID: 452137384}
   - component: {fileID: 452137387}
   - component: {fileID: 452137383}
+  - component: {fileID: 452137388}
+  - component: {fileID: 452137389}
   m_Layer: 0
   m_Name: Chest
   m_TagString: Untagged
@@ -2478,6 +2309,37 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &452137388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452137382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &452137389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452137382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: -0.03, y: 0.03, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &460221418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,7 +2350,6 @@ GameObject:
   m_Component:
   - component: {fileID: 460221419}
   - component: {fileID: 460221422}
-  - component: {fileID: 460221424}
   - component: {fileID: 460221423}
   - component: {fileID: 460221421}
   - component: {fileID: 460221420}
@@ -2586,7 +2447,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460221418}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -2595,23 +2456,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &460221424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460221418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &460221425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2638,7 +2483,6 @@ GameObject:
   m_Component:
   - component: {fileID: 495506941}
   - component: {fileID: 495506944}
-  - component: {fileID: 495506946}
   - component: {fileID: 495506945}
   - component: {fileID: 495506943}
   - component: {fileID: 495506942}
@@ -2736,7 +2580,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495506940}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -2745,23 +2589,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &495506946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495506940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &495506947
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2788,7 +2616,6 @@ GameObject:
   m_Component:
   - component: {fileID: 594048667}
   - component: {fileID: 594048670}
-  - component: {fileID: 594048672}
   - component: {fileID: 594048671}
   - component: {fileID: 594048669}
   - component: {fileID: 594048668}
@@ -2886,7 +2713,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 594048666}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -2895,23 +2722,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &594048672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 594048666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &594048673
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2938,7 +2749,6 @@ GameObject:
   m_Component:
   - component: {fileID: 607632160}
   - component: {fileID: 607632163}
-  - component: {fileID: 607632165}
   - component: {fileID: 607632164}
   - component: {fileID: 607632162}
   - component: {fileID: 607632161}
@@ -3036,7 +2846,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607632159}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -3045,23 +2855,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &607632165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 607632159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &607632166
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3088,7 +2882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 643280574}
   - component: {fileID: 643280577}
-  - component: {fileID: 643280579}
   - component: {fileID: 643280578}
   - component: {fileID: 643280576}
   - component: {fileID: 643280575}
@@ -3186,7 +2979,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 643280573}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -3195,23 +2988,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &643280579
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 643280573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &643280580
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3238,7 +3015,6 @@ GameObject:
   m_Component:
   - component: {fileID: 683995883}
   - component: {fileID: 683995886}
-  - component: {fileID: 683995888}
   - component: {fileID: 683995887}
   - component: {fileID: 683995885}
   - component: {fileID: 683995884}
@@ -3336,7 +3112,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683995882}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -3345,23 +3121,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &683995888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 683995882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &683995889
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3482,7 +3242,6 @@ GameObject:
   m_Component:
   - component: {fileID: 732840345}
   - component: {fileID: 732840348}
-  - component: {fileID: 732840350}
   - component: {fileID: 732840349}
   - component: {fileID: 732840347}
   - component: {fileID: 732840346}
@@ -3580,7 +3339,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732840344}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -3589,23 +3348,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &732840350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732840344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &732840351
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3632,7 +3375,6 @@ GameObject:
   m_Component:
   - component: {fileID: 747182690}
   - component: {fileID: 747182693}
-  - component: {fileID: 747182695}
   - component: {fileID: 747182694}
   - component: {fileID: 747182692}
   - component: {fileID: 747182691}
@@ -3730,7 +3472,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747182689}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -3739,23 +3481,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &747182695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747182689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &747182696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3782,7 +3508,6 @@ GameObject:
   m_Component:
   - component: {fileID: 750027333}
   - component: {fileID: 750027336}
-  - component: {fileID: 750027338}
   - component: {fileID: 750027337}
   - component: {fileID: 750027335}
   - component: {fileID: 750027334}
@@ -3880,7 +3605,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 750027332}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -3889,23 +3614,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &750027338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750027332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &750027339
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3932,7 +3641,6 @@ GameObject:
   m_Component:
   - component: {fileID: 751384550}
   - component: {fileID: 751384553}
-  - component: {fileID: 751384555}
   - component: {fileID: 751384554}
   - component: {fileID: 751384552}
   - component: {fileID: 751384551}
@@ -4030,7 +3738,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751384549}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -4039,23 +3747,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &751384555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751384549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &751384556
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4157,7 +3849,6 @@ GameObject:
   m_Component:
   - component: {fileID: 786754236}
   - component: {fileID: 786754239}
-  - component: {fileID: 786754241}
   - component: {fileID: 786754240}
   - component: {fileID: 786754238}
   - component: {fileID: 786754237}
@@ -4255,7 +3946,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786754235}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -4264,23 +3955,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &786754241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786754235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &786754242
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4307,7 +3982,6 @@ GameObject:
   m_Component:
   - component: {fileID: 842764979}
   - component: {fileID: 842764982}
-  - component: {fileID: 842764984}
   - component: {fileID: 842764983}
   - component: {fileID: 842764981}
   - component: {fileID: 842764980}
@@ -4405,7 +4079,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842764978}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -4414,23 +4088,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &842764984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842764978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &842764985
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4457,7 +4115,6 @@ GameObject:
   m_Component:
   - component: {fileID: 852328030}
   - component: {fileID: 852328033}
-  - component: {fileID: 852328035}
   - component: {fileID: 852328034}
   - component: {fileID: 852328032}
   - component: {fileID: 852328031}
@@ -4555,7 +4212,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852328029}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -4564,23 +4221,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &852328035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852328029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &852328036
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4610,6 +4251,8 @@ GameObject:
   - component: {fileID: 882958814}
   - component: {fileID: 882958817}
   - component: {fileID: 882958813}
+  - component: {fileID: 882958818}
+  - component: {fileID: 882958819}
   m_Layer: 0
   m_Name: LeftShoulder
   m_TagString: Untagged
@@ -4717,6 +4360,37 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &882958818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882958812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &882958819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882958812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: -9.98, y: 9.71, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &943530031
 GameObject:
   m_ObjectHideFlags: 0
@@ -4911,7 +4585,6 @@ GameObject:
   m_Component:
   - component: {fileID: 983196692}
   - component: {fileID: 983196695}
-  - component: {fileID: 983196697}
   - component: {fileID: 983196696}
   - component: {fileID: 983196694}
   - component: {fileID: 983196693}
@@ -5009,7 +4682,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983196691}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -5018,23 +4691,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &983196697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983196691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &983196698
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5061,7 +4718,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1007338741}
   - component: {fileID: 1007338744}
-  - component: {fileID: 1007338746}
   - component: {fileID: 1007338745}
   - component: {fileID: 1007338743}
   - component: {fileID: 1007338742}
@@ -5159,7 +4815,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007338740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -5168,23 +4824,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1007338746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007338740}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1007338747
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5211,7 +4851,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1013870099}
   - component: {fileID: 1013870102}
-  - component: {fileID: 1013870104}
   - component: {fileID: 1013870103}
   - component: {fileID: 1013870101}
   - component: {fileID: 1013870100}
@@ -5309,7 +4948,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013870098}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -5318,23 +4957,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1013870104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1013870098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1013870105
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5562,6 +5185,8 @@ GameObject:
   - component: {fileID: 1066097728}
   - component: {fileID: 1066097731}
   - component: {fileID: 1066097727}
+  - component: {fileID: 1066097732}
+  - component: {fileID: 1066097733}
   m_Layer: 0
   m_Name: RightAccessory
   m_TagString: Untagged
@@ -5669,6 +5294,37 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &1066097732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066097726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &1066097733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066097726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: 9.72, y: -10, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &1079061751
 GameObject:
   m_ObjectHideFlags: 0
@@ -5679,7 +5335,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1079061752}
   - component: {fileID: 1079061755}
-  - component: {fileID: 1079061757}
   - component: {fileID: 1079061756}
   - component: {fileID: 1079061754}
   - component: {fileID: 1079061753}
@@ -5777,7 +5432,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079061751}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -5786,23 +5441,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1079061757
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079061751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1079061758
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5832,6 +5471,8 @@ GameObject:
   - component: {fileID: 1093382490}
   - component: {fileID: 1093382493}
   - component: {fileID: 1093382489}
+  - component: {fileID: 1093382494}
+  - component: {fileID: 1093382495}
   m_Layer: 0
   m_Name: RightShoulder
   m_TagString: Untagged
@@ -5939,6 +5580,37 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &1093382494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093382488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &1093382495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093382488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: 9.72, y: 9.71, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &1141670141
 GameObject:
   m_ObjectHideFlags: 0
@@ -5949,7 +5621,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1141670142}
   - component: {fileID: 1141670145}
-  - component: {fileID: 1141670147}
   - component: {fileID: 1141670146}
   - component: {fileID: 1141670144}
   - component: {fileID: 1141670143}
@@ -6047,7 +5718,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141670141}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -6056,23 +5727,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1141670147
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141670141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1141670148
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6099,7 +5754,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1237011938}
   - component: {fileID: 1237011941}
-  - component: {fileID: 1237011943}
   - component: {fileID: 1237011942}
   - component: {fileID: 1237011940}
   - component: {fileID: 1237011939}
@@ -6197,7 +5851,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237011937}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -6206,23 +5860,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1237011943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237011937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1237011944
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6348,7 +5986,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1310239856}
   - component: {fileID: 1310239859}
-  - component: {fileID: 1310239861}
   - component: {fileID: 1310239860}
   - component: {fileID: 1310239858}
   - component: {fileID: 1310239857}
@@ -6446,7 +6083,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310239855}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -6455,23 +6092,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1310239861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310239855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1310239862
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6498,7 +6119,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1313812701}
   - component: {fileID: 1313812704}
-  - component: {fileID: 1313812706}
   - component: {fileID: 1313812705}
   - component: {fileID: 1313812703}
   - component: {fileID: 1313812702}
@@ -6596,7 +6216,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1313812700}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -6605,23 +6225,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1313812706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1313812700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1313812707
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6648,7 +6252,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1325439208}
   - component: {fileID: 1325439211}
-  - component: {fileID: 1325439213}
   - component: {fileID: 1325439212}
   - component: {fileID: 1325439210}
   - component: {fileID: 1325439209}
@@ -6746,7 +6349,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325439207}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -6755,23 +6358,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1325439213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325439207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face1
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1325439214
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6798,7 +6385,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1412918854}
   - component: {fileID: 1412918857}
-  - component: {fileID: 1412918859}
   - component: {fileID: 1412918858}
   - component: {fileID: 1412918856}
   - component: {fileID: 1412918855}
@@ -6896,7 +6482,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1412918853}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -6905,23 +6491,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1412918859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1412918853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1412918860
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6948,7 +6518,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1428275544}
   - component: {fileID: 1428275547}
-  - component: {fileID: 1428275549}
   - component: {fileID: 1428275548}
   - component: {fileID: 1428275546}
   - component: {fileID: 1428275545}
@@ -7046,7 +6615,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428275543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -7055,23 +6624,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1428275549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1428275543}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1428275550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7098,7 +6651,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1469248410}
   - component: {fileID: 1469248413}
-  - component: {fileID: 1469248415}
   - component: {fileID: 1469248414}
   - component: {fileID: 1469248412}
   - component: {fileID: 1469248411}
@@ -7196,7 +6748,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469248409}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -7205,23 +6757,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1469248415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469248409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1469248416
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7248,7 +6784,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1472357615}
   - component: {fileID: 1472357618}
-  - component: {fileID: 1472357620}
   - component: {fileID: 1472357619}
   - component: {fileID: 1472357617}
   - component: {fileID: 1472357616}
@@ -7346,7 +6881,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1472357614}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -7355,23 +6890,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1472357620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472357614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1472357621
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7401,6 +6920,8 @@ GameObject:
   - component: {fileID: 1477777788}
   - component: {fileID: 1477777791}
   - component: {fileID: 1477777787}
+  - component: {fileID: 1477777792}
+  - component: {fileID: 1477777793}
   m_Layer: 0
   m_Name: LeftArm
   m_TagString: Untagged
@@ -7508,6 +7029,37 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &1477777792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477777786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &1477777793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477777786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: -9.98, y: -0.03, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &1492193078
 GameObject:
   m_ObjectHideFlags: 0
@@ -7617,7 +7169,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1510912512}
   - component: {fileID: 1510912515}
-  - component: {fileID: 1510912517}
   - component: {fileID: 1510912516}
   - component: {fileID: 1510912514}
   - component: {fileID: 1510912513}
@@ -7715,7 +7266,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510912511}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -7724,23 +7275,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1510912517
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510912511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1510912518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7866,7 +7401,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1550645076}
   - component: {fileID: 1550645079}
-  - component: {fileID: 1550645081}
   - component: {fileID: 1550645080}
   - component: {fileID: 1550645078}
   - component: {fileID: 1550645077}
@@ -7964,7 +7498,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550645075}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -7973,23 +7507,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1550645081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1550645075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1550645082
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8016,7 +7534,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1553984118}
   - component: {fileID: 1553984121}
-  - component: {fileID: 1553984123}
   - component: {fileID: 1553984122}
   - component: {fileID: 1553984120}
   - component: {fileID: 1553984119}
@@ -8114,7 +7631,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553984117}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -8123,23 +7640,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1553984123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1553984117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1553984124
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8169,6 +7670,8 @@ GameObject:
   - component: {fileID: 1585569585}
   - component: {fileID: 1585569588}
   - component: {fileID: 1585569584}
+  - component: {fileID: 1585569589}
+  - component: {fileID: 1585569590}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -8276,6 +7779,37 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &1585569589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585569583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &1585569590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585569583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: -0.03, y: 9.71, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &1701604030
 GameObject:
   m_ObjectHideFlags: 0
@@ -8286,7 +7820,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1701604031}
   - component: {fileID: 1701604034}
-  - component: {fileID: 1701604036}
   - component: {fileID: 1701604035}
   - component: {fileID: 1701604033}
   - component: {fileID: 1701604032}
@@ -8384,7 +7917,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701604030}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -8393,23 +7926,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1701604036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701604030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1701604037
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8436,7 +7953,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1725354066}
   - component: {fileID: 1725354069}
-  - component: {fileID: 1725354071}
   - component: {fileID: 1725354070}
   - component: {fileID: 1725354068}
   - component: {fileID: 1725354067}
@@ -8534,7 +8050,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725354065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -8543,23 +8059,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1725354071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725354065}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1725354072
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8589,6 +8089,8 @@ GameObject:
   - component: {fileID: 1744563537}
   - component: {fileID: 1744563540}
   - component: {fileID: 1744563536}
+  - component: {fileID: 1744563541}
+  - component: {fileID: 1744563542}
   m_Layer: 0
   m_Name: RightArm
   m_TagString: Untagged
@@ -8696,6 +8198,37 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &1744563541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744563535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &1744563542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744563535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: 9.72, y: -0.03, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &1812404190
 GameObject:
   m_ObjectHideFlags: 0
@@ -8706,7 +8239,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1812404191}
   - component: {fileID: 1812404194}
-  - component: {fileID: 1812404196}
   - component: {fileID: 1812404195}
   - component: {fileID: 1812404193}
   - component: {fileID: 1812404192}
@@ -8804,7 +8336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812404190}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -8813,23 +8345,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1812404196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1812404190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1812404197
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8856,7 +8372,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1834730578}
   - component: {fileID: 1834730581}
-  - component: {fileID: 1834730583}
   - component: {fileID: 1834730582}
   - component: {fileID: 1834730580}
   - component: {fileID: 1834730579}
@@ -8954,7 +8469,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834730577}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -8963,23 +8478,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1834730583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1834730577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face5
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1834730584
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9105,7 +8604,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1910779980}
   - component: {fileID: 1910779983}
-  - component: {fileID: 1910779985}
   - component: {fileID: 1910779984}
   - component: {fileID: 1910779982}
   - component: {fileID: 1910779981}
@@ -9203,7 +8701,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910779979}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -9212,23 +8710,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1910779985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1910779979}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1910779986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9255,7 +8737,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1949541265}
   - component: {fileID: 1949541268}
-  - component: {fileID: 1949541270}
   - component: {fileID: 1949541269}
   - component: {fileID: 1949541267}
   - component: {fileID: 1949541266}
@@ -9353,7 +8834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949541264}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -9362,23 +8843,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1949541270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949541264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1949541271
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9405,7 +8870,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1959709439}
   - component: {fileID: 1959709442}
-  - component: {fileID: 1959709444}
   - component: {fileID: 1959709443}
   - component: {fileID: 1959709441}
   - component: {fileID: 1959709440}
@@ -9503,7 +8967,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959709438}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -9512,23 +8976,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1959709444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959709438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1959709445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9555,7 +9003,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1991412705}
   - component: {fileID: 1991412708}
-  - component: {fileID: 1991412710}
   - component: {fileID: 1991412709}
   - component: {fileID: 1991412707}
   - component: {fileID: 1991412706}
@@ -9653,7 +9100,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991412704}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -9662,23 +9109,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &1991412710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991412704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &1991412711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9708,6 +9139,8 @@ GameObject:
   - component: {fileID: 2003373445}
   - component: {fileID: 2003373448}
   - component: {fileID: 2003373444}
+  - component: {fileID: 2003373449}
+  - component: {fileID: 2003373450}
   m_Layer: 0
   m_Name: LeftAccessory
   m_TagString: Untagged
@@ -9815,6 +9248,37 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+--- !u!114 &2003373449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003373443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gm: {fileID: 180865648}
+  amountdone: 0
+--- !u!114 &2003373450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003373443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isSeen: 0
+  ps: {fileID: 180865649}
+  range: 143.61
+  targetpos: {x: -9.98, y: -10, z: 28}
+  newParent: {fileID: 27703437}
 --- !u!1 &2068976315
 GameObject:
   m_ObjectHideFlags: 0
@@ -9825,7 +9289,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2068976316}
   - component: {fileID: 2068976319}
-  - component: {fileID: 2068976321}
   - component: {fileID: 2068976320}
   - component: {fileID: 2068976318}
   - component: {fileID: 2068976317}
@@ -9923,7 +9386,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068976315}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -9932,23 +9395,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &2068976321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068976315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &2068976322
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9975,7 +9422,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2072416609}
   - component: {fileID: 2072416612}
-  - component: {fileID: 2072416614}
   - component: {fileID: 2072416613}
   - component: {fileID: 2072416611}
   - component: {fileID: 2072416610}
@@ -10073,7 +9519,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072416608}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -10082,23 +9528,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &2072416614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072416608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face3
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &2072416615
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10125,7 +9555,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2078437970}
   - component: {fileID: 2078437973}
-  - component: {fileID: 2078437975}
   - component: {fileID: 2078437974}
   - component: {fileID: 2078437972}
   - component: {fileID: 2078437971}
@@ -10223,7 +9652,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078437969}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -10232,23 +9661,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &2078437975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078437969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face2
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &2078437976
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10275,7 +9688,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2109292020}
   - component: {fileID: 2109292023}
-  - component: {fileID: 2109292025}
   - component: {fileID: 2109292024}
   - component: {fileID: 2109292022}
   - component: {fileID: 2109292021}
@@ -10373,7 +9785,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109292019}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -10382,23 +9794,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &2109292025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109292019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face6
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &2109292026
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10425,7 +9821,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2110949065}
   - component: {fileID: 2110949068}
-  - component: {fileID: 2110949070}
   - component: {fileID: 2110949069}
   - component: {fileID: 2110949067}
   - component: {fileID: 2110949066}
@@ -10523,7 +9918,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110949064}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 153fb3a4f87306647a9938702f481e5b, type: 3}
   m_Name: 
@@ -10532,23 +9927,7 @@ MonoBehaviour:
   ps: {fileID: 180865649}
   range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
-  newParent: {fileID: 0}
---- !u!114 &2110949070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110949064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b6651ba79e40344e82ba8ef7b3f0a43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gm: {fileID: 180865648}
-  amountdone: 0
-  hazardName: face4
-  hazards: 0
+  newParent: {fileID: 27703437}
 --- !u!54 &2110949071
 Rigidbody:
   m_ObjectHideFlags: 0

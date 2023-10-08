@@ -23,8 +23,8 @@ public class takeSS : MonoBehaviour
             {
                 print("photo Taken");
 
-                string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
-                ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
+                //string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
+                //ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
                 takenPhoto = true;
             }
         }

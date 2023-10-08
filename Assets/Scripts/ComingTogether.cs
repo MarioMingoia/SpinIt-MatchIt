@@ -10,22 +10,15 @@ public class ComingTogether : MonoBehaviour
     [SerializeField]
     float amountdone;
 
-    [SerializeField]
-    string hazardName;
-
-    [SerializeField]
-    bool hazards;
 
     //I think in this script is where we want to handle hazards
-    public void bringEverythingTogether(Vector3 target, bool detectHazards)
+    public void bringEverythingTogether(Vector3 target)
     {
-        hazards = detectHazards;
-
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, Time.deltaTime);
         amountdone += Time.deltaTime;
 
 
-        transform.localEulerAngles = new Vector3(-90, 0, 0);
+        //transform.localEulerAngles = new Vector3(-90, 0, 0);
 
         if (amountdone >= 11.01f)
         {
@@ -36,9 +29,4 @@ public class ComingTogether : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.name == hazardName && hazards)
-            print("Collided with hazard " + hazardName + " " + gameObject.name);
-    }
 }
