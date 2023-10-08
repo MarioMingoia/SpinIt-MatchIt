@@ -43,7 +43,7 @@ public class positionStopper : MonoBehaviour
         {
             foreach (GameObject item in realobjects)
             {
-                if (item.GetComponent<SpinningScript>().enabled == false)
+                if (item.GetComponent<SpinningScript>().stoppedSpinning == true)
                 {
                     realobjects.Remove(item);
                     counter++;

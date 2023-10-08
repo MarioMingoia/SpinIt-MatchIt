@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class takeSS : MonoBehaviour
 {
-    [SerializeField] bool takeThePhoto;
+    [SerializeField] bool pointReached;
 
-    bool takenPhoto;
+    public bool takenPhoto;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class takeSS : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (takeThePhoto)
+        if (pointReached)
         {
 
             if (takenPhoto == false)
@@ -32,7 +32,7 @@ public class takeSS : MonoBehaviour
 
     public void changeBool()
     {
-        if (takeThePhoto == false)
-            takeThePhoto = true;
+        if (pointReached == false)
+            pointReached = true;
     }
 }

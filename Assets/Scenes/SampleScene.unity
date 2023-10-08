@@ -237,7 +237,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &519367
@@ -370,7 +369,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &21641176
@@ -432,7 +430,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &32682760
 GameObject:
@@ -548,7 +546,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &32682767
@@ -681,7 +678,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &54901194
@@ -814,7 +810,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &75393334
@@ -947,7 +942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &177373238
@@ -1023,7 +1017,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &180865651
 MonoBehaviour:
@@ -1037,7 +1031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c8ce137eb79b494f873ae662a04330b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  takeThePhoto: 0
+  pointReached: 0
+  takenPhoto: 0
 --- !u!1 &214457165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1066,7 @@ Transform:
   m_Children:
   - {fileID: 452137386}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &214457167
 MeshCollider:
@@ -1170,7 +1165,7 @@ Transform:
   m_Children:
   - {fileID: 1093382492}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &226296490
 MeshCollider:
@@ -1350,7 +1345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &286259230
@@ -1483,7 +1477,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &295544677
@@ -1616,7 +1609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &322111640
@@ -1757,6 +1749,7 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &322993514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,8 +1778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
-  targetpos: {x: -0.03, y: -10, z: 28}
+  targetpos: {x: -0.03, y: -9.97, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &402552476
 GameObject:
@@ -1902,7 +1894,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &402552483
@@ -2035,7 +2026,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &406284447
@@ -2168,7 +2158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &415436916
@@ -2309,6 +2298,7 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &452137388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2337,7 +2327,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &460221418
@@ -2454,7 +2443,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &460221425
@@ -2587,7 +2575,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &495506947
@@ -2720,7 +2707,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &594048673
@@ -2853,7 +2839,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &607632166
@@ -2986,7 +2971,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &643280580
@@ -3119,7 +3103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &683995889
@@ -3230,7 +3213,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &732840344
 GameObject:
@@ -3346,7 +3329,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &732840351
@@ -3479,7 +3461,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &747182696
@@ -3612,7 +3593,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &750027339
@@ -3745,7 +3725,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &751384556
@@ -3953,7 +3932,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &786754242
@@ -4086,7 +4064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &842764985
@@ -4219,7 +4196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &852328036
@@ -4360,6 +4336,7 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &882958818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4388,7 +4365,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &943530031
@@ -4424,7 +4400,7 @@ Transform:
   m_Children:
   - {fileID: 2003373447}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &943530033
 MeshCollider:
@@ -4567,7 +4543,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.63, y: -17.7, z: -64.4}
+  m_LocalPosition: {x: 10.63, y: -17.7, z: -52.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4689,7 +4665,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &983196698
@@ -4822,7 +4797,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1007338747
@@ -4955,7 +4929,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1013870105
@@ -5007,7 +4980,7 @@ Transform:
   m_Children:
   - {fileID: 1744563539}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1021850435
 MeshCollider:
@@ -5106,7 +5079,7 @@ Transform:
   m_Children:
   - {fileID: 882958816}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1043232031
 MeshCollider:
@@ -5294,6 +5267,7 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &1066097732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5322,8 +5296,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
-  targetpos: {x: 9.72, y: -10, z: 28}
+  targetpos: {x: 9.72, y: -9.97, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &1079061751
 GameObject:
@@ -5439,7 +5412,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1079061758
@@ -5580,6 +5552,7 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &1093382494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5608,7 +5581,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &1141670141
@@ -5725,7 +5697,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1141670148
@@ -5858,7 +5829,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1237011944
@@ -5910,7 +5880,7 @@ Transform:
   m_Children:
   - {fileID: 322993512}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1290772480
 MeshCollider:
@@ -6090,7 +6060,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1310239862
@@ -6223,7 +6192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1313812707
@@ -6356,7 +6324,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1325439214
@@ -6489,7 +6456,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1412918860
@@ -6622,7 +6588,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1428275550
@@ -6755,7 +6720,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1469248416
@@ -6888,7 +6852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1472357621
@@ -7029,6 +6992,7 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &1477777792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7057,7 +7021,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &1492193078
@@ -7093,7 +7056,7 @@ Transform:
   m_Children:
   - {fileID: 1066097730}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1492193080
 MeshCollider:
@@ -7273,7 +7236,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1510912518
@@ -7325,7 +7287,7 @@ Transform:
   m_Children:
   - {fileID: 1477777790}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1544584543
 MeshCollider:
@@ -7505,7 +7467,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1550645082
@@ -7638,7 +7599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1553984124
@@ -7779,6 +7739,7 @@ MonoBehaviour:
   rotateY: -1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &1585569589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7807,7 +7768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &1701604030
@@ -7924,7 +7884,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1701604037
@@ -8057,7 +8016,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1725354072
@@ -8198,6 +8156,7 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &1744563541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8226,7 +8185,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &1812404190
@@ -8343,7 +8301,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1812404197
@@ -8476,7 +8433,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1834730584
@@ -8528,7 +8484,7 @@ Transform:
   m_Children:
   - {fileID: 1585569587}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1894931071
 MeshCollider:
@@ -8708,7 +8664,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1910779986
@@ -8841,7 +8796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: 9.72, y: -0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1949541271
@@ -8974,7 +8928,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1959709445
@@ -9107,7 +9060,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 0.03, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &1991412711
@@ -9248,6 +9200,7 @@ MonoBehaviour:
   rotateY: 1
   direction: {x: 0, y: 0, z: 0}
   speedofRotation: 100
+  stoppedSpinning: 0
 --- !u!114 &2003373449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9276,8 +9229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
-  targetpos: {x: -9.98, y: -10, z: 28}
+  targetpos: {x: -9.98, y: -9.97, z: 28}
   newParent: {fileID: 27703437}
 --- !u!1 &2068976315
 GameObject:
@@ -9393,7 +9345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: -10, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &2068976322
@@ -9526,7 +9477,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &2072416615
@@ -9659,7 +9609,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &2078437976
@@ -9792,7 +9741,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -0.03, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &2109292026
@@ -9925,7 +9873,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSeen: 0
   ps: {fileID: 180865649}
-  range: 143.61
   targetpos: {x: -9.98, y: 9.71, z: 28}
   newParent: {fileID: 27703437}
 --- !u!54 &2110949071

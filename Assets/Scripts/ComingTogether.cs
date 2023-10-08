@@ -20,7 +20,7 @@ public class ComingTogether : MonoBehaviour
 
         //transform.localEulerAngles = new Vector3(-90, 0, 0);
 
-        if (amountdone >= 11.01f)
+        if (amountdone >= 15f)
         {
             //this is where we want to call the code to take a screenshot
             //if we want the screenshot to be taken, i think it would be a good idea to ask the player before it being taken

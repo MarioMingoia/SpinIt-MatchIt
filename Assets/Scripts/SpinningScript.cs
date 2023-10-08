@@ -11,13 +11,12 @@ public class SpinningScript : MonoBehaviour
 
     bool enterPressed;
 
-    [SerializeField]
-    Vector3 direction;
+    public Vector3 direction;
 
     [SerializeField]
     float speedofRotation;
 
-
+    public bool stoppedSpinning = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +34,7 @@ public class SpinningScript : MonoBehaviour
             transform.RotateAround(transform.position, direction, speedofRotation * Time.deltaTime);
         }
 
-        if (enterPressed)
+        if (enterPressed && !stoppedSpinning)
         {
             var vec = transform.eulerAngles;
             vec.x = Mathf.Round(vec.x / 90) * 90;
@@ -58,6 +57,6 @@ public class SpinningScript : MonoBehaviour
     IEnumerator waitfortime()
     {
         yield return new WaitForSeconds(5);
-        GetComponent<SpinningScript>().enabled = false;
+        stoppedSpinning = true; 
     }
 }
