@@ -21,6 +21,9 @@ public class reRollandStop : MonoBehaviour
 
     [SerializeField]
     Vector3 reRollDirection;
+
+    [SerializeField]
+    int photoCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +63,10 @@ public class reRollandStop : MonoBehaviour
 
 
         if (!stopSpinning && chosenObj != null)
+        {
             rotator(chosenObj);
+
+        }
     }
 
     public void rotator(GameObject chosen)
@@ -71,5 +77,19 @@ public class reRollandStop : MonoBehaviour
         vec.z = Mathf.Round(vec.z / 90) * 90;
 
         chosen.transform.eulerAngles = Vector3.Lerp(chosen.transform.eulerAngles, vec, Time.deltaTime);
+
+
+        if (Vector3.Angle(transform.eulerAngles, vec) == 0)
+            StartCoroutine(waitfortime());
+    }
+
+    IEnumerator waitfortime()
+    {
+        yield return new WaitForSeconds(5);
+        if (photoCount == 0)
+        {
+            tss.ssPhoto();
+            photoCount++;
+        }
     }
 }

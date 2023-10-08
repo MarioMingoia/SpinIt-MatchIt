@@ -21,10 +21,9 @@ public class takeSS : MonoBehaviour
 
             if (takenPhoto == false)
             {
-                print("photo Taken");
 
-                //string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
-                //ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
+                ssPhoto();
+
                 takenPhoto = true;
             }
         }
@@ -34,5 +33,14 @@ public class takeSS : MonoBehaviour
     {
         if (pointReached == false)
             pointReached = true;
+    }
+
+    public void ssPhoto()
+    {
+        //string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
+        //ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
+
+        print("photo Taken");
+
     }
 }

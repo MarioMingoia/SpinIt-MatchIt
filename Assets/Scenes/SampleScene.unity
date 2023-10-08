@@ -397,6 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27703439}
   - component: {fileID: 27703438}
+  - component: {fileID: 27703440}
   m_Layer: 0
   m_Name: faceDetecter
   m_TagString: removeParent
@@ -432,6 +433,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &27703440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27703437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae858999e0bccf45abbc29d8a3b42fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinningCube: []
+  chosenObj: {fileID: 0}
+  tss: {fileID: 180865651}
+  pickRandom: 1
+  stopSpinning: 1
+  reRollDirection: {x: 0, y: 0, z: 0}
+  photoCount: 0
 --- !u!1 &32682760
 GameObject:
   m_ObjectHideFlags: 0
