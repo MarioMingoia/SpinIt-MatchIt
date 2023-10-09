@@ -20,7 +20,9 @@ public class reRollandStop : MonoBehaviour
     bool stopSpinning;
 
     [SerializeField]
-    Vector3 reRollDirection;
+    float reRollX;
+    [SerializeField]
+    float reRollY;
 
     [SerializeField]
     int photoCount;
@@ -52,9 +54,9 @@ public class reRollandStop : MonoBehaviour
 
         if (chosenObj != null && stopSpinning)
         {
-            reRollDirection = chosenObj.GetComponent<SpinningScript>().direction;
-
-            chosenObj.transform.RotateAround(chosenObj.transform.position, reRollDirection, 25 * Time.deltaTime);
+            reRollX = chosenObj.GetComponent<SpinningScript>().rotateX;
+            reRollY = chosenObj.GetComponent<SpinningScript>().rotateY;
+            chosenObj.transform.Rotate(reRollX, 0, reRollY);
             if (Input.GetKey(KeyCode.Return) && stopSpinning)
             {
                 stopSpinning = false;
