@@ -26,7 +26,7 @@ public class findCamera : MonoBehaviour
 
         if (isSeen)
         {
-            if (!transform.parent.CompareTag("removeParent"))
+            if (!transform.parent.CompareTag("bringFaceTogether"))
             {
                 transform.parent = null;
                 transform.parent = newParent.transform;
