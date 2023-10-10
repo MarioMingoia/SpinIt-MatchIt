@@ -13,6 +13,8 @@ public class positionStopper : MonoBehaviour
     [SerializeField] int counter = 0;
 
     public bool seen;
+
+    public SpinningScript previousCube;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,19 +26,42 @@ public class positionStopper : MonoBehaviour
             realobjects.Add(objects[rand]);
             objects.RemoveAt(rand);
         }
+
+
     }
 
         // Update is called once per frame
         void Update()
     {
         if (listPicker <= realobjects.Count - 1)
+        {
             realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = true;
+            
+        }
 
         if (listPicker < realobjects.Count && Input.GetKeyUp(KeyCode.Return))
         {
-            realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
-            realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
-            listPicker++;
+            if (previousCube)
+            {
+                if (previousCube.stoppedSpinning)
+                {
+                    previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
+
+                    realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
+                    realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
+                    listPicker++;
+
+                }
+            }
+            else
+            {
+                previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
+
+                realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
+                realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
+                listPicker++;
+            }
+
         }
 
         if (listPicker == 9 && counter < 9)
@@ -45,13 +70,13 @@ public class positionStopper : MonoBehaviour
             {
                 if (item.GetComponent<SpinningScript>().stoppedSpinning == true)
                 {
-                    realobjects.Remove(item);
+                    //realobjects.Remove(item);
                     counter++;
                 }
             }
         }
 
-        if (counter == 9)
+        if (counter >= 9)
             seen = true;
     }
    
