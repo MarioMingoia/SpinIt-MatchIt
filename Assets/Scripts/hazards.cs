@@ -38,6 +38,18 @@ public class hazards : MonoBehaviour
     {
         foreach (SpinningScript ss in neighbours)
         {
+           // if(ss.getFrontFace().position == ss.getFrontFace().)
+            //IF BotLeft/BotRight faces is APose, Then Mid/TopRight cannot be RightHandUp pose, and Mid/TopLeft cannot be LeftHandUpPose
+
+            //IF MidLeft is LeftHandUp pose, then the TopLeft should also be LeftHandUp pose
+
+            //IF MidRight is RightHandUp pose, then the TopRight should also be RightHandUp pose
+
+            //IF MidLeft is RightHandUp pose, then the Top/BotLeft should also be RightHandUp pose or Apose
+
+            //IF MidRight is LeftHandUp pose, then the Top/BotRight should also be LeftHandUp pose or Apose
+
+            //IF MidRight is LeftHandUp pose, then the Top/BotRight should also be LeftHandUp pose or Apose
 
         }
 

@@ -10,6 +10,9 @@ public class ComingTogether : MonoBehaviour
     [SerializeField]
     float amountdone;
 
+    [SerializeField]
+
+
 
     //I think in this script is where we want to handle hazards
     public void bringEverythingTogether(Vector3 target)

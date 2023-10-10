@@ -77,7 +77,11 @@ public class positionStopper : MonoBehaviour
         }
 
         if (counter >= 9)
-            seen = true;
+            Invoke("SetSeen", 3);
+    }
+    void SetSeen()
+    {
+        seen = true;
     }
    
 }
