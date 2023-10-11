@@ -24,8 +24,7 @@ public class SpinningScript : MonoBehaviour
     [SerializeField]
     List<hazards> faces = new List<hazards>();
 
-    [SerializeField]
-    hazards frontFaceHzd;
+    public hazards frontFaceHzd;
 
     [SerializeField]
     positionStopper ps;
@@ -58,16 +57,14 @@ public class SpinningScript : MonoBehaviour
 
     }
 
-    public face getFrontFace()
+    face getFrontFace()
     {
         foreach (hazards item in faces)
         {
-            Debug.Log(possibleRotations[ran].getName() + "Side Chosen");
             face faceInstance = item.GetComponent<face>();
-            //Debug.Log(faceInstance.getName() + " get name");
             if (faceInstance.getName() == possibleRotations[ran].name)
             {
-                print(faceInstance);
+                frontFaceHzd = item;
                 return faceInstance;
 
             }
@@ -92,9 +89,7 @@ public class SpinningScript : MonoBehaviour
         transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, possibleRotations[i].rotation, timer);
         if (timer >= 1)
         {
-            print(possibleRotations[i].rotation + "Before");
             transform.localEulerAngles = possibleRotations[i].rotation;
-            print(possibleRotations[i].rotation + "After");
 
             getFrontFace();
 
