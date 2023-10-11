@@ -146,16 +146,16 @@ public class hazards : MonoBehaviour
                     {
                         if(poses != Poses.LeftHandUp)
                         {
-                            parent.findSafestFace(Poses.APose.ToString());
+                            parent.findSafestFace(Poses.LeftHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
                     }
                     if (position == Position.BotLeft)
                     {
-                        if (poses == Poses.LeftHandUp)
+                        if (poses != Poses.LeftHandUp)
                         {
-                            parent.findSafestFace(Poses.APose.ToString());
+                            parent.findSafestFace(Poses.LeftHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
@@ -194,16 +194,16 @@ public class hazards : MonoBehaviour
                     {
                         if (poses != Poses.RightHandUp)
                         {
-                            parent.findSafestFace(Poses.APose.ToString());
+                            parent.findSafestFace(Poses.RightHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
                     }
                     if (position == Position.BotRight)
                     {
-                        if (poses == Poses.RightHandUp)
+                        if (poses != Poses.RightHandUp)
                         {
-                            parent.findSafestFace(Poses.APose.ToString());
+                            parent.findSafestFace(Poses.RightHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
@@ -212,20 +212,20 @@ public class hazards : MonoBehaviour
             }
             else if (ss.frontFaceHzd.position == Position.MidRight)
             {
-                if (ss.frontFaceHzd.poses == Poses.RightHandUp)
+                if (ss.frontFaceHzd.poses == Poses.APose)
                 {
                     if (position == Position.TopRight)
                     {
-                        if (poses == Poses.APose)
+                        if (poses != Poses.APose)
                         {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
+                            parent.findSafestFace(Poses.APose.ToString());
                         }
                     }
                     if (position == Position.BotRight)
                     {
-                        if (poses == Poses.APose)
+                        if (poses != Poses.APose)
                         {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
+                            parent.findSafestFace(Poses.APose.ToString());
 
                             print("Hazard Detected!");
                         }
@@ -241,7 +241,7 @@ public class hazards : MonoBehaviour
                     {
                         if (poses != Poses.LeftHandUp)
                         {
-                            ss.findSafestFace(Poses.APose.ToString());
+                            ss.findSafestFace(Poses.LeftHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
@@ -250,7 +250,7 @@ public class hazards : MonoBehaviour
                     {
                         if (poses != Poses.LeftHandUp)
                         {
-                            ss.findSafestFace(Poses.APose.ToString());
+                            ss.findSafestFace(Poses.LeftHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
@@ -289,16 +289,16 @@ public class hazards : MonoBehaviour
                     {
                         if (poses != Poses.RightHandUp)
                         {
-                            ss.findSafestFace(Poses.APose.ToString());
+                            ss.findSafestFace(Poses.RightHandUp.ToString());
 
                             print("Hazard Detected!");
                         }
                     }
                     if (position == Position.BotRight)
                     {
-                        if (poses == Poses.RightHandUp)
+                        if (poses != Poses.RightHandUp)
                         {
-                            parent.findSafestFace(Poses.APose.ToString());
+                            parent.findSafestFace(Poses.RightHandUp.ToString());
 
                             print("Hazard Detected!");
                         }

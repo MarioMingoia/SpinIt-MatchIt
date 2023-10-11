@@ -113,7 +113,7 @@ public class SpinningScript : MonoBehaviour
                 item = face;
             }
         }
-        print(item);
+        print(item.parent);
         setTrue(item.GetComponent<face>().rotation);
     }
     public void setTrue(Vector3 newRot)
@@ -122,7 +122,10 @@ public class SpinningScript : MonoBehaviour
 
         timer = 0;
 
-        StartCoroutine(StopPiece(newRot));
+        transform.localEulerAngles = newRot;
+
+        //item = null;
+        //StartCoroutine(StopPiece(newRot));
     }
     IEnumerator waitfortime()
     {
