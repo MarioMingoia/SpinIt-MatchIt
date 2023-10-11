@@ -43,7 +43,7 @@ public class positionStopper : MonoBehaviour
         {
             if (previousCube)
             {
-                if (previousCube.stoppedSpinning)
+                if (previousCube.stoppedSpinning && previousCube.item == null)
                 {
                     previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
 

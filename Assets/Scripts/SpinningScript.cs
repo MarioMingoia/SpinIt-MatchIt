@@ -28,6 +28,8 @@ public class SpinningScript : MonoBehaviour
 
     [SerializeField]
     positionStopper ps;
+
+    public hazards item;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,17 +81,17 @@ public class SpinningScript : MonoBehaviour
 
         timer = 0;
 
-        StartCoroutine(StopPiece(ran));
+        StartCoroutine(StopPiece(possibleRotations[ran].rotation));
     }
 
-    IEnumerator StopPiece(int i)
+    IEnumerator StopPiece(Vector3 rotation)
     {
         yield return new WaitForFixedUpdate();
         timer += Time.deltaTime * 2;
-        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, possibleRotations[i].rotation, timer);
+        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, rotation, timer);
         if (timer >= 1)
         {
-            transform.localEulerAngles = possibleRotations[i].rotation;
+            transform.localEulerAngles = rotation;
 
             getFrontFace();
 
@@ -98,10 +100,30 @@ public class SpinningScript : MonoBehaviour
 
             yield break;
         }
-        yield return StopPiece(i);
+        yield return StopPiece(rotation);
 
     }
 
+    public void findSafestFace(string pose)
+    {
+        foreach (hazards face in faces)
+        {
+            if (face.poses.ToString() == pose)
+            {
+                item = face;
+            }
+        }
+        print(item);
+        setTrue(item.GetComponent<face>().rotation);
+    }
+    public void setTrue(Vector3 newRot)
+    {
+        enterPressed = true;
+
+        timer = 0;
+
+        StartCoroutine(StopPiece(newRot));
+    }
     IEnumerator waitfortime()
     {
         yield return new WaitForSeconds(5);
