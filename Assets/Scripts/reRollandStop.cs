@@ -5,10 +5,10 @@ using UnityEngine;
 public class reRollandStop : MonoBehaviour
 {
     [SerializeField]
-    List<GameObject> spinningCube;
+    List<SpinningScript> spinningCube;
 
     [SerializeField]
-    GameObject chosenObj;
+    SpinningScript chosenObj;
 
     [SerializeField]
     takeSS tss;
@@ -38,6 +38,8 @@ public class reRollandStop : MonoBehaviour
     int ran;
 
     float timer = 0;
+
+    public bool startReRoll;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,13 +54,14 @@ public class reRollandStop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount > 0 && tss.takenPhoto)
+        if (transform.childCount > 0 && startReRoll)
         {
             for (int i = 0; i < transform.childCount; i++)
             {
-                if (!spinningCube.Contains(transform.GetChild(i).gameObject))
+                if (!spinningCube.Contains(transform.GetChild(i).GetComponent<SpinningScript>()))
                 {
-                    spinningCube.Add(transform.GetChild(i).gameObject);
+                    spinningCube.Add(transform.GetChild(i).GetComponent<SpinningScript>());
+                    
                 }
             }
 
@@ -68,46 +71,24 @@ public class reRollandStop : MonoBehaviour
 
                 pickRandom = false;
             }
-        }
 
-        if (chosenObj != null && stopSpinning)
-        {
-            reRollX = chosenObj.GetComponent<SpinningScript>().rotateX;
-            reRollY = chosenObj.GetComponent<SpinningScript>().rotateY;
-            chosenObj.transform.Rotate(reRollX, 0, reRollY);
+            if (chosenObj != null && stopSpinning)
+            {
+                reRollX = chosenObj.rotateX;
+                reRollY = chosenObj.rotateY;
+
+                chosenObj.gameObject.transform.Rotate(reRollX, 0, reRollY);
+            }
+
             if (Input.GetKey(KeyCode.Return) && stopSpinning)
             {
-                ran = Random.Range(0, possibleRotations.Count);
+                chosenObj.setTrue();
                 stopSpinning = false;
-                timer = 0;
+
+                tss.changeBool();
             }
+
         }
-
-
-        if (!stopSpinning && chosenObj != null)
-        {
-            StartCoroutine(StopPiece(ran));
-        }
-    }
-
-    IEnumerator StopPiece(int i)
-    {
-        yield return new WaitForFixedUpdate();
-        timer += Time.deltaTime * 2;
-        chosenObj.transform.eulerAngles = Vector3.Lerp(chosenObj.transform.eulerAngles, possibleRotations[i], timer);
-        if (timer >= 1)
-        {
-            chosenObj.transform.eulerAngles = possibleRotations[i];
-            if (photoCount == 0)
-            {
-                tss.ssPhoto();
-                photoCount++;
-
-            }
-            yield break;
-        }
-        yield return StopPiece(i);
-
     }
 
 }

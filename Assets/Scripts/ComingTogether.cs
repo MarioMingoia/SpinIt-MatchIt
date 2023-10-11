@@ -10,9 +10,6 @@ public class ComingTogether : MonoBehaviour
     [SerializeField]
     float amountdone;
 
-    [SerializeField]
-
-
 
     //I think in this script is where we want to handle hazards
     public void bringEverythingTogether(Vector3 target)
@@ -25,10 +22,7 @@ public class ComingTogether : MonoBehaviour
 
         if (amountdone >= 15f)
         {
-            //this is where we want to call the code to take a screenshot
-            //if we want the screenshot to be taken, i think it would be a good idea to ask the player before it being taken
-            //i.e. "do you want a photo taken?"
-            gm.GetComponent<takeSS>().changeBool();
+            gm.GetComponent<reRollandStop>().startReRoll = true;
         }
     }
 

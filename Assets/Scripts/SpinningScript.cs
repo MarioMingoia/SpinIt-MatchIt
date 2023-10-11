@@ -124,7 +124,7 @@ public class SpinningScript : MonoBehaviour
 
         transform.localEulerAngles = newRot;
 
-        //item = null;
+        item = null;
         //StartCoroutine(StopPiece(newRot));
     }
     IEnumerator waitfortime()
