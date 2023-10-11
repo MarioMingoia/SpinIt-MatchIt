@@ -47,287 +47,408 @@ public class hazards : MonoBehaviour
     {
         foreach (SpinningScript ss in neighbours)
         {
-            //IF BotLeft/BotRight faces is APose, Then Mid/TopRight cannot be RightHandUp pose, and Mid/TopLeft cannot be LeftHandUpPose DONE!!
-            if (ss.frontFaceHzd.position == Position.BotLeft)
+            if(position== Position.BotLeft)
             {
-                if (ss.frontFaceHzd.poses == Poses.APose)
+                if(ss.frontFaceHzd.position == Position.MidLeft)
                 {
-                    if(position == Position.MidLeft)
+                    if(ss.frontFaceHzd.poses != poses)
                     {
-                        if(poses == Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-                            print("Hazard Detected!");
-
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
-                    if(position == Position.TopLeft)
-                    {
-                        if (poses == Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-
-                            print("Hazard Detected!");
-                        }
-                    }
-
                 }
-            }
-            else if (ss.frontFaceHzd.position == Position.BotLeft)
-            {
-                if (ss.frontFaceHzd.poses == Poses.LeftHandUp)
+                if (ss.frontFaceHzd.position == Position.TopLeft)
                 {
-                    if (position == Position.MidLeft)
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.APose)
-                        {
-                            parent.findSafestFace(Poses.LeftHandUp.ToString());
-                        }
-                    }
-                    if (position == Position.TopLeft)
-                    {
-                        if (poses == Poses.APose)
-                        {
-                            parent.findSafestFace(Poses.LeftHandUp.ToString());
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
                 }
             }
-            if(ss.frontFaceHzd.position == Position.BotRight)
+            if (position == Position.BotRight)
             {
-                if (ss.frontFaceHzd.poses == Poses.APose)
+                if (ss.frontFaceHzd.position == Position.MidRight)
                 {
-                    if (position == Position.MidRight)
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-
-                            print("Hazard Detected!");
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
-                    if (position == Position.TopRight)
+                }
+                if (ss.frontFaceHzd.position == Position.TopRight)
+                {
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-
-                            print("Hazard Detected!");
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
                 }
             }
-            else if (ss.frontFaceHzd.position == Position.BotRight)
+            if (position == Position.MidLeft)
             {
-                if (ss.frontFaceHzd.poses == Poses.RightHandUp)
+                if (ss.frontFaceHzd.position == Position.BotLeft)
                 {
-                    if (position == Position.TopRight)
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.APose)
-                        {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
-                    if (position == Position.MidRight)
+                }
+                if (ss.frontFaceHzd.position == Position.TopLeft)
+                {
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.APose)
-                        {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
                 }
             }
-            //IF MidLeft is LeftHandUp pose, then the TopLeft should also be LeftHandUp pose,
-            if (ss.frontFaceHzd.position == Position.MidLeft)
+            if (position == Position.MidRight)
             {
-                if(ss.frontFaceHzd.poses == Poses.LeftHandUp)
+                if (ss.frontFaceHzd.position == Position.BotRight)
                 {
-                    if(position == Position.TopLeft)
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if(poses != Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.LeftHandUp.ToString());
-
-                            print("Hazard Detected!");
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
-                    if (position == Position.BotLeft)
+                }
+                if (ss.frontFaceHzd.position == Position.TopRight)
+                {
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses != Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.LeftHandUp.ToString());
-
-                            print("Hazard Detected!");
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
                 }
             }
-            else if (ss.frontFaceHzd.position == Position.MidLeft)
+            if (position == Position.TopLeft)
             {
-                if (ss.frontFaceHzd.poses == Poses.APose)
+                if (ss.frontFaceHzd.position == Position.MidLeft)
                 {
-                    if (position == Position.TopLeft)
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
-                    if (position == Position.BotLeft)
+                }
+                if (ss.frontFaceHzd.position == Position.BotLeft)
+                {
+                    if (ss.frontFaceHzd.poses != poses)
                     {
-                        if (poses == Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-
-                            print("Hazard Detected!");
-                        }
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                    }
+                }
+            }
+            if (position == Position.TopRight)
+            {
+                if (ss.frontFaceHzd.position == Position.MidRight)
+                {
+                    if (ss.frontFaceHzd.poses != poses)
+                    {
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                    }
+                }
+                if (ss.frontFaceHzd.position == Position.BotRight)
+                {
+                    if (ss.frontFaceHzd.poses != poses)
+                    {
+                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                     }
                 }
             }
 
-            //IF MidRight is RightHandUp pose, then the TopRight should also be RightHandUp pose
-            if (ss.frontFaceHzd.position == Position.MidRight)
-            {
-                if (ss.frontFaceHzd.poses == Poses.RightHandUp)
-                {
-                    if (position == Position.TopRight)
-                    {
-                        if (poses != Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                    if (position == Position.BotRight)
-                    {
-                        if (poses != Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                }
-            }
-            else if (ss.frontFaceHzd.position == Position.MidRight)
-            {
-                if (ss.frontFaceHzd.poses == Poses.APose)
-                {
-                    if (position == Position.TopRight)
-                    {
-                        if (poses != Poses.APose)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-                        }
-                    }
-                    if (position == Position.BotRight)
-                    {
-                        if (poses != Poses.APose)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                }
-            }
-            //IF TopRight
-            if (ss.frontFaceHzd.position == Position.TopLeft)
-            {
-                if (ss.frontFaceHzd.poses == Poses.LeftHandUp)
-                {
-                    if (position == Position.MidLeft)
-                    {
-                        if (poses != Poses.LeftHandUp)
-                        {
-                            ss.findSafestFace(Poses.LeftHandUp.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                    if (position == Position.BotLeft)
-                    {
-                        if (poses != Poses.LeftHandUp)
-                        {
-                            ss.findSafestFace(Poses.LeftHandUp.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                }
 
-            }
-            else if (ss.frontFaceHzd.position == Position.TopLeft)
-            {
-                if (ss.frontFaceHzd.poses == Poses.APose)
-                {
-                    if (position == Position.MidLeft)
-                    {
-                        if (poses == Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-                        }
-                    }
-                    if (position == Position.BotLeft)
-                    {
-                        if (poses == Poses.LeftHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                }
-            }
-            //IF TopLeft
-            if (ss.frontFaceHzd.position == Position.TopRight)
-            {
-                if (ss.frontFaceHzd.poses == Poses.RightHandUp)
-                {
-                    if (position == Position.MidRight)
-                    {
-                        if (poses != Poses.RightHandUp)
-                        {
-                            ss.findSafestFace(Poses.RightHandUp.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                    if (position == Position.BotRight)
-                    {
-                        if (poses != Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.RightHandUp.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                }
 
-            }
-            else if (ss.frontFaceHzd.position == Position.TopRight)
-            {
-                if (ss.frontFaceHzd.poses == Poses.APose)
-                {
-                    if (position == Position.MidRight)
-                    {
-                        if (poses == Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
-                        }
-                    }
-                    if (position == Position.BotRight)
-                    {
-                        if (poses == Poses.RightHandUp)
-                        {
-                            parent.findSafestFace(Poses.APose.ToString());
 
-                            print("Hazard Detected!");
-                        }
-                    }
-                }
-            }
+
+
+
+
+
+
+
+            ////IF BotLeft/BotRight faces is APose, Then Mid/TopRight cannot be RightHandUp pose, and Mid/TopLeft cannot be LeftHandUpPose DONE!!
+            //if (ss.frontFaceHzd.position == Position.BotLeft)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.APose)
+            //    {
+            //        if(position == Position.MidLeft)
+            //        {
+            //            if(poses == Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+            //                print("Hazard Detected!");
+
+            //            }
+            //        }
+            //        if(position == Position.TopLeft)
+            //        {
+            //            if (poses == Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+
+            //    }
+            //}
+            //else if (ss.frontFaceHzd.position == Position.BotLeft)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.LeftHandUp)
+            //    {
+            //        if (position == Position.MidLeft)
+            //        {
+            //            if (poses == Poses.APose)
+            //            {
+            //                parent.findSafestFace(Poses.LeftHandUp.ToString());
+            //            }
+            //        }
+            //        if (position == Position.TopLeft)
+            //        {
+            //            if (poses == Poses.APose)
+            //            {
+            //                parent.findSafestFace(Poses.LeftHandUp.ToString());
+            //            }
+            //        }
+            //    }
+            //}
+            //if(ss.frontFaceHzd.position == Position.BotRight)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.APose)
+            //    {
+            //        if (position == Position.MidRight)
+            //        {
+            //            if (poses == Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //        if (position == Position.TopRight)
+            //        {
+            //            if (poses == Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
+            //else if (ss.frontFaceHzd.position == Position.BotRight)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.RightHandUp)
+            //    {
+            //        if (position == Position.TopRight)
+            //        {
+            //            if (poses == Poses.APose)
+            //            {
+            //                parent.findSafestFace(Poses.RightHandUp.ToString());
+            //            }
+            //        }
+            //        if (position == Position.MidRight)
+            //        {
+            //            if (poses == Poses.APose)
+            //            {
+            //                parent.findSafestFace(Poses.RightHandUp.ToString());
+            //            }
+            //        }
+            //    }
+            //}
+            ////IF MidLeft is LeftHandUp pose, then the TopLeft should also be LeftHandUp pose,
+            //if (ss.frontFaceHzd.position == Position.MidLeft)
+            //{
+            //    if(ss.frontFaceHzd.poses == Poses.LeftHandUp)
+            //    {
+            //        if(position == Position.TopLeft)
+            //        {
+            //            if(poses != Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.LeftHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //        if (position == Position.BotLeft)
+            //        {
+            //            if (poses != Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.LeftHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
+            //else if (ss.frontFaceHzd.position == Position.MidLeft)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.APose)
+            //    {
+            //        if (position == Position.TopLeft)
+            //        {
+            //            if (poses == Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+            //            }
+            //        }
+            //        if (position == Position.BotLeft)
+            //        {
+            //            if (poses == Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
+
+            ////IF MidRight is RightHandUp pose, then the TopRight should also be RightHandUp pose
+            //if (ss.frontFaceHzd.position == Position.MidRight)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.RightHandUp)
+            //    {
+            //        if (position == Position.TopRight)
+            //        {
+            //            if (poses != Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.RightHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //        if (position == Position.BotRight)
+            //        {
+            //            if (poses != Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.RightHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
+            //else if (ss.frontFaceHzd.position == Position.MidRight)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.APose)
+            //    {
+            //        if (position == Position.TopRight)
+            //        {
+            //            if (poses != Poses.APose)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+            //            }
+            //        }
+            //        if (position == Position.BotRight)
+            //        {
+            //            if (poses != Poses.APose)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
+            ////IF TopRight
+            //if (ss.frontFaceHzd.position == Position.TopLeft)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.LeftHandUp)
+            //    {
+            //        if (position == Position.MidLeft)
+            //        {
+            //            if (poses != Poses.LeftHandUp)
+            //            {
+            //                ss.findSafestFace(Poses.LeftHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //        if (position == Position.BotLeft)
+            //        {
+            //            if (poses != Poses.LeftHandUp)
+            //            {
+            //                ss.findSafestFace(Poses.LeftHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+
+            //}
+            //else if (ss.frontFaceHzd.position == Position.TopLeft)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.APose)
+            //    {
+            //        if (position == Position.MidLeft)
+            //        {
+            //            if (poses == Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+            //            }
+            //        }
+            //        if (position == Position.BotLeft)
+            //        {
+            //            if (poses == Poses.LeftHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
+            ////IF TopLeft
+            //if (ss.frontFaceHzd.position == Position.TopRight)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.RightHandUp)
+            //    {
+            //        if (position == Position.MidRight)
+            //        {
+            //            if (poses != Poses.RightHandUp)
+            //            {
+            //                ss.findSafestFace(Poses.RightHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //        if (position == Position.BotRight)
+            //        {
+            //            if (poses != Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.RightHandUp.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+
+            //}
+            //else if (ss.frontFaceHzd.position == Position.TopRight)
+            //{
+            //    if (ss.frontFaceHzd.poses == Poses.APose)
+            //    {
+            //        if (position == Position.MidRight)
+            //        {
+            //            if (poses == Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+            //            }
+            //        }
+            //        if (position == Position.BotRight)
+            //        {
+            //            if (poses == Poses.RightHandUp)
+            //            {
+            //                parent.findSafestFace(Poses.APose.ToString());
+
+            //                print("Hazard Detected!");
+            //            }
+            //        }
+            //    }
+            //}
         }
 
     }
