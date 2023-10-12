@@ -84,11 +84,26 @@ public class reRollandStop : MonoBehaviour
             {
                 chosenObj.setTrue();
                 stopSpinning = false;
+                timer = 0;
+                StartCoroutine(StopPiece());
 
-                tss.changeBool();
             }
 
         }
+    }
+
+    IEnumerator StopPiece()
+    {
+        yield return new WaitForFixedUpdate();
+        timer += Time.deltaTime * 2;
+        if (timer >= 1)
+        {
+            tss.changeBool();
+
+            yield break;
+        }
+        yield return StopPiece();
+
     }
 
 }
