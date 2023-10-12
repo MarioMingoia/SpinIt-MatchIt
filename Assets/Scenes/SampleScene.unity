@@ -1055,7 +1055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 5
   neighbours: []
   nextSafestFace: []
@@ -1474,7 +1474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 3
   neighbours: []
   nextSafestFace: []
@@ -2827,7 +2827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 4
   neighbours: []
   nextSafestFace: []
@@ -3209,7 +3209,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c835919cb57cb394285eb601f4317876, type: 2}
+  - {fileID: 2100000, guid: 74bf238bb5f2efb43ac4b9b088df8069, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3268,7 +3268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 0
   neighbours: []
   nextSafestFace: []
@@ -3656,7 +3656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 1
   neighbours: []
   nextSafestFace: []
@@ -3950,7 +3950,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 8
   neighbours: []
   nextSafestFace: []
@@ -4319,7 +4319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 3
   neighbours: []
   nextSafestFace: []
@@ -4466,7 +4466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 5
   neighbours: []
   nextSafestFace: []
@@ -5961,7 +5961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 2
   neighbours: []
   nextSafestFace: []
@@ -6270,7 +6270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 7
   neighbours: []
   nextSafestFace: []
@@ -6417,7 +6417,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 8
   neighbours: []
   nextSafestFace: []
@@ -7104,7 +7104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 7
   neighbours: []
   nextSafestFace: []
@@ -7251,7 +7251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 0
   neighbours: []
   nextSafestFace: []
@@ -7398,7 +7398,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 6
   neighbours: []
   nextSafestFace: []
@@ -7545,7 +7545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 7
   neighbours: []
   nextSafestFace: []
@@ -7953,7 +7953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 4
   neighbours: []
   nextSafestFace: []
@@ -8199,7 +8199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 2
   neighbours: []
   nextSafestFace: []
@@ -9111,7 +9111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 6
   neighbours: []
   nextSafestFace: []
@@ -9798,7 +9798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 4
   neighbours: []
   nextSafestFace: []
@@ -9945,7 +9945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 4
   neighbours: []
   nextSafestFace: []
@@ -10254,7 +10254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 7
   neighbours: []
   nextSafestFace: []
@@ -10401,7 +10401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 1
   position: 1
   neighbours: []
   nextSafestFace: []
@@ -10548,7 +10548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 1
   neighbours: []
   nextSafestFace: []
@@ -10695,7 +10695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 0}
-  poses: 0
+  poses: 2
   position: 1
   neighbours: []
   nextSafestFace: []
