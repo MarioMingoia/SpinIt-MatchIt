@@ -40,6 +40,8 @@ public class reRollandStop : MonoBehaviour
     float timer = 0;
 
     public bool startReRoll;
+
+    public face selectedFace;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,8 @@ public class reRollandStop : MonoBehaviour
         possibleRotations.Add(topFace);
         possibleRotations.Add(rightFace);
         possibleRotations.Add(leftFace);
+
+        ran = Random.Range(0, spinningCube.Count);
     }
 
     // Update is called once per frame
@@ -67,8 +71,8 @@ public class reRollandStop : MonoBehaviour
 
             if(spinningCube.Count > 8 && pickRandom)
             {
-                chosenObj = spinningCube[Random.Range(0, spinningCube.Count)];
-
+                chosenObj = spinningCube[ran];
+                selectedFace = chosenObj.frontFaceHzd.GetComponent<face>();
                 pickRandom = false;
             }
 

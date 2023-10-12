@@ -428,6 +428,7 @@ GameObject:
   - component: {fileID: 27703439}
   - component: {fileID: 27703438}
   - component: {fileID: 27703440}
+  - component: {fileID: 27703441}
   m_Layer: 0
   m_Name: faceDetecter
   m_TagString: bringFaceTogether
@@ -484,6 +485,36 @@ MonoBehaviour:
   reRollY: 0
   photoCount: 0
   startReRoll: 0
+--- !u!114 &27703441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27703437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fd4b2c1feba64146bab8add070d61f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ss:
+  - {fileID: 452137387}
+  - {fileID: 1585569588}
+  - {fileID: 2003373448}
+  - {fileID: 1477777791}
+  - {fileID: 882958817}
+  - {fileID: 322993513}
+  - {fileID: 1066097731}
+  - {fileID: 1744563540}
+  - {fileID: 1093382493}
+  faces: []
+  hasThereBeenHazard: 0
+  countofFrontFace: []
+  countofBackFace: []
+  countofLeftFace: []
+  countofRightFace: []
+  countofTopFace: []
+  countofBottomFace: []
 --- !u!1 &32682760
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,10 +1944,12 @@ MonoBehaviour:
   - {fileID: 1141670150}
   - {fileID: 2068976324}
   - {fileID: 460221427}
+  ran: 0
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &322993514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,10 +2549,12 @@ MonoBehaviour:
   - {fileID: 1959709447}
   - {fileID: 495506949}
   - {fileID: 75393336}
+  ran: 0
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &452137388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4812,10 +4847,12 @@ MonoBehaviour:
   - {fileID: 1313812709}
   - {fileID: 643280582}
   - {fileID: 1834730586}
+  ran: 4
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &882958818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5797,10 +5834,12 @@ MonoBehaviour:
   - {fileID: 1237011946}
   - {fileID: 1553984126}
   - {fileID: 683995891}
+  ran: 0
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &1066097732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6106,10 +6145,12 @@ MonoBehaviour:
   - {fileID: 1550645084}
   - {fileID: 852328038}
   - {fileID: 295544679}
+  ran: 4
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &1093382494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7690,10 +7731,12 @@ MonoBehaviour:
   - {fileID: 21641178}
   - {fileID: 786754244}
   - {fileID: 983196700}
+  ran: 4
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &1477777792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8491,10 +8534,12 @@ MonoBehaviour:
   - {fileID: 2072416617}
   - {fileID: 2109292028}
   - {fileID: 402552485}
+  ran: 4
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &1585569589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8947,10 +8992,12 @@ MonoBehaviour:
   - {fileID: 842764987}
   - {fileID: 1725354074}
   - {fileID: 54901196}
+  ran: 0
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &1744563541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10090,10 +10137,12 @@ MonoBehaviour:
   - {fileID: 322111642}
   - {fileID: 1469248418}
   - {fileID: 415436918}
+  ran: 0
   faces: []
   frontFaceHzd: {fileID: 0}
   ps: {fileID: 0}
   item: {fileID: 0}
+  HazardDetect: 0
 --- !u!114 &2003373449
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ public class SpinningScript : MonoBehaviour
     
     [SerializeField] List<face> possibleRotations = new();
 
-    int ran;
+    public int ran;
 
     float timer = 0;
 
@@ -30,6 +30,8 @@ public class SpinningScript : MonoBehaviour
     positionStopper ps;
 
     public hazards item;
+
+    public bool HazardDetect = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -106,6 +108,7 @@ public class SpinningScript : MonoBehaviour
 
     public void findSafestFace(string pose)
     {
+        HazardDetect = true;
         foreach (hazards face in faces)
         {
             if (face.poses.ToString() == pose)
