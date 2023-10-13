@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class positionStopper : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class positionStopper : MonoBehaviour
     public bool seen;
 
     public SpinningScript previousCube;
+
+    public GameObject panel;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +30,26 @@ public class positionStopper : MonoBehaviour
             objects.RemoveAt(rand);
         }
 
+        StartCoroutine(fadeOut());
+    }
+
+    IEnumerator fadeOut()
+    {
+        yield return new WaitForFixedUpdate();
+        print("fading out");
+        panel.GetComponent<CanvasGroup>().alpha -= Time.deltaTime;
+
+        if (panel.GetComponent<CanvasGroup>().alpha == 0)
+        {
+            print("faded out");
+            yield break;
+        }
+        yield return fadeOut();
 
     }
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
     {
         if (listPicker <= realobjects.Count - 1)
         {
@@ -39,7 +57,7 @@ public class positionStopper : MonoBehaviour
             
         }
 
-        if (listPicker < realobjects.Count && Input.GetKeyUp(KeyCode.Return))
+        if (listPicker < realobjects.Count && Input.GetKeyUp(KeyCode.Return) && panel.GetComponent<CanvasGroup>().alpha == 0)
         {
             if (previousCube)
             {

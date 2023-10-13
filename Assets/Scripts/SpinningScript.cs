@@ -45,6 +45,7 @@ public class SpinningScript : MonoBehaviour
         }
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -129,9 +130,5 @@ public class SpinningScript : MonoBehaviour
 
         item = null;
         //StartCoroutine(StopPiece(newRot));
-    }
-    IEnumerator waitfortime()
-    {
-        yield return new WaitForSeconds(5);
     }
 }
