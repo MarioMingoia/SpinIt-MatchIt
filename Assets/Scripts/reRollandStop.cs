@@ -10,8 +10,7 @@ public class reRollandStop : MonoBehaviour
     [SerializeField]
     SpinningScript chosenObj;
 
-    [SerializeField]
-    takeSS tss;
+    public    takeSS tss;
 
     [SerializeField]
     bool pickRandom = true;
@@ -52,7 +51,6 @@ public class reRollandStop : MonoBehaviour
         possibleRotations.Add(rightFace);
         possibleRotations.Add(leftFace);
 
-        ran = Random.Range(0, spinningCube.Count);
     }
 
     // Update is called once per frame
@@ -71,6 +69,8 @@ public class reRollandStop : MonoBehaviour
 
             if(spinningCube.Count > 8 && pickRandom)
             {
+                ran = Random.Range(0, spinningCube.Count);
+
                 chosenObj = spinningCube[ran];
                 selectedFace = chosenObj.frontFaceHzd.GetComponent<face>();
                 pickRandom = false;

@@ -36,12 +36,10 @@ public class positionStopper : MonoBehaviour
     IEnumerator fadeOut()
     {
         yield return new WaitForFixedUpdate();
-        print("fading out");
         panel.GetComponent<CanvasGroup>().alpha -= Time.deltaTime;
 
         if (panel.GetComponent<CanvasGroup>().alpha == 0)
         {
-            print("faded out");
             yield break;
         }
         yield return fadeOut();

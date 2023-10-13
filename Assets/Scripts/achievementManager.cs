@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-
+using UnityEngine.UI;
 
 public class achievementManager : MonoBehaviour
 {
@@ -34,6 +34,24 @@ public class achievementManager : MonoBehaviour
     
     [SerializeField]
     face rerolled;
+
+    [SerializeField]
+    GameObject achievementNoHazard;
+    
+    [SerializeField]
+    GameObject achievement5050;
+    
+    [SerializeField]
+    GameObject achievementPerfect;
+    
+    [SerializeField]
+    GameObject achievementTwiceInARow;
+
+    public List<GameObject> achievementCounter;
+
+    [SerializeField]
+    showReturnButton srb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,21 +108,7 @@ public class achievementManager : MonoBehaviour
         }
 
 
-        //re-roll to the same image on that tile
-        if (GetComponent<reRollandStop>().startReRoll)
-        {
-            origin = GetComponent<reRollandStop>().selectedFace;
-            foreach (SpinningScript spin in ss)
-            {
-                if (spin.stoppedSpinning)
-                {
-                    if (spin.frontFaceHzd.GetComponent<face>() == origin)
-                    {
-                        print("achievement DOUBLE TROUBE Found");
-                    }
-                }
-            }
-        }
+
         if (faces.Count > 0)
         {
             foreach (face face in faces)
@@ -141,17 +145,57 @@ public class achievementManager : MonoBehaviour
                 }
             }
         }
-        if (faces.Count >= 9)
+        
+
+        if (GetComponent<reRollandStop>().tss.takenPhoto)
         {
-            //not having any hazards in the image
-            if (hasThereBeenHazard == 0)
-                print("achievement SAFE GAME Found");
-            //having a perfect image
-            if (countofBackFace.Count == 9 || countofBottomFace.Count == 9 || countofFrontFace.Count == 9 || countofTopFace.Count == 9 || countofLeftFace.Count == 9 || countofRightFace.Count == 9)
-                print("achievement PERFECT IMAGE Found");
-            //having an image with max 50% of same type
-            if (countofBackFace.Count <= 5 || countofBottomFace.Count <= 5 || countofFrontFace.Count <= 5 || countofTopFace.Count <= 5 || countofLeftFace.Count <= 5 || countofRightFace.Count <= 5)
-                print("achievement HALF AND HALF Found");
+            if (faces.Count >= 9)
+            {
+                //not having any hazards in the image
+                if (hasThereBeenHazard == 0)
+                {
+                    achievementNoHazard.SetActive(true);
+                    if (!achievementCounter.Contains(achievementNoHazard))
+                        achievementCounter.Add(achievementNoHazard);
+                    print("achievement SAFE GAME Found");
+                }
+                //having a perfect image
+                if (countofBackFace.Count == 9 || countofBottomFace.Count == 9 || countofFrontFace.Count == 9 || countofTopFace.Count == 9 || countofLeftFace.Count == 9 || countofRightFace.Count == 9)
+                {
+                    achievementPerfect.SetActive(true);
+                    if (!achievementCounter.Contains(achievementPerfect))
+                        achievementCounter.Add(achievementPerfect);
+                    print("achievement PERFECT IMAGE Found");
+                }
+                //having an image with max 50% of same type
+                if (countofBackFace.Count <= 5 || countofBottomFace.Count <= 5 || countofFrontFace.Count <= 5 || countofTopFace.Count <= 5 || countofLeftFace.Count <= 5 || countofRightFace.Count <= 5)
+                {
+                    achievement5050.SetActive(true);
+                    if (!achievementCounter.Contains(achievement5050))
+                        achievementCounter.Add(achievement5050);
+                    print("achievement HALF AND HALF Found");
+                }
+            }
+
+            //re-roll to the same image on that tile
+            if (GetComponent<reRollandStop>().startReRoll)
+            {
+                origin = GetComponent<reRollandStop>().selectedFace;
+                foreach (SpinningScript spin in ss)
+                {
+                    if (spin.stoppedSpinning)
+                    {
+                        if (spin.frontFaceHzd.GetComponent<face>() == origin)
+                        {
+                            achievementTwiceInARow.SetActive(true);
+                            if (!achievementCounter.Contains(achievementTwiceInARow))
+                                achievementCounter.Add(achievementTwiceInARow);
+                            print("achievement DOUBLE TROUBE Found");
+                        }
+                    }
+                }
+            }
+            srb.enabled = true;
         }
     }
 }
