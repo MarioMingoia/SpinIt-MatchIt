@@ -47,7 +47,6 @@ public class mainMenu : MonoBehaviour
     IEnumerator fadeIn()
     {
         yield return new WaitForFixedUpdate();
-        print("fading in");
         stopRotate = true;
         panel.GetComponent<CanvasGroup>().alpha += Time.deltaTime / 2;
         gameNameCube.transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, new Vector3(0, 0, 0), 0.01f * Time.fixedDeltaTime);

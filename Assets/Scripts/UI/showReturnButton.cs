@@ -32,7 +32,6 @@ public class showReturnButton : MonoBehaviour
     IEnumerator fadeIn()
     {
         yield return new WaitForFixedUpdate();
-        print("fading in");
         mainMenuFadePanel.GetComponent<CanvasGroup>().alpha += Time.deltaTime / 2;
         if (mainMenuFadePanel.GetComponent<CanvasGroup>().alpha >= 1)
         {
