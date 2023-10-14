@@ -165,7 +165,7 @@ public class SpinningScript : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         timer += Time.deltaTime * 2;
-        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, rotation, timer);
+        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, rotation, Time.deltaTime / 10);
         if (timer >= 1)
         {
             transform.localEulerAngles = rotation;

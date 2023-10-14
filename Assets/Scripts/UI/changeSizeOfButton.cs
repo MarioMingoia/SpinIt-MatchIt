@@ -35,7 +35,7 @@ public class changeSizeOfButton : MonoBehaviour, IPointerEnterHandler, IPointerE
         if (scaleUp)
         {
             timer += Time.deltaTime;
-            transform.localScale = Vector3.Lerp(transform.localScale, multipledScale, Time.deltaTime * 10);
+            transform.localScale = Vector3.Lerp(transform.localScale, multipledScale, Time.deltaTime * 50);
             if (timer >= 1)
             {
                 scaleUp = false;
@@ -44,7 +44,7 @@ public class changeSizeOfButton : MonoBehaviour, IPointerEnterHandler, IPointerE
         if (scaleDown)
         {
             timer += Time.deltaTime;
-            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 10);
+            transform.localScale = Vector3.Lerp(transform.localScale, originalScale, Time.deltaTime * 50);
             if (timer >= 1)
             {
                 scaleDown = false;
@@ -55,15 +55,17 @@ public class changeSizeOfButton : MonoBehaviour, IPointerEnterHandler, IPointerE
 
     public void OnPointerEnter(PointerEventData data)
     {
-        //this.transform.localScale = new Vector2(originalScale.x * multiplyer, originalScale.y * multiplyer);
+        scaleDown = false;
         scaleUp = true;
+        transform.localScale = originalScale;
         timer = 0;
     }
 
     public void OnPointerExit(PointerEventData data)
     {
-        //this.transform.localScale = originalScale;
+        scaleUp = false;
         scaleDown = true;
+        transform.localScale = multipledScale;
         timer = 0;
     }
 }
