@@ -52,6 +52,8 @@ public class achievementManager : MonoBehaviour
     [SerializeField]
     showReturnButton srb;
 
+    [SerializeField]
+    int speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -156,7 +158,11 @@ public class achievementManager : MonoBehaviour
                 {
                     achievementNoHazard.SetActive(true);
                     if (!achievementCounter.Contains(achievementNoHazard))
+                    {
                         achievementCounter.Add(achievementNoHazard);
+                        speed--;
+                        achievementNoHazard.GetComponent<moveAchievementsUp>().speed = speed;
+                    }
                     print("achievement SAFE GAME Found");
                 }
                 //having a perfect image
@@ -164,7 +170,11 @@ public class achievementManager : MonoBehaviour
                 {
                     achievementPerfect.SetActive(true);
                     if (!achievementCounter.Contains(achievementPerfect))
+                    {
                         achievementCounter.Add(achievementPerfect);
+                        speed--;
+                        achievementPerfect.GetComponent<moveAchievementsUp>().speed = speed;
+                    }
                     print("achievement PERFECT IMAGE Found");
                 }
                 //having an image with max 50% of same type
@@ -172,7 +182,11 @@ public class achievementManager : MonoBehaviour
                 {
                     achievement5050.SetActive(true);
                     if (!achievementCounter.Contains(achievement5050))
+                    {
                         achievementCounter.Add(achievement5050);
+                        speed--;
+                        achievement5050.GetComponent<moveAchievementsUp>().speed = speed;
+                    }
                     print("achievement HALF AND HALF Found");
                 }
             }
@@ -189,7 +203,11 @@ public class achievementManager : MonoBehaviour
                         {
                             achievementTwiceInARow.SetActive(true);
                             if (!achievementCounter.Contains(achievementTwiceInARow))
+                            {
                                 achievementCounter.Add(achievementTwiceInARow);
+                                speed--;
+                                achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;
+                            }
                             print("achievement DOUBLE TROUBE Found");
                         }
                     }

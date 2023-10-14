@@ -6,6 +6,8 @@ public class moveAchievementsUp : MonoBehaviour
 {
     [SerializeField]
     showReturnButton srb;
+
+    public int speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +19,8 @@ public class moveAchievementsUp : MonoBehaviour
     {
         if (this.gameObject.activeInHierarchy)
         {
-            transform.Translate(0, 1, 0);
-            GetComponent<CanvasGroup>().alpha -= Time.deltaTime / 5.5f;
+            transform.Translate(0, speed/2, 0);
+            GetComponent<CanvasGroup>().alpha -= Time.deltaTime / speed;
 
             if (transform.localPosition.y >= 569)
             {

@@ -25,7 +25,7 @@ public class mainMenu : MonoBehaviour
     {
         if (!stopRotate)
         {
-            gameNameCube.transform.Rotate(.5f, 0, .5f);
+            gameNameCube.transform.Rotate(.25f, 0, .25f);
         }
     }
 
