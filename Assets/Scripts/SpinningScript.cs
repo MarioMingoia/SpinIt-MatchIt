@@ -87,12 +87,6 @@ public class SpinningScript : MonoBehaviour
 
         var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.z / 90) * 90));
 
-        float x = roundedangle.x - originalvalue.x;
-        float z = roundedangle.z - originalvalue.z;
-
-        x = Mathf.Abs(x);
-        z = Mathf.Abs(z);
-
         if (originalvalue.x < 45 && originalvalue.z < 45 && changeAngle)
         {
             ran = 4;
