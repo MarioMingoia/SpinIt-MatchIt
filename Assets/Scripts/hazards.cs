@@ -9,7 +9,11 @@ public class hazards : MonoBehaviour
     public enum Poses { APose, LeftHandUp, RightHandUp }
     public Poses poses;
     public enum Position { TopLeft, TopMid, TopRight, MidLeft, Mid, MidRight, BotLeft, BotMid, BotRight }
-    public Position position;
+    public Position position; 
+    
+    [System.Flags]
+    public enum allFace { top, left, front, bottom, back, right}
+    public allFace myFace;
 
     [SerializeField]
     List<SpinningScript> neighbours = new List<SpinningScript>();
@@ -53,14 +57,20 @@ public class hazards : MonoBehaviour
                 {
                     if(ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
                 if (ss.frontFaceHzd.position == Position.TopLeft)
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
             }
@@ -70,14 +80,20 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
                 if (ss.frontFaceHzd.position == Position.TopRight)
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
             }
@@ -87,14 +103,20 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
                 if (ss.frontFaceHzd.position == Position.TopLeft)
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
             }
@@ -104,14 +126,20 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
                 if (ss.frontFaceHzd.position == Position.TopRight)
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
             }
@@ -121,14 +149,20 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
                 if (ss.frontFaceHzd.position == Position.BotLeft)
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
             }
@@ -138,14 +172,20 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
                 if (ss.frontFaceHzd.position == Position.BotRight)
                 {
                     if (ss.frontFaceHzd.poses != poses)
                     {
-                        parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        if (ss.frontFaceHzd.myFace != myFace)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                        }
                     }
                 }
             }

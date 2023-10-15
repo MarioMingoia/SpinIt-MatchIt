@@ -178,7 +178,7 @@ public class achievementManager : MonoBehaviour
                     print("achievement PERFECT IMAGE Found");
                 }
                 //having an image with max 50% of same type
-                if (countofBackFace.Count <= 5 || countofBottomFace.Count <= 5 || countofFrontFace.Count <= 5 || countofTopFace.Count <= 5 || countofLeftFace.Count <= 5 || countofRightFace.Count <= 5)
+                if (countofBackFace.Count <= 5 && countofBottomFace.Count <= 5 && countofFrontFace.Count <= 5 && countofTopFace.Count <= 5 && countofLeftFace.Count <= 5 && countofRightFace.Count <= 5)
                 {
                     achievement5050.SetActive(true);
                     if (!achievementCounter.Contains(achievement5050))
