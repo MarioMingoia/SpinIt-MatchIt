@@ -86,17 +86,8 @@ public class SpinningScript : MonoBehaviour
         var originalvalue = transform.localEulerAngles;
         print("Original " + originalvalue);
 
-        var roundedangle = new Vector3(Mathf.Round(originalvalue.x / 90) * 90, 0, Mathf.Round(originalvalue.z / 90) * 90);
-
-        if (roundedangle.z < 180)
-            roundedangle.z = 90;
-        if (roundedangle.z >= 180)
-            roundedangle.z = 270;
-
-        if (roundedangle.x >= 360)
-            roundedangle = new Vector3(0, 0, roundedangle.z);
-        if (roundedangle.z >= 360)
-            roundedangle = new Vector3(roundedangle.x, 0, 0);
+        var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.z / 90) * 90));
+        print("rounded  " + roundedangle);
 
         float x = roundedangle.x - originalvalue.x;
         float z = roundedangle.z - originalvalue.z;
@@ -106,17 +97,21 @@ public class SpinningScript : MonoBehaviour
 
         if (originalvalue.x < 45 && originalvalue.z < 45 && changeAngle)
         {
-            print(roundedangle);
             print("Front Face: 0,0,0");
             ran = 4;
             changeAngle = false;
-        }
+        } 
         
+        if (originalvalue.x >= 315 && originalvalue.z >= 315 && changeAngle)
+        {
+            print("Front Face: 0,0,0");
+            ran = 4;
+            changeAngle = false;
+        }     
         if (x < z && changeAngle)
         {
             print("x less than z");
             z = 0;
-            print(roundedangle.x + " " + roundedangle.y + " " + roundedangle.z);
             if (Mathf.Approximately(roundedangle.x,90))
             {
                 print("Bottom face: 90,0,0");
@@ -138,14 +133,17 @@ public class SpinningScript : MonoBehaviour
         if (x > z && changeAngle)
         {
             print("z less than x");
-            print(roundedangle.x + " " +  roundedangle.y + " " + roundedangle.z);
             x = 0;
             if (Mathf.Approximately(roundedangle.z,90))
             {
                 print("Right face: 0,0,90");
                 ran = 0;
             }
-
+            if (Mathf.Approximately(roundedangle.z, 180))
+            {
+                print("Back face: 180,0,0");
+                ran = 5;
+            }
             if (Mathf.Approximately(roundedangle.z,270))
             {
                 print("Left face: 0,0,270");
@@ -165,7 +163,7 @@ public class SpinningScript : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         timer += Time.deltaTime * 2;
-        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, rotation, Time.deltaTime / 10);
+        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, rotation, timer);
         if (timer >= 1)
         {
             transform.localEulerAngles = rotation;
@@ -191,7 +189,6 @@ public class SpinningScript : MonoBehaviour
                 item = face;
             }
         }
-        print(item.parent);
         setTrue(item.GetComponent<face>().rotation);
     }
     public void setTrue(Vector3 newRot)
