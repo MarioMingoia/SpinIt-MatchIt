@@ -84,10 +84,8 @@ public class SpinningScript : MonoBehaviour
         enterPressed = true;
         changeAngle = true;
         var originalvalue = transform.localEulerAngles;
-        print("Original " + originalvalue);
 
         var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.z / 90) * 90));
-        print("rounded  " + roundedangle);
 
         float x = roundedangle.x - originalvalue.x;
         float z = roundedangle.z - originalvalue.z;
@@ -97,62 +95,48 @@ public class SpinningScript : MonoBehaviour
 
         if (originalvalue.x < 45 && originalvalue.z < 45 && changeAngle)
         {
-            print("Front Face: 0,0,0");
             ran = 4;
             changeAngle = false;
         } 
         
         if (originalvalue.x >= 315 && originalvalue.z >= 315 && changeAngle)
         {
-            print("Front Face: 0,0,0");
             ran = 4;
             changeAngle = false;
         }     
-        if (x < z && changeAngle)
+        if (changeAngle)
         {
-            print("x less than z");
-            z = 0;
-            if (Mathf.Approximately(roundedangle.x,90))
+            if (Mathf.Approximately(roundedangle.x, 90))
             {
-                print("Bottom face: 90,0,0");
                 ran = 1;
-            }
+                changeAngle = false;
 
-            if (Mathf.Approximately(roundedangle.x,180))
+            }
+            if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.z, 180))
             {
-                print("Back face: 180,0,0");
                 ran = 5;
+                changeAngle = false;
+
             }
-            if (Mathf.Approximately(roundedangle.x,270))
+            if (Mathf.Approximately(roundedangle.x, 270))
             {
-                print("Top face: 270,0,0");
                 ran = 2;
+                changeAngle = false;
+
             }
-            changeAngle = false;
-        }
-        if (x > z && changeAngle)
-        {
-            print("z less than x");
-            x = 0;
             if (Mathf.Approximately(roundedangle.z,90))
             {
-                print("Right face: 0,0,90");
                 ran = 0;
-            }
-            if (Mathf.Approximately(roundedangle.z, 180))
-            {
-                print("Back face: 180,0,0");
-                ran = 5;
+                changeAngle = false;
+
             }
             if (Mathf.Approximately(roundedangle.z,270))
             {
-                print("Left face: 0,0,270");
                 ran = 3;
-            }    
-            changeAngle = false;
+                changeAngle = false;
+
+            }
         }
-
-
 
         timer = 0;
 

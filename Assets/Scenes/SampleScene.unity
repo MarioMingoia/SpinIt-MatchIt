@@ -255,6 +255,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 8
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &519369
@@ -402,6 +403,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 3
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &21641178
@@ -657,6 +659,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 4
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &32682769
@@ -804,6 +807,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 5
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &54901196
@@ -951,6 +955,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 4
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &75393336
@@ -1233,6 +1238,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 5
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &177373240
@@ -1773,6 +1779,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 3
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &286259232
@@ -1920,6 +1927,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 2
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &295544679
@@ -2067,6 +2075,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 6
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &322111642
@@ -2378,6 +2387,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 1
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &402552485
@@ -2525,6 +2535,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 3
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &406284449
@@ -2672,6 +2683,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 6
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &415436918
@@ -2983,6 +2995,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 7
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &460221427
@@ -3130,6 +3143,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 4
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &495506949
@@ -3379,6 +3393,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 8
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &594048675
@@ -3526,6 +3541,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 5
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &607632168
@@ -3673,6 +3689,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 0
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &643280582
@@ -3820,6 +3837,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 8
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &683995891
@@ -4061,6 +4079,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 1
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &732840353
@@ -4345,6 +4364,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 6
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &747182698
@@ -4492,6 +4512,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 8
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &750027341
@@ -4639,6 +4660,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 6
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &751384558
@@ -4861,6 +4883,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 3
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &786754244
@@ -5008,6 +5031,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 5
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &842764987
@@ -5155,6 +5179,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 2
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &852328038
@@ -5704,6 +5729,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 3
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &983196700
@@ -5851,6 +5877,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 2
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1007338749
@@ -5998,6 +6025,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 7
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1013870107
@@ -6642,6 +6670,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 2
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1079061760
@@ -6953,6 +6982,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 7
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1141670150
@@ -7100,6 +7130,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 8
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1237011946
@@ -7548,6 +7579,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 0
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1310239864
@@ -7695,6 +7727,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 0
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1313812709
@@ -7842,6 +7875,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 1
+  myFace: 3
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1325439216
@@ -7989,6 +8023,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 7
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1412918862
@@ -8136,6 +8171,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 0
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1428275552
@@ -8283,6 +8319,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 6
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1469248418
@@ -8430,6 +8467,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 7
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1472357623
@@ -8840,6 +8878,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 4
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1510912520
@@ -9192,6 +9231,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 2
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1550645084
@@ -9339,6 +9379,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 8
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1553984126
@@ -9787,6 +9828,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 2
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1701604039
@@ -9934,6 +9976,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 5
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1725354074
@@ -10347,6 +10390,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 6
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1812404199
@@ -10596,6 +10640,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 0
   position: 0
+  myFace: 4
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1834730586
@@ -10842,6 +10887,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 3
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1910779988
@@ -10989,6 +11035,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 5
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1949541273
@@ -11136,6 +11183,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 4
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1959709447
@@ -11283,6 +11331,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 4
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &1991412713
@@ -11684,6 +11733,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 7
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &2068976324
@@ -11831,6 +11881,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 1
+  myFace: 1
   neighbours: []
   nextSafestFace: []
 --- !u!114 &2072416617
@@ -11978,6 +12029,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 1
+  myFace: 5
   neighbours: []
   nextSafestFace: []
 --- !u!114 &2078437978
@@ -12214,6 +12266,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 2
   position: 1
+  myFace: 2
   neighbours: []
   nextSafestFace: []
 --- !u!114 &2109292028
@@ -12361,6 +12414,7 @@ MonoBehaviour:
   parent: {fileID: 0}
   poses: 1
   position: 0
+  myFace: 0
   neighbours: []
   nextSafestFace: []
 --- !u!114 &2110949073
