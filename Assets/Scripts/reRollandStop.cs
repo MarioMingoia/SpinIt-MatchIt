@@ -7,8 +7,7 @@ public class reRollandStop : MonoBehaviour
     [SerializeField]
     List<SpinningScript> spinningCube;
 
-    [SerializeField]
-    SpinningScript chosenObj;
+    public SpinningScript chosenObj;
 
     public    takeSS tss;
 
@@ -72,7 +71,9 @@ public class reRollandStop : MonoBehaviour
                 ran = Random.Range(0, spinningCube.Count);
 
                 chosenObj = spinningCube[ran];
-                selectedFace = chosenObj.frontFaceHzd.GetComponent<face>();
+                if (!selectedFace)
+                    selectedFace = chosenObj.thisFace;
+                print(selectedFace.getName().ToString());
                 pickRandom = false;
             }
 
@@ -103,7 +104,6 @@ public class reRollandStop : MonoBehaviour
         if (timer >= 1)
         {
             tss.changeBool();
-
             yield break;
         }
         yield return StopPiece();

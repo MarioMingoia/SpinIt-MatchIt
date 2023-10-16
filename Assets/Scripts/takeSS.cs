@@ -38,13 +38,14 @@ public class takeSS : MonoBehaviour
     public void ssPhoto()
     {
 
-#if UNITY_EDITOR
-        print("imagine photo Taken");
-
-#endif
+#if !UNITY_EDITOR
         string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
         ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
         print("photo Taken");
+#endif
+
+        print("imagine photo Taken");
+
 
     }
 }

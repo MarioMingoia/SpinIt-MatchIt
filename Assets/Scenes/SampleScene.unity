@@ -519,7 +519,6 @@ MonoBehaviour:
   countofTopFace: []
   countofBottomFace: []
   origin: {fileID: 0}
-  rerolled: {fileID: 0}
   achievementNoHazard: {fileID: 1819026275}
   achievement5050: {fileID: 1728952563}
   achievementPerfect: {fileID: 575878811}

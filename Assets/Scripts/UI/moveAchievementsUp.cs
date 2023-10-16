@@ -20,7 +20,7 @@ public class moveAchievementsUp : MonoBehaviour
         if (this.gameObject.activeInHierarchy)
         {
             transform.Translate(0, speed/2, 0);
-            GetComponent<CanvasGroup>().alpha -= Time.deltaTime / speed;
+            GetComponent<CanvasGroup>().alpha -= Time.deltaTime / (speed * 10);
 
             if (transform.localPosition.y >= 569)
             {

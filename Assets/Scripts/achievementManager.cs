@@ -33,7 +33,7 @@ public class achievementManager : MonoBehaviour
     face origin;
     
     [SerializeField]
-    face rerolled;
+    face rerolledFace;
 
     [SerializeField]
     GameObject achievementNoHazard;
@@ -54,6 +54,9 @@ public class achievementManager : MonoBehaviour
 
     [SerializeField]
     int speed;
+
+    [SerializeField]
+    SpinningScript reRolledSS;
     // Start is called before the first frame update
     void Start()
     {
@@ -160,7 +163,7 @@ public class achievementManager : MonoBehaviour
                     if (!achievementCounter.Contains(achievementNoHazard))
                     {
                         achievementCounter.Add(achievementNoHazard);
-                        speed--;
+                        speed -= 1;
                         achievementNoHazard.GetComponent<moveAchievementsUp>().speed = speed;
                     }
                     print("achievement SAFE GAME Found");
@@ -172,7 +175,7 @@ public class achievementManager : MonoBehaviour
                     if (!achievementCounter.Contains(achievementPerfect))
                     {
                         achievementCounter.Add(achievementPerfect);
-                        speed--;
+                        speed -= 1;
                         achievementPerfect.GetComponent<moveAchievementsUp>().speed = speed;
                     }
                     print("achievement PERFECT IMAGE Found");
@@ -184,10 +187,9 @@ public class achievementManager : MonoBehaviour
                     if (!achievementCounter.Contains(achievement5050))
                     {
                         achievementCounter.Add(achievement5050);
-                        speed--;
+                        speed -= 1;
                         achievement5050.GetComponent<moveAchievementsUp>().speed = speed;
                     }
-                    print("achievement HALF AND HALF Found");
                 }
             }
 
@@ -195,20 +197,17 @@ public class achievementManager : MonoBehaviour
             if (GetComponent<reRollandStop>().startReRoll)
             {
                 origin = GetComponent<reRollandStop>().selectedFace;
-                foreach (SpinningScript spin in ss)
+                reRolledSS = GetComponent<reRollandStop>().chosenObj;
+                if (reRolledSS.stoppedSpinning)
                 {
-                    if (spin.stoppedSpinning)
+                    if (reRolledSS.thisFace.getName().ToString() == origin.getName().ToString())
                     {
-                        if (spin.frontFaceHzd.GetComponent<face>() == origin)
+                        achievementTwiceInARow.SetActive(true);
+                        if (!achievementCounter.Contains(achievementTwiceInARow))
                         {
-                            achievementTwiceInARow.SetActive(true);
-                            if (!achievementCounter.Contains(achievementTwiceInARow))
-                            {
-                                achievementCounter.Add(achievementTwiceInARow);
-                                speed--;
-                                achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;
-                            }
-                            print("achievement DOUBLE TROUBE Found");
+                            achievementCounter.Add(achievementTwiceInARow);
+                            speed -= 1;
+                            achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;
                         }
                     }
                 }
