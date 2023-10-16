@@ -196,11 +196,15 @@ public class achievementManager : MonoBehaviour
             //re-roll to the same image on that tile
             if (GetComponent<reRollandStop>().startReRoll)
             {
-                origin = GetComponent<reRollandStop>().selectedFace;
                 reRolledSS = GetComponent<reRollandStop>().chosenObj;
+
                 if (reRolledSS.stoppedSpinning)
                 {
-                    if (reRolledSS.thisFace.getName().ToString() == origin.getName().ToString())
+                    origin = GetComponent<reRollandStop>().selectedFace;
+                    print(origin);
+                    face newFace = reRolledSS.thisFace;
+                    print(newFace);
+                    if (newFace.getName().ToString() == origin.getName().ToString())
                     {
                         achievementTwiceInARow.SetActive(true);
                         if (!achievementCounter.Contains(achievementTwiceInARow))

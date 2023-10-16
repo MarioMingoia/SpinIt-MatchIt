@@ -88,9 +88,11 @@ public class SpinningScript : MonoBehaviour
         var originalvalue = transform.localEulerAngles;
 
         var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.z / 90) * 90));
+        float x = 0;
+        float z = 0;
 
-        float x = Mathf.Abs(roundedangle.x - originalvalue.x);
-        float z = Mathf.Abs(roundedangle.z - originalvalue.z);
+        x = Mathf.Abs(roundedangle.x - originalvalue.x);
+       z = Mathf.Abs(roundedangle.z - originalvalue.z);
 
         if (originalvalue.x < 45 && originalvalue.z < 45 && changeAngle)
         {
@@ -107,35 +109,49 @@ public class SpinningScript : MonoBehaviour
         {
             if (changeAngle)
             {
-                if (Mathf.Approximately(roundedangle.x, 90) && x < z)
+
+                if (x < z)
+                {
+                    roundedangle.z = 0;
+                }
+                else if (x > z)
+                {
+                    roundedangle.x = 0;
+                }
+                if (Mathf.Approximately(roundedangle.x, 90))
                 {
                     ran = 1;
                     changeAngle = false;
 
                 }
-                if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.z, 180))
+                else if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.z, 180))
                 {
                     ran = 5;
                     changeAngle = false;
 
                 }
-                if (Mathf.Approximately(roundedangle.x, 270) && x < z)
+                else if (Mathf.Approximately(roundedangle.x, 270))
                 {
                     ran = 2;
                     changeAngle = false;
 
                 }
-                if (Mathf.Approximately(roundedangle.z, 90) && x > z)
+                else if (Mathf.Approximately(roundedangle.z, 90))
                 {
                     ran = 0;
                     changeAngle = false;
 
                 }
-                if (Mathf.Approximately(roundedangle.z, 270) && x > z)
+                else if (Mathf.Approximately(roundedangle.z, 270))
                 {
                     ran = 3;
                     changeAngle = false;
 
+                }
+                else
+                {
+                    ran = Random.Range(0, possibleRotations.Count);
+                    changeAngle = false;
                 }
             }
         }
@@ -156,7 +172,6 @@ public class SpinningScript : MonoBehaviour
 
             getFrontFace();
             thisFace = possibleRotations[ran];
-            print(thisFace.getName().ToString());
             onstop();
             stoppedSpinning = true;
 

@@ -73,7 +73,6 @@ public class reRollandStop : MonoBehaviour
                 chosenObj = spinningCube[ran];
                 if (!selectedFace)
                     selectedFace = chosenObj.thisFace;
-                print(selectedFace.getName().ToString());
                 pickRandom = false;
             }
 
