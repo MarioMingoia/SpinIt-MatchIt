@@ -1015,8 +1015,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -2395,8 +2395,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -2933,8 +2933,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -3340,8 +3340,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -4262,7 +4262,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.7990566, b: 0.5981132, a: 1}
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
   m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
@@ -5971,8 +5971,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -6277,7 +6277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cf30a262a73021c45adeb607810c7594, type: 2}
+  - {fileID: 2100000, guid: 663fc7cf2d7f7c94a807571e265da16d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7860,8 +7860,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -7954,8 +7954,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -10019,7 +10019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1546107853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10446,8 +10446,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -11820,7 +11820,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: bb2319f8d7435684ba9eebac42d05648, type: 2}
+  - {fileID: 2100000, guid: 489f16e91d6fcfa438fd8807fdf5bec9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12483,8 +12483,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9774428, b: 0.87169814, a: 1}
-  m_Intensity: 24.66
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
+  m_Intensity: 30
   m_Range: 25.98103
   m_SpotAngle: 33.68378
   m_InnerSpotAngle: 21.80208
@@ -14081,7 +14081,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.7990566, b: 0.5981132, a: 1}
+  m_Color: {r: 1, g: 0.95763844, b: 0.89056605, a: 1}
   m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
