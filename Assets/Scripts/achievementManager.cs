@@ -159,9 +159,10 @@ public class achievementManager : MonoBehaviour
                 //not having any hazards in the image
                 if (hasThereBeenHazard == 0)
                 {
-                    achievementNoHazard.SetActive(true);
                     if (!achievementCounter.Contains(achievementNoHazard))
                     {
+                        achievementNoHazard.SetActive(true);
+
                         achievementCounter.Add(achievementNoHazard);
                         speed -= 1;
                         achievementNoHazard.GetComponent<moveAchievementsUp>().speed = speed;
@@ -171,9 +172,10 @@ public class achievementManager : MonoBehaviour
                 //having a perfect image
                 if (countofBackFace.Count == 9 || countofBottomFace.Count == 9 || countofFrontFace.Count == 9 || countofTopFace.Count == 9 || countofLeftFace.Count == 9 || countofRightFace.Count == 9)
                 {
-                    achievementPerfect.SetActive(true);
                     if (!achievementCounter.Contains(achievementPerfect))
                     {
+                        achievementPerfect.SetActive(true);
+
                         achievementCounter.Add(achievementPerfect);
                         speed -= 1;
                         achievementPerfect.GetComponent<moveAchievementsUp>().speed = speed;
@@ -183,9 +185,10 @@ public class achievementManager : MonoBehaviour
                 //having an image with max 50% of same type
                 if (countofBackFace.Count <= 5 && countofBottomFace.Count <= 5 && countofFrontFace.Count <= 5 && countofTopFace.Count <= 5 && countofLeftFace.Count <= 5 && countofRightFace.Count <= 5)
                 {
-                    achievement5050.SetActive(true);
                     if (!achievementCounter.Contains(achievement5050))
                     {
+                        achievement5050.SetActive(true);
+
                         achievementCounter.Add(achievement5050);
                         speed -= 1;
                         achievement5050.GetComponent<moveAchievementsUp>().speed = speed;
@@ -206,9 +209,10 @@ public class achievementManager : MonoBehaviour
                     print(newFace);
                     if (newFace.getName().ToString() == origin.getName().ToString())
                     {
-                        achievementTwiceInARow.SetActive(true);
                         if (!achievementCounter.Contains(achievementTwiceInARow))
                         {
+                            achievementTwiceInARow.SetActive(true);
+
                             achievementCounter.Add(achievementTwiceInARow);
                             speed -= 1;
                             achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;

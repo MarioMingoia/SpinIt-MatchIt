@@ -18,7 +18,7 @@ public class showReturnButton : MonoBehaviour
 
     private void Update()
     {
-        if (achievements.Count == am.achievementCounter.Count)
+        if (achievements.Count == am.achievementCounter.Count || am.achievementCounter.Count == 0)
         {
             showReturn();
         }
