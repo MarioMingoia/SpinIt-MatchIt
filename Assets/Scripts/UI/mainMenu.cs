@@ -14,6 +14,14 @@ public class mainMenu : MonoBehaviour
 
     public bool nextLevelBool = false;
     public bool exitGameBool = false;
+
+    [SerializeField]
+    float rotSpeed;
+
+    private void OnMouseDrag()
+    {
+
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +33,14 @@ public class mainMenu : MonoBehaviour
     {
         if (!stopRotate)
         {
-            gameNameCube.transform.Rotate(.25f, 0, .25f);
+            //gameNameCube.transform.Rotate(0, .25f, 0);
+
+            if (Input.GetMouseButton(0))
+            {
+                float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
+                print(rotX);
+                gameNameCube.transform.Rotate(Vector3.up, -rotX);
+            }
         }
     }
 
