@@ -33,7 +33,6 @@ public class mainMenu : MonoBehaviour
     {
         if (!stopRotate)
         {
-            //gameNameCube.transform.Rotate(0, .25f, 0);
 
             if (Input.GetMouseButton(0))
             {
