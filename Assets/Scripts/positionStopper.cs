@@ -19,6 +19,10 @@ public class positionStopper : MonoBehaviour
 
     public GameObject panel;
     // Start is called before the first frame update
+    private void Awake()
+    {
+        StartCoroutine(fadeOut());
+    }
     void Start()
     {
         int x = objects.Count; // will use for "for loop"
@@ -30,7 +34,6 @@ public class positionStopper : MonoBehaviour
             objects.RemoveAt(rand);
         }
 
-        StartCoroutine(fadeOut());
     }
 
     IEnumerator fadeOut()

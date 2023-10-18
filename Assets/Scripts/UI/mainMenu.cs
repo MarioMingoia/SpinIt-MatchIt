@@ -18,6 +18,8 @@ public class mainMenu : MonoBehaviour
     [SerializeField]
     float rotSpeed;
 
+    [SerializeField]
+    float timer;
     private void OnMouseDrag()
     {
 
@@ -46,6 +48,7 @@ public class mainMenu : MonoBehaviour
     public void nextLevel()
     {
         panel.SetActive(true);
+        timer = 0;
         StartCoroutine(fadeIn());
         nextLevelBool = true;
         exitGameBool = false;
@@ -54,6 +57,7 @@ public class mainMenu : MonoBehaviour
     public void exitGame()
     {
         panel.SetActive(true);
+        timer = 0;
         StartCoroutine(fadeIn());
         nextLevelBool = false;
         exitGameBool = true;
@@ -62,9 +66,11 @@ public class mainMenu : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         stopRotate = true;
-        panel.GetComponent<CanvasGroup>().alpha += Time.deltaTime / 2;
+        panel.GetComponent<CanvasGroup>().alpha += Time.deltaTime;
         gameNameCube.transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, new Vector3(0, 0, 0), 0.01f * Time.fixedDeltaTime);
-        if (panel.GetComponent<CanvasGroup>().alpha >= 1)
+        timer += Time.deltaTime;
+
+        if (timer >= 1)
         {
             if (nextLevelBool && !exitGameBool)
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

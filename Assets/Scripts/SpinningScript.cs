@@ -39,9 +39,6 @@ public class SpinningScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rotateX /= 2; 
-        rotateY /= 2;
-
 
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -85,22 +82,22 @@ public class SpinningScript : MonoBehaviour
     {
         enterPressed = true;
         changeAngle = true;
-        var originalvalue = transform.localEulerAngles;
+        var originalvalue = transform.eulerAngles;
 
-        var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.z / 90) * 90));
+        var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90));
         float x = 0;
-        float z = 0;
+        float y = 0;
 
         x = Mathf.Abs(roundedangle.x - originalvalue.x);
-       z = Mathf.Abs(roundedangle.z - originalvalue.z);
+       y = Mathf.Abs(roundedangle.y - originalvalue.y);
 
-        if (originalvalue.x < 45 && originalvalue.z < 45 && changeAngle)
+        if (originalvalue.x < 45 && originalvalue.y < 45 && changeAngle)
         {
             ran = 4;
             changeAngle = false;
         } 
         
-        else if (originalvalue.x >= 315 && originalvalue.z >= 315 && changeAngle)
+        else if (originalvalue.x >= 315 && originalvalue.y >= 315 && changeAngle)
         {
             ran = 4;
             changeAngle = false;
@@ -110,11 +107,11 @@ public class SpinningScript : MonoBehaviour
             if (changeAngle)
             {
 
-                if (x < z)
+                if (x < y)
                 {
-                    roundedangle.z = 0;
+                    roundedangle.y = 0;
                 }
-                else if (x > z)
+                else if (x > y)
                 {
                     roundedangle.x = 0;
                 }
@@ -130,19 +127,19 @@ public class SpinningScript : MonoBehaviour
                     changeAngle = false;
 
                 }
-                else if (Mathf.Approximately(roundedangle.x, 270))
+                else if (Mathf.Approximately(roundedangle.y, 270))
                 {
                     ran = 2;
                     changeAngle = false;
 
                 }
-                else if (Mathf.Approximately(roundedangle.z, 90))
+                else if (Mathf.Approximately(roundedangle.y, 90))
                 {
                     ran = 0;
                     changeAngle = false;
 
                 }
-                else if (Mathf.Approximately(roundedangle.z, 270))
+                else if (Mathf.Approximately(roundedangle.y, 270))
                 {
                     ran = 3;
                     changeAngle = false;
@@ -165,10 +162,10 @@ public class SpinningScript : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         timer += Time.deltaTime * 2;
-        transform.localEulerAngles = Vector3.Lerp(transform.localEulerAngles, rotation, timer);
+        transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, rotation, timer);
         if (timer >= 1)
         {
-            transform.localEulerAngles = rotation;
+            transform.eulerAngles = rotation;
 
             getFrontFace();
             thisFace = possibleRotations[ran];
@@ -199,7 +196,7 @@ public class SpinningScript : MonoBehaviour
 
         timer = 0;
 
-        transform.localEulerAngles = newRot;
+        transform.eulerAngles = newRot;
 
         item = null;
         //StartCoroutine(StopPiece(newRot));
