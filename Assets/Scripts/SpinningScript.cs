@@ -70,14 +70,12 @@ public class SpinningScript : MonoBehaviour
 
         if (!enterPressed)
         {
-            print(ranX);
             if (ranX)
                 rotateX = speed * -1;
             else
             {
                 rotateX = speed;
             }
-            print(ranY);
             if (ranY)
                 rotateY = speed * -1;
             else

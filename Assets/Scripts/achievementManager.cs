@@ -164,7 +164,6 @@ public class achievementManager : MonoBehaviour
                         achievementNoHazard.SetActive(true);
 
                         achievementCounter.Add(achievementNoHazard);
-                        speed -= 1;
                         achievementNoHazard.GetComponent<moveAchievementsUp>().speed = speed;
                     }
                     print("achievement SAFE GAME Found");
@@ -177,7 +176,6 @@ public class achievementManager : MonoBehaviour
                         achievementPerfect.SetActive(true);
 
                         achievementCounter.Add(achievementPerfect);
-                        speed -= 1;
                         achievementPerfect.GetComponent<moveAchievementsUp>().speed = speed;
                     }
                     print("achievement PERFECT IMAGE Found");
@@ -190,7 +188,6 @@ public class achievementManager : MonoBehaviour
                         achievement5050.SetActive(true);
 
                         achievementCounter.Add(achievement5050);
-                        speed -= 1;
                         achievement5050.GetComponent<moveAchievementsUp>().speed = speed;
                     }
                 }
@@ -214,7 +211,6 @@ public class achievementManager : MonoBehaviour
                             achievementTwiceInARow.SetActive(true);
 
                             achievementCounter.Add(achievementTwiceInARow);
-                            speed -= 1;
                             achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;
                         }
                     }
