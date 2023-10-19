@@ -11,6 +11,9 @@ public class SpinningScript : MonoBehaviour
     public float rotateX;
     public float rotateY;
 
+    [SerializeField]
+    float speed;
+
     bool enterPressed;
 
     public bool stoppedSpinning = false;
@@ -36,14 +39,28 @@ public class SpinningScript : MonoBehaviour
     bool changeAngle;
 
     public face thisFace;
+
+    bool ranX;
+    bool ranY;
+
+    [SerializeField]
+    GameObject particleSparks;
     // Start is called before the first frame update
     void Start()
     {
 
         for (int i = 0; i < transform.childCount; i++)
         {
-            faces.Add(transform.GetChild(i).gameObject.GetComponent<hazards>());
+            if(transform.GetChild(i).GetComponent<hazards>() != null)
+                faces.Add(transform.GetChild(i).gameObject.GetComponent<hazards>());
+            else
+            {
+                particleSparks = transform.GetChild(i).gameObject;
+            }
         }
+
+        ranX = Random.value > .5f;
+        ranY = Random.value > .5f;
     }
 
 
@@ -53,13 +70,22 @@ public class SpinningScript : MonoBehaviour
 
         if (!enterPressed)
         {
+            print(ranX);
+            if (ranX)
+                rotateX = speed * -1;
+            else
+            {
+                rotateX = speed;
+            }
+            print(ranY);
+            if (ranY)
+                rotateY = speed * -1;
+            else
+            {
+                rotateY = speed;
+            }
             transform.Rotate(rotateX, 0, rotateY);
         }
-
-        //if (enterPressed && !stoppedSpinning)
-        //{
-
-        //}
 
     }
 
@@ -80,8 +106,11 @@ public class SpinningScript : MonoBehaviour
     }
     public void setTrue()
     {
+
         enterPressed = true;
         changeAngle = true;
+        particleSparks.SetActive(true);
+
         var originalvalue = transform.eulerAngles;
 
         var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), 0, Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90));
@@ -90,6 +119,7 @@ public class SpinningScript : MonoBehaviour
 
         x = Mathf.Abs(roundedangle.x - originalvalue.x);
        y = Mathf.Abs(roundedangle.y - originalvalue.y);
+
 
         if (originalvalue.x < 45 && originalvalue.y < 45 && changeAngle)
         {
@@ -121,13 +151,13 @@ public class SpinningScript : MonoBehaviour
                     changeAngle = false;
 
                 }
-                else if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.z, 180))
+                else if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.y, 180))
                 {
                     ran = 5;
                     changeAngle = false;
 
                 }
-                else if (Mathf.Approximately(roundedangle.y, 270))
+                else if (Mathf.Approximately(roundedangle.x, 270))
                 {
                     ran = 2;
                     changeAngle = false;
@@ -161,7 +191,7 @@ public class SpinningScript : MonoBehaviour
     IEnumerator StopPiece(Vector3 rotation)
     {
         yield return new WaitForFixedUpdate();
-        timer += Time.deltaTime * 2;
+        timer += Time.deltaTime;
         transform.eulerAngles = Vector3.Lerp(transform.eulerAngles, rotation, timer);
         if (timer >= 1)
         {
@@ -169,6 +199,7 @@ public class SpinningScript : MonoBehaviour
 
             getFrontFace();
             thisFace = possibleRotations[ran];
+            StartCoroutine(sparklesHide());
             onstop();
             stoppedSpinning = true;
 
@@ -176,6 +207,13 @@ public class SpinningScript : MonoBehaviour
         }
         yield return StopPiece(rotation);
 
+    }
+
+    IEnumerator sparklesHide()
+    {
+        yield return new WaitForSeconds(.5f);
+        particleSparks.SetActive(false);
+        yield break;
     }
 
     public void findSafestFace(string pose)

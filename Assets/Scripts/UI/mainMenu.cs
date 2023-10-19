@@ -39,7 +39,6 @@ public class mainMenu : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
-                print(rotX);
                 gameNameCube.transform.Rotate(Vector3.up, -rotX);
             }
         }

@@ -18,6 +18,9 @@ public class ComingTogether : MonoBehaviour
 
     [SerializeField]
     List<Light> togetherLights;
+
+    [SerializeField]
+    GameObject particleSparks;
     //I think in this script is where we want to handle hazards
     public void bringEverythingTogether(Vector3 target)
     {
@@ -37,11 +40,21 @@ public class ComingTogether : MonoBehaviour
             if (togetherLights[i].intensity <= 6.1f)
                 togetherLights[i].intensity += Time.deltaTime;
         }
+        if (amountdone >= 13f)
+            particleSparks.SetActive(true);
 
         if (amountdone >= 15f)
         {
             gm.GetComponent<reRollandStop>().startReRoll = true;
+            StartCoroutine(sparklesHide());
         }
+    }
+
+    IEnumerator sparklesHide()
+    {
+        yield return new WaitForSeconds(2f);
+        particleSparks.SetActive(false);
+        yield break;
     }
 
 }
