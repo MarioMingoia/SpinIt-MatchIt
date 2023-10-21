@@ -36,6 +36,9 @@ public class achievementManager : MonoBehaviour
     face rerolledFace;
 
     [SerializeField]
+    face newFace;
+
+    [SerializeField]
     GameObject achievementNoHazard;
     
     [SerializeField]
@@ -57,6 +60,7 @@ public class achievementManager : MonoBehaviour
 
     [SerializeField]
     SpinningScript reRolledSS;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -200,11 +204,13 @@ public class achievementManager : MonoBehaviour
 
                 if (reRolledSS.stoppedSpinning)
                 {
-                    origin = GetComponent<reRollandStop>().selectedFace;
+                    if (origin == null)
+                        origin = GetComponent<reRollandStop>().selectedFace;
                     print(origin);
-                    face newFace = reRolledSS.thisFace;
+                    if (newFace == null)
+                     newFace = reRolledSS.thisFace;
                     print(newFace);
-                    if (newFace.getName().ToString() == origin.getName().ToString())
+                    if (GameObject.ReferenceEquals(origin, newFace))
                     {
                         if (!achievementCounter.Contains(achievementTwiceInARow))
                         {

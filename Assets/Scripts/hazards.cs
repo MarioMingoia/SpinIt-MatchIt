@@ -39,7 +39,6 @@ public class hazards : MonoBehaviour
     }
     void findNeighbourCubes()
     {
-        print("FindNeighbours");
         foreach (SpinningScript ss in FindObjectsOfType<SpinningScript>().Where(ss => ss.stoppedSpinning == true))
         {
             neighbours.Add(ss);

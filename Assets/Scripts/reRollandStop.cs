@@ -71,7 +71,7 @@ public class reRollandStop : MonoBehaviour
                 ran = Random.Range(0, spinningCube.Count);
 
                 chosenObj = spinningCube[ran];
-                if (!selectedFace)
+                if (selectedFace == null)
                     selectedFace = chosenObj.thisFace;
                 pickRandom = false;
             }
@@ -81,7 +81,7 @@ public class reRollandStop : MonoBehaviour
                 reRollX = chosenObj.rotateX;
                 reRollY = chosenObj.rotateY;
 
-                chosenObj.gameObject.transform.Rotate(reRollX, 0, reRollY);
+                chosenObj.gameObject.transform.Rotate(reRollX, reRollY, 0, Space.World);
             }
 
             if (Input.GetKey(KeyCode.Return) && stopSpinning)
