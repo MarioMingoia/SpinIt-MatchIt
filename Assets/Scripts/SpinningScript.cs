@@ -64,9 +64,6 @@ public class SpinningScript : MonoBehaviour
         ranX = Random.value > .5f;
         ranY = Random.value > .5f;
 
-#if UNITY_EDITOR
-        speed = 0.5f;
-#endif
     }
 
 
@@ -120,12 +117,11 @@ public class SpinningScript : MonoBehaviour
 
         var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90), 0);
 
-        roundedangle.x = Mathf.Clamp(roundedangle.x, 0, 314);
-        roundedangle.y = Mathf.Clamp(roundedangle.x, 0, 314);
-
         float x = Mathf.Abs(roundedangle.x - originalvalue.x);
         float y = Mathf.Abs(roundedangle.y - originalvalue.y);
 
+        roundedangle.x = Mathf.Clamp(roundedangle.x, 0, 315);
+        roundedangle.y = Mathf.Clamp(roundedangle.y, 0, 315);
 
         if (changeAngle)
         {
@@ -140,57 +136,53 @@ public class SpinningScript : MonoBehaviour
                 roundedangle.x = 0;
                 reduced = false;
             }
-
-            print(roundedangle);
-            if (Mathf.Approximately(roundedangle.x, 90))
+            
+            if (Mathf.Approximately(roundedangle.x, 90) )
             {
                 //back face
                 ran = 5;
                 changeAngle = false;
 
             }
-            else if (Mathf.Approximately(roundedangle.x, 0) && Mathf.Approximately(roundedangle.y, 0))
+            if (Mathf.Approximately(roundedangle.x, 0) && Mathf.Approximately(roundedangle.y, 0))
             {
                 //bottom face
                 ran = 1;
                 changeAngle = false;
             }
-            else if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.y, 180))
+            if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.y, 180))
             {
                 //top face
                 ran = 2;
                 changeAngle = false;
 
             }
-            else if (Mathf.Approximately(roundedangle.x, 270))
+            if (Mathf.Approximately(roundedangle.x, 270))
             {
                 //front face
                 ran = 4;
                 changeAngle = false;
 
             }
-            else if (Mathf.Approximately(roundedangle.y, 90))
+            if (Mathf.Approximately(roundedangle.y, 90))
             {
                 //right face
                 ran = 0;
                 changeAngle = false;
 
             }
-            else if (Mathf.Approximately(roundedangle.y, 270))
+            if (Mathf.Approximately(roundedangle.y, 270))
             {
                 //left face
                 ran = 3;
                 changeAngle = false;
 
             }
-            else
-            {
-                ran = Random.Range(0, possibleRotations.Count);
-                changeAngle = false;
-            }
         }
 
         timer = 0;
+        print(originalvalue);
+        print(ran + " " + possibleRotations[ran].rotation);
         StartCoroutine(StopPiece(possibleRotations[ran].rotation));
     }
 
