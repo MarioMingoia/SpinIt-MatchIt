@@ -90,6 +90,8 @@ public class SpinningScript : MonoBehaviour
 
     }
 
+    
+
     face getFrontFace()
     {
         foreach (hazards item in faces)
