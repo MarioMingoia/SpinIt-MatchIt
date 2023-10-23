@@ -18,6 +18,10 @@ public class positionStopper : MonoBehaviour
     public SpinningScript previousCube;
 
     public GameObject panel;
+
+    [SerializeField] AudioSource source;
+
+    bool invoked = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -33,6 +37,8 @@ public class positionStopper : MonoBehaviour
             realobjects.Add(objects[rand]);
             objects.RemoveAt(rand);
         }
+
+        source = GetComponent<AudioSource>();
 
     }
 
@@ -96,11 +102,24 @@ public class positionStopper : MonoBehaviour
         }
 
         if (counter >= 9)
+        {
             Invoke("SetSeen", 3);
+        }
+
     }
     void SetSeen()
     {
+        if (invoked) { return; }
+        bgmManager.instance.StopMusic();
+
+        invoked = true;
+        source.Play();
+        print("Seen");
         seen = true;
+        Invoke("PlayMusic", 5);
     }
-   
+    void PlayMusic()
+    {
+        previousCube.CalculateCharacter();
+    }
 }

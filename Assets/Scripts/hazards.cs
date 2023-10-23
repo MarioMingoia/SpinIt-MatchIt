@@ -10,6 +10,9 @@ public class hazards : MonoBehaviour
     public Poses poses;
     public enum Position { TopLeft, TopMid, TopRight, MidLeft, Mid, MidRight, BotLeft, BotMid, BotRight }
     public Position position; 
+
+    public enum Character { Treeman, Rockman, Witch, Fairy, Drummer, Barbarian}
+    public Character character;
     
     [System.Flags]
     public enum allFace { top, left, front, bottom, back, right}

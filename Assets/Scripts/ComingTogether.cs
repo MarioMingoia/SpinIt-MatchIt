@@ -22,6 +22,11 @@ public class ComingTogether : MonoBehaviour
     [SerializeField]
     float timer;
 
+    SpinningScript spinning;
+    private void Start()
+    {
+        spinning = GetComponent<SpinningScript>();
+    }
     private void Update()
     {
         
@@ -29,6 +34,7 @@ public class ComingTogether : MonoBehaviour
     //I think in this script is where we want to handle hazards
     public void bringEverythingTogether(Vector3 target)
     {
+
         transform.localPosition = Vector3.MoveTowards(transform.localPosition, target, speed * Time.deltaTime);
         amountdone += Time.deltaTime;
 

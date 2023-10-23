@@ -47,6 +47,22 @@ public class SpinningScript : MonoBehaviour
 
     [SerializeField]
     GameObject particleSparks;
+
+    [SerializeField] List<AudioClip> cubeSFX = new();
+    public static int cubeStopSFXi = 0;
+
+    [SerializeField] List<AudioClip> charMusic = new();
+    public static int charMusici = 0; 
+
+    static int treeman = 0;
+    static int rockman = 0;
+    static int witch = 0;
+    static int fairy = 0;
+    static int drummer = 0;
+    static int barbarian = 0;
+
+    AudioSource source;
+    [SerializeField] AudioSource charMusicSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +80,7 @@ public class SpinningScript : MonoBehaviour
         ranX = Random.value > .5f;
         ranY = Random.value > .5f;
 
+        source = GetComponent<AudioSource>();
     }
 
 
@@ -106,6 +123,67 @@ public class SpinningScript : MonoBehaviour
         }
         print("null");
         return null;
+    }
+    void AddOnCharacters()
+    {
+        if(frontFaceHzd.character.ToString() == "Treeman")
+        {
+            treeman++;
+        }
+        if (frontFaceHzd.character.ToString() == "Rockman")
+        {
+            rockman++;
+        }
+        if (frontFaceHzd.character.ToString() == "Witch")
+        {
+            witch++;
+        }
+        if (frontFaceHzd.character.ToString() == "Fairy")
+        {
+            fairy++;
+        }
+        if (frontFaceHzd.character.ToString() == "Drummer")
+        {
+            drummer++;
+        }
+        if (frontFaceHzd.character.ToString() == "Barbarian")
+        {
+            barbarian++;
+        }
+    }
+    static int max;
+    static string ID ;
+    public void CalculateCharacter()
+    {
+        max = treeman;
+        ID = "0";
+        if (rockman > max)
+        {
+            max = rockman;
+            ID = "1";
+        }
+        if (witch > max)
+        {
+            max = witch;
+            ID = "2";
+        }
+        if (fairy > max)
+        {
+            max = fairy;
+            ID = "3";
+        }
+        if (drummer > max)
+        {
+            max = drummer;
+            ID = "4";
+        }
+        if (barbarian > max)
+        {
+            max = barbarian;
+            ID = "5";
+        }
+        charMusicSource.clip = charMusic[int.Parse(ID)];
+        charMusicSource.Play();
     }
     public void setTrue()
     {
@@ -183,8 +261,8 @@ public class SpinningScript : MonoBehaviour
         }
 
         timer = 0;
-        print(originalvalue);
-        print(ran + " " + possibleRotations[ran].rotation);
+        //print(originalvalue);
+        //print(ran + " " + possibleRotations[ran].rotation);
         StartCoroutine(StopPiece(possibleRotations[ran].rotation));
     }
 
@@ -198,11 +276,15 @@ public class SpinningScript : MonoBehaviour
             transform.eulerAngles = rotation;
 
             getFrontFace();
+            AddOnCharacters();
             thisFace = possibleRotations[ran];
             StartCoroutine(sparklesHide());
             onstop();
             stoppedSpinning = true;
 
+            source.clip = cubeSFX[cubeStopSFXi];
+            source.Play();
+            cubeStopSFXi++;
             yield break;
         }
         yield return StopPiece(rotation);

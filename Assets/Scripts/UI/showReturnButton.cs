@@ -35,6 +35,7 @@ public class showReturnButton : MonoBehaviour
         mainMenuFadePanel.GetComponent<CanvasGroup>().alpha += Time.deltaTime;
         if (mainMenuFadePanel.GetComponent<CanvasGroup>().alpha >= 1f)
         {
+            bgmManager.instance.PlayMusic();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
 
             yield break;
