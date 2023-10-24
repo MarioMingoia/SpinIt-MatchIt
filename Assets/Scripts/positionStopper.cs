@@ -60,7 +60,7 @@ public class positionStopper : MonoBehaviour
     {
         if (listPicker <= realobjects.Count - 1)
         {
-            realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = true;
+            //realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = true;
             
         }
 
