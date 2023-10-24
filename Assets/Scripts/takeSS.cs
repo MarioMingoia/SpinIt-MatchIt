@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO ;
 
 public class takeSS : MonoBehaviour
 {
     [SerializeField] bool pointReached;
 
     public bool takenPhoto;
+
+    public Texture2D photo;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,14 +41,12 @@ public class takeSS : MonoBehaviour
     public void ssPhoto()
     {
 
-#if !UNITY_EDITOR
         string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
-        ScreenCapture.CaptureScreenshot("screenshot " + currentTime + ".png");
+        string url = "screenshot " + currentTime + ".png";
+        ScreenCapture.CaptureScreenshot(url);
         print("photo Taken");
-#endif
-
-        print("imagine photo Taken");
-
-
+        byte[] file = File.ReadAllBytes(url);
+        photo = new Texture2D(4, 4);
+        photo.LoadImage(file);
     }
 }
