@@ -45,7 +45,7 @@ public class positionStopper : MonoBehaviour
     IEnumerator fadeOut()
     {
         yield return new WaitForFixedUpdate();
-        panel.GetComponent<CanvasGroup>().alpha -= Time.deltaTime;
+        panel.GetComponent<CanvasGroup>().alpha -= Time.deltaTime * 2;
 
         if (panel.GetComponent<CanvasGroup>().alpha == 0)
         {

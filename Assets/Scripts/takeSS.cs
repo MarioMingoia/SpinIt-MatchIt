@@ -13,7 +13,7 @@ public class takeSS : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        photo = null;
     }
 
     // Update is called once per frame
@@ -40,13 +40,15 @@ public class takeSS : MonoBehaviour
 
     public void ssPhoto()
     {
-
-        string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
-        string url = "screenshot " + currentTime + ".png";
-        ScreenCapture.CaptureScreenshot(url);
-        print("photo Taken");
-        byte[] file = File.ReadAllBytes(url);
-        photo = new Texture2D(4, 4);
-        photo.LoadImage(file);
+        if (photo == null)
+        {
+            string currentTime = System.DateTime.Now.ToString("MM-dd-yy (HH-mm-ss)");
+            string url = "screenshot " + currentTime + ".png";
+            ScreenCapture.CaptureScreenshot(url);
+            print("photo Taken");
+            byte[] file = File.ReadAllBytes(url);
+            photo = new Texture2D(4, 4);
+            photo.LoadImage(file);
+        }
     }
 }

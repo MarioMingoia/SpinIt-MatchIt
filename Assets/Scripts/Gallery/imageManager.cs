@@ -8,6 +8,7 @@ public class imageManager : MonoBehaviour
     [SerializeField]
     takeSS tss;
 
+    [SerializeField]
     List<Texture2D> pictures = new List<Texture2D>();
 
     [SerializeField]
@@ -25,14 +26,12 @@ public class imageManager : MonoBehaviour
         {
             if (tss == null)
             {
-                print("find tss");
                 tss = FindObjectOfType<takeSS>();
             }
             else
             {
-                if (!pictures.Contains(tss.photo))
+                if (!pictures.Contains(tss.photo) && tss.photo != null)
                 {
-                    print("found tss");
 
                     pictures.Add(tss.photo);
                 }
@@ -43,21 +42,25 @@ public class imageManager : MonoBehaviour
         {
             if (cube == null)
             {
-                print("find cube");
 
                 cube = GameObject.Find("mainMenuCube");
             }    
             if (pictures.Count > 0 && cube != null)
             {
-                print("found cube");
 
                 for (int i = 0; i < cube.transform.childCount; i++)
                 {
-                    if (i > pictures.Count)
-                        return;
-                    if (cube.transform.GetChild(i).GetComponent<MeshRenderer>().material.ToString() == "emptySides")
+                    if (i > pictures.Count || i > 3)
+                        break;
+                    
+                    if (cube.transform.GetChild(i).GetComponent<MeshRenderer>().material.name.Contains("emptySides"))
                     {
-                        cube.transform.GetChild(i).GetComponent<MeshRenderer>().material.mainTexture = pictures[i];
+                        Material mat = new Material(cube.transform.GetChild(i).GetComponent<MeshRenderer>().material);
+                        mat.mainTexture = pictures[i];
+                        mat.color = Color.white;
+                        mat.mainTextureOffset = new Vector2(0.37f, 0.24f);
+                        mat.mainTextureScale = new Vector2(0.27f, 0.51f);
+                        cube.transform.GetChild(i).GetComponent<MeshRenderer>().material = mat;
                     }
                 }
             }

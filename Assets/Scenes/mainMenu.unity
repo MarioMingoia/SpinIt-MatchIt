@@ -1138,7 +1138,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 43aaaa6e037399248a00ca7726704e9c, type: 2}
   m_audioClip: {fileID: 8300000, guid: 1fbde0a7dfe7ad84f9a888e99815dea7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.29
+  m_Volume: 0.23
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1235,6 +1235,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tss: {fileID: 0}
+  pictures:
+  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
+  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
+  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
+  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
   cube: {fileID: 0}
 --- !u!1 &1410427470
 GameObject:

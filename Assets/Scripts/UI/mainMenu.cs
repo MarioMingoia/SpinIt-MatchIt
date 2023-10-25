@@ -26,14 +26,28 @@ public class mainMenu : MonoBehaviour
 
     [SerializeField]
     bool moving = false;
-    private void OnMouseDrag()
-    {
-
-    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        panel.SetActive(true);
+        panel.GetComponent<CanvasGroup>().alpha = 1;
+        StartCoroutine(fadeOut());
+    }
+
+    IEnumerator fadeOut()
+    {
+        yield return new WaitForFixedUpdate();
+        panel.GetComponent<CanvasGroup>().alpha -= Time.deltaTime * 2;
+
+        if (panel.GetComponent<CanvasGroup>().alpha == 0)
+        {
+            panel.SetActive(false);
+
+            yield break;
+
+        }
+        yield return fadeOut();
+
     }
 
     // Update is called once per frame
@@ -49,7 +63,7 @@ public class mainMenu : MonoBehaviour
             if (moving == false)
             {
                 stopRotate = true;
-                gameNameCube.transform.Rotate(Vector3.up, -.5f);
+                gameNameCube.transform.Rotate(Vector3.up, .5f);
             }
 
         }
@@ -99,7 +113,7 @@ public class mainMenu : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         stopRotate = true;
-        panel.GetComponent<CanvasGroup>().alpha += Time.deltaTime;
+        panel.GetComponent<CanvasGroup>().alpha += Time.deltaTime * 2;
         gameNameCube.transform.eulerAngles = Vector3.Slerp(transform.eulerAngles, new Vector3(0, 0, 0), 0.01f * Time.fixedDeltaTime);
         timer += Time.deltaTime;
 
