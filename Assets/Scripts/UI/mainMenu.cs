@@ -20,6 +20,12 @@ public class mainMenu : MonoBehaviour
 
     [SerializeField]
     float timer;
+
+    Ray ray;
+    RaycastHit hit;
+
+    [SerializeField]
+    bool moving = false;
     private void OnMouseDrag()
     {
 
@@ -33,13 +39,32 @@ public class mainMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit))
+        {
+            stopRotate = false;
+        }
+        else
+        {
+            if (moving == false)
+            {
+                stopRotate = true;
+                gameNameCube.transform.Rotate(Vector3.up, -.5f);
+            }
+
+        }
         if (!stopRotate)
         {
 
             if (Input.GetMouseButton(0))
             {
+                moving = true;
                 float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
                 gameNameCube.transform.Rotate(Vector3.up, -rotX);
+            }
+            else
+            {
+                moving = false;
             }
         }
     }
@@ -61,6 +86,15 @@ public class mainMenu : MonoBehaviour
         nextLevelBool = false;
         exitGameBool = true;
     }
+
+    public void gallery()
+    {
+        panel.SetActive(true);
+        timer = 0;
+        StartCoroutine(fadeIn());
+        nextLevelBool = false;
+        exitGameBool = false;
+    }
     IEnumerator fadeIn()
     {
         yield return new WaitForFixedUpdate();
@@ -80,7 +114,11 @@ public class mainMenu : MonoBehaviour
             #endif
                 Application.Quit();
             }
-        
+            else if (!nextLevelBool && !exitGameBool)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            }
+
             yield break;
         }
         yield return fadeIn();

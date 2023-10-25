@@ -23,17 +23,42 @@ public class imageManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            if (!pictures.Contains(tss.photo))
+            if (tss == null)
             {
-                pictures.Add(tss.photo);
+                print("find tss");
+                tss = FindObjectOfType<takeSS>();
             }
+            else
+            {
+                if (!pictures.Contains(tss.photo))
+                {
+                    print("found tss");
+
+                    pictures.Add(tss.photo);
+                }
+            }
+
         }
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            for (int i = 0; i < cube.transform.childCount; i++)
+            if (cube == null)
             {
-                if (cube.transform.GetChild(i).GetComponent<MeshRenderer>().material.ToString() == "emptySides")
+                print("find cube");
+
+                cube = GameObject.Find("mainMenuCube");
+            }    
+            if (pictures.Count > 0 && cube != null)
+            {
+                print("found cube");
+
+                for (int i = 0; i < cube.transform.childCount; i++)
                 {
+                    if (i > pictures.Count)
+                        return;
+                    if (cube.transform.GetChild(i).GetComponent<MeshRenderer>().material.ToString() == "emptySides")
+                    {
+                        cube.transform.GetChild(i).GetComponent<MeshRenderer>().material.mainTexture = pictures[i];
+                    }
                 }
             }
         }

@@ -7,7 +7,7 @@ public class moveAchievementsUp : MonoBehaviour
     [SerializeField]
     showReturnButton srb;
 
-    public int speed;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {

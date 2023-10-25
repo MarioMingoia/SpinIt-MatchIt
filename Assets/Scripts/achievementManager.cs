@@ -56,7 +56,7 @@ public class achievementManager : MonoBehaviour
     showReturnButton srb;
 
     [SerializeField]
-    int speed;
+    float speed;
 
     [SerializeField]
     SpinningScript reRolledSS;
