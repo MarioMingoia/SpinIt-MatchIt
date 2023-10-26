@@ -1235,11 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tss: {fileID: 0}
-  pictures:
-  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
-  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
-  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
-  - {fileID: 2800000, guid: 48938b1d40d152c4c96299908f243c2c, type: 3}
+  pictures: []
   cube: {fileID: 0}
 --- !u!1 &1410427470
 GameObject:

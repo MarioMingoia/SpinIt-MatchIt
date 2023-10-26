@@ -64,7 +64,7 @@ public class positionStopper : MonoBehaviour
             
         }
 
-        if (listPicker < realobjects.Count && Input.GetKeyUp(KeyCode.Return) && panel.GetComponent<CanvasGroup>().alpha == 0)
+        if (listPicker < realobjects.Count && Input.GetMouseButtonUp(0) && panel.GetComponent<CanvasGroup>().alpha == 0)
         {
             if (previousCube)
             {

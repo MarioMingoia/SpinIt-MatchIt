@@ -317,7 +317,8 @@ public class SpinningScript : MonoBehaviour
         timer = 0;
 
         transform.eulerAngles = newRot;
-
+        frontFaceHzd = item;
+        thisFace = frontFaceHzd.GetComponent<face>();
         item = null;
         //StartCoroutine(StopPiece(newRot));
     }
