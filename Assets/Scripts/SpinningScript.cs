@@ -297,7 +297,18 @@ public class SpinningScript : MonoBehaviour
         particleSparks.SetActive(false);
         yield break;
     }
-
+    public void findSafestFace2(string pose)
+    {
+        HazardDetect = true;
+        foreach (hazards face in faces)
+        {
+            if (face.character.ToString() == pose)
+            {
+                item = face;
+            }
+        }
+        setTrue(item.GetComponent<face>().rotation);
+    }
     public void findSafestFace(string pose)
     {
         HazardDetect = true;
@@ -320,6 +331,8 @@ public class SpinningScript : MonoBehaviour
         frontFaceHzd = item;
         thisFace = frontFaceHzd.GetComponent<face>();
         item = null;
+        HazardDetect = false;
+
         //StartCoroutine(StopPiece(newRot));
     }
 }
