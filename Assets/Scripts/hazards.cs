@@ -79,7 +79,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -99,7 +99,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -116,7 +116,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -136,7 +136,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -153,7 +153,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -173,7 +173,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -190,7 +190,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -210,7 +210,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -227,7 +227,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -247,7 +247,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -264,7 +264,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                            if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                             {
                                 parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                             }
@@ -285,7 +285,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                         }
@@ -299,7 +299,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                         }
@@ -316,7 +316,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                         }
@@ -330,7 +330,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                         }
@@ -347,7 +347,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                         }
@@ -361,7 +361,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.positionshzd.ToString() == positionshzd.ToString())
+                        if (ss.frontFaceHzd.character.ToString() == hazardFace.ToString() && ss.frontFaceHzd.position.ToString() == positionshzd.ToString())
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.safeFace.ToString());
                         }
