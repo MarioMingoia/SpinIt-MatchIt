@@ -297,12 +297,12 @@ public class SpinningScript : MonoBehaviour
         particleSparks.SetActive(false);
         yield break;
     }
-    public void findSafestFace2(string pose)
+    public void findSafestFace2(string hzdFace)
     {
         HazardDetect = true;
         foreach (hazards face in faces)
         {
-            if (face.character.ToString() == pose)
+            if (face.character.ToString() == hzdFace)
             {
                 item = face;
             }
