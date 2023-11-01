@@ -99,7 +99,7 @@ public class reRollandStop : MonoBehaviour
     IEnumerator StopPiece()
     {
         yield return new WaitForFixedUpdate();
-        timer += Time.deltaTime * 2;
+        timer += Time.deltaTime;
         if (timer >= 1)
         {
             tss.changeBool();

@@ -301,7 +301,7 @@ public class SpinningScript : MonoBehaviour
 
     IEnumerator sparklesHide()
     {
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.1f);
         particleSparks.SetActive(false);
         yield break;
     }

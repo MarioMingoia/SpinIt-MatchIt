@@ -47,7 +47,7 @@ public class ComingTogether : MonoBehaviour
             StartCoroutine(timeToDisableSparkles());
         }
 
-        if (amountdone >= 15f)
+        if (amountdone >= 12f)
         {
             gm.GetComponent<reRollandStop>().startReRoll = true;
         }

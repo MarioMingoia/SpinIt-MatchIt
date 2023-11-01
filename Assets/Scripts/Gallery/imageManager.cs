@@ -45,8 +45,11 @@ public class imageManager : MonoBehaviour
                         if (replaceAt >= pictures.Count)
                             replaceAt = 0;
                     }
+                    else
+                    {
+                        pictures.Add(tss.photo);
+                    }
 
-                    pictures.Add(tss.photo);
 
                 }
             }
