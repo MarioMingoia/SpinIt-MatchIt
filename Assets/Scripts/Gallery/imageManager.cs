@@ -13,6 +13,9 @@ public class imageManager : MonoBehaviour
 
     [SerializeField]
     GameObject cube;
+
+    [SerializeField]
+    int replaceAt = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,7 +36,18 @@ public class imageManager : MonoBehaviour
                 if (!pictures.Contains(tss.photo) && tss.photo != null)
                 {
 
+                    if (pictures.Count > 3)
+                    {
+                        pictures[replaceAt] = null;
+                        pictures[replaceAt] = tss.photo;
+                        replaceAt++;
+
+                        if (replaceAt >= pictures.Count)
+                            replaceAt = 0;
+                    }
+
                     pictures.Add(tss.photo);
+
                 }
             }
 

@@ -193,15 +193,12 @@ public class SpinningScript : MonoBehaviour
         reduced = true;
         particleSparks.SetActive(true);
 
-        var originalvalue = transform.eulerAngles;
+        Vector3 originalvalue = transform.eulerAngles;
 
-        var roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90), 0);
+        Vector3 roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90), Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90));
 
         float x = Mathf.Abs(roundedangle.x - originalvalue.x);
         float y = Mathf.Abs(roundedangle.y - originalvalue.y);
-
-        roundedangle.x = Mathf.Clamp(roundedangle.x, 0, 315);
-        roundedangle.y = Mathf.Clamp(roundedangle.y, 0, 315);
 
         if (changeAngle)
         {
@@ -209,60 +206,71 @@ public class SpinningScript : MonoBehaviour
             if (x < y && reduced)
             {
                 roundedangle.y = 0;
+                print("x less than y");
                 reduced = false;
             }
             else if (x > y && reduced)
             {
                 roundedangle.x = 0;
+                print("y less than x");
                 reduced = false;
             }
-            
-            if (Mathf.Approximately(roundedangle.x, 90) )
+            roundedangle.y = Mathf.Clamp(roundedangle.y, 0, 360);
+            roundedangle.x = Mathf.Clamp(roundedangle.x, 0, 360);
+
+            roundedangle = new Vector3(roundedangle.x, roundedangle.y, 0);
+
+            if (Vector3.Equals(roundedangle, new Vector3(90,0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(270, 180, roundedangle.z)))
             {
                 //back face
                 ran = 5;
                 changeAngle = false;
 
             }
-            if (Mathf.Approximately(roundedangle.x, 0) && Mathf.Approximately(roundedangle.y, 0))
-            {
-                //bottom face
-                ran = 1;
-                changeAngle = false;
-            }
-            if (Mathf.Approximately(roundedangle.x, 180) || Mathf.Approximately(roundedangle.y, 180))
+            else if (Vector3.Equals(roundedangle, new Vector3(180, 0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(0, 180, roundedangle.z)))
             {
                 //top face
                 ran = 2;
                 changeAngle = false;
 
             }
-            if (Mathf.Approximately(roundedangle.x, 270))
+            else if (Vector3.Equals(roundedangle, new Vector3(270, 0, roundedangle.z)) ||  Vector3.Equals(roundedangle, new Vector3(90, 180, roundedangle.z)))
             {
                 //front face
                 ran = 4;
                 changeAngle = false;
 
             }
-            if (Mathf.Approximately(roundedangle.y, 90))
+            else if (Vector3.Equals(roundedangle, new Vector3(0, 90, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(180, 90, roundedangle.z)) ||  Vector3.Equals(roundedangle, new Vector3(90, 90, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(270, 90, roundedangle.z)))
             {
                 //right face
                 ran = 0;
                 changeAngle = false;
 
             }
-            if (Mathf.Approximately(roundedangle.y, 270))
+            else if (Vector3.Equals(roundedangle, new Vector3(0, 270, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(90, 270, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(180, 270, roundedangle.z)))
             {
                 //left face
                 ran = 3;
                 changeAngle = false;
 
             }
+            else if (Vector3.Equals(roundedangle, new Vector3(0, 0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(360, 0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(0, 360, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(360, 360, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(180, 180, roundedangle.z)))
+            {
+                //bottom face
+                ran = 1;
+                changeAngle = false;
+            }
+            else
+            {
+                //top face
+                ran = 2;
+                changeAngle = false;
+
+            }
         }
 
         timer = 0;
-        //print(originalvalue);
-        //print(ran + " " + possibleRotations[ran].rotation);
         StartCoroutine(StopPiece(possibleRotations[ran].rotation));
     }
 
@@ -331,7 +339,6 @@ public class SpinningScript : MonoBehaviour
         frontFaceHzd = item;
         thisFace = frontFaceHzd.GetComponent<face>();
         item = null;
-        HazardDetect = false;
 
         //StartCoroutine(StopPiece(newRot));
     }

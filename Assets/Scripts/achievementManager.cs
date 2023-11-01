@@ -30,13 +30,10 @@ public class achievementManager : MonoBehaviour
 
 
     [SerializeField]
-    face origin;
-    
-    [SerializeField]
-    face rerolledFace;
+    GameObject origin;
 
     [SerializeField]
-    face newFace;
+    GameObject newFace;
 
     [SerializeField]
     GameObject achievementNoHazard;
@@ -194,6 +191,7 @@ public class achievementManager : MonoBehaviour
                         achievementCounter.Add(achievement5050);
                         achievement5050.GetComponent<moveAchievementsUp>().speed = speed;
                     }
+                    print("5050");
                 }
             }
 
@@ -205,12 +203,12 @@ public class achievementManager : MonoBehaviour
                 if (reRolledSS.stoppedSpinning)
                 {
                     if (origin == null)
-                        origin = GetComponent<reRollandStop>().selectedFace;
+                        origin = GetComponent<reRollandStop>().selectedFace.gameObject;
                     print(origin);
                     if (newFace == null)
-                     newFace = reRolledSS.thisFace;
+                     newFace = reRolledSS.thisFace.gameObject;
                     print(newFace);
-                    if (GameObject.ReferenceEquals(origin, newFace))
+                    if (ReferenceEquals(origin, newFace))
                     {
                         if (!achievementCounter.Contains(achievementTwiceInARow))
                         {
@@ -219,6 +217,7 @@ public class achievementManager : MonoBehaviour
                             achievementCounter.Add(achievementTwiceInARow);
                             achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;
                         }
+                        print("double troube");
                     }
                 }
             }

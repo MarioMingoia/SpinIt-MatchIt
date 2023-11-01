@@ -84,7 +84,7 @@ public class reRollandStop : MonoBehaviour
                 chosenObj.gameObject.transform.Rotate(reRollX, reRollY, 0, Space.World);
             }
 
-            if (Input.GetKey(KeyCode.Return) && stopSpinning)
+            if (Input.GetMouseButtonUp(0) && stopSpinning)
             {
                 chosenObj.setTrue();
                 stopSpinning = false;
