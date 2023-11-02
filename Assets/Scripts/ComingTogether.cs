@@ -41,7 +41,12 @@ public class ComingTogether : MonoBehaviour
         if (amountdone > 5 && sparklesEnabled)
         {
             timer = 0;
-            sparkles.SetActive(true);
+            for (int i = 0; i < sparkles.transform.childCount; i++)
+            {
+                ParticleSystem p = sparkles.transform.GetChild(i).GetComponent<ParticleSystem>();
+                p.Play();
+                p.enableEmission = true;
+            }
             sparklesEnabled = false;
 
             StartCoroutine(timeToDisableSparkles());
@@ -59,8 +64,12 @@ public class ComingTogether : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 1.5f)
         {
-            sparkles.SetActive(false);
-
+            for (int i = 0; i < sparkles.transform.childCount; i++)
+            {
+                ParticleSystem p = sparkles.transform.GetChild(i).GetComponent<ParticleSystem>();
+                p.Stop();
+                p.enableEmission = false;
+            }
             yield break;
         }
         yield return timeToDisableSparkles();

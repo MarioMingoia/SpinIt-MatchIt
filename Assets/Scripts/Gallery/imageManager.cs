@@ -36,7 +36,7 @@ public class imageManager : MonoBehaviour
                 if (!pictures.Contains(tss.photo) && tss.photo != null)
                 {
 
-                    if (pictures.Count > 3)
+                    if (pictures.Count >= 4)
                     {
                         pictures[replaceAt] = null;
                         pictures[replaceAt] = tss.photo;

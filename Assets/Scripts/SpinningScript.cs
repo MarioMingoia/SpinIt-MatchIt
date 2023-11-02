@@ -81,6 +81,13 @@ public class SpinningScript : MonoBehaviour
         ranY = Random.value > .5f;
 
         source = GetComponent<AudioSource>();
+
+        for (int i = 0; i < particleSparks.transform.childCount; i++)
+        {
+            ParticleSystem p = particleSparks.transform.GetChild(i).GetComponent<ParticleSystem>();
+            p.Stop();
+            p.enableEmission = false;
+        }
     }
 
 
@@ -191,7 +198,13 @@ public class SpinningScript : MonoBehaviour
         enterPressed = true;
         changeAngle = true;
         reduced = true;
-        particleSparks.SetActive(true);
+
+        for (int i = 0; i < particleSparks.transform.childCount; i++)
+        {
+            ParticleSystem p = particleSparks.transform.GetChild(i).GetComponent<ParticleSystem>();
+            p.Play();
+            p.enableEmission = true;
+        }
 
         Vector3 originalvalue = transform.eulerAngles;
 
@@ -302,7 +315,13 @@ public class SpinningScript : MonoBehaviour
     IEnumerator sparklesHide()
     {
         yield return new WaitForSeconds(.1f);
-        particleSparks.SetActive(false);
+
+        for (int i = 0; i < particleSparks.transform.childCount; i++)
+        {
+            ParticleSystem p = particleSparks.transform.GetChild(i).GetComponent<ParticleSystem>();
+            p.Stop();
+            p.enableEmission = false;
+        }
         yield break;
     }
     public void findSafestFace2(string hzdFace)
