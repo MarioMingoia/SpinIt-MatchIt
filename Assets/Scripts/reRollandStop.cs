@@ -100,7 +100,7 @@ public class reRollandStop : MonoBehaviour
     {
         yield return new WaitForFixedUpdate();
         timer += Time.deltaTime;
-        if (timer >= 1)
+        if (timer >= 2.5f)
         {
             tss.changeBool();
             yield break;
