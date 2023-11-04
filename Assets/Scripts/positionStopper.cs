@@ -60,9 +60,8 @@ public class positionStopper : MonoBehaviour
     {
         if (listPicker <= realobjects.Count - 1)
         {
-#if UNITY_EDITOR
             realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = true;
-#endif
+
         }
 
         if (listPicker < realobjects.Count && Input.GetMouseButtonUp(0) && panel.GetComponent<CanvasGroup>().alpha == 0)

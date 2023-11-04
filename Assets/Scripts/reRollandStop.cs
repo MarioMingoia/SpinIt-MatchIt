@@ -39,6 +39,7 @@ public class reRollandStop : MonoBehaviour
 
     public bool startReRoll;
 
+    bool photoTaken = false;
     public face selectedFace;
     // Start is called before the first frame update
     void Start()
@@ -102,7 +103,11 @@ public class reRollandStop : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 2.5f)
         {
-            tss.changeBool();
+            if (!photoTaken)
+            {
+                tss.changeBool();
+                photoTaken = true;
+            }
             yield break;
         }
         yield return StopPiece();

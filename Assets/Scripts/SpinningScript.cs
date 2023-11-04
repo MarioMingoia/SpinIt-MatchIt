@@ -303,9 +303,12 @@ public class SpinningScript : MonoBehaviour
             onstop();
             stoppedSpinning = true;
 
-            source.clip = cubeSFX[cubeStopSFXi];
+            if (cubeStopSFXi < cubeSFX.Count)
+                source.clip = cubeSFX[cubeStopSFXi];
             source.Play();
-            cubeStopSFXi++;
+
+            if (cubeStopSFXi < cubeSFX.Count)
+                cubeStopSFXi++;
             yield break;
         }
         yield return StopPiece(rotation);
