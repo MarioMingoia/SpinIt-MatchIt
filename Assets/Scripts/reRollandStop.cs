@@ -41,6 +41,8 @@ public class reRollandStop : MonoBehaviour
 
     bool photoTaken = false;
     public face selectedFace;
+
+    int rotateChange = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,18 +81,34 @@ public class reRollandStop : MonoBehaviour
 
             if (chosenObj != null && stopSpinning)
             {
-                reRollX = chosenObj.rotateX;
-                reRollY = chosenObj.rotateY;
-
+                if (rotateChange == 1)
+                {
+                    reRollX = chosenObj.rotateX;
+                    reRollY = 0;
+                }
+                else
+                {
+                    reRollY = chosenObj.rotateY;
+                    reRollX = 0;
+                }
                 chosenObj.gameObject.transform.Rotate(reRollX, reRollY, 0, Space.World);
             }
 
             if (Input.GetMouseButtonUp(0) && stopSpinning)
             {
-                chosenObj.setTrue();
-                stopSpinning = false;
-                timer = 0;
-                StartCoroutine(StopPiece());
+                if (rotateChange < 2)
+                {
+                    chosenObj.changeSpinDirection();
+                    rotateChange++;
+                }
+                else
+                {
+                    chosenObj.setTrue();
+                    stopSpinning = false;
+                    timer = 0;
+                    StartCoroutine(StopPiece());
+                }
+
 
             }
 

@@ -22,6 +22,8 @@ public class positionStopper : MonoBehaviour
     [SerializeField] AudioSource source;
 
     bool invoked = false;
+
+    int rotateChange = 1;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -62,29 +64,82 @@ public class positionStopper : MonoBehaviour
         {
             realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = true;
 
+            for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
+            {
+                if (realobjects[listPicker].transform.GetChild(i).GetComponent<face>())
+                {
+                    Material mat = realobjects[listPicker].transform.GetChild(i).GetComponent<MeshRenderer>().material;
+                    mat.EnableKeyword("_EMISSION");
+                    mat.SetColor("_EmissionColor", Color.white);
+                }
+            }
+
         }
 
         if (listPicker < realobjects.Count && Input.GetMouseButtonUp(0) && panel.GetComponent<CanvasGroup>().alpha == 0)
         {
             if (previousCube)
             {
-                if (previousCube.stoppedSpinning && previousCube.item == null)
+                if (rotateChange < 2)
                 {
-                    previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
-
-                    realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
-                    realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
-                    listPicker++;
-
+                    realobjects[listPicker].GetComponent<SpinningScript>().changeSpinDirection();
+                    rotateChange++;
                 }
+                else
+                {
+                    if (previousCube.stoppedSpinning && previousCube.item == null)
+                    {
+                        previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
+
+                        for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
+                        {
+                            if (realobjects[listPicker].transform.GetChild(i).GetComponent<face>())
+                            {
+                                Material mat = realobjects[listPicker].transform.GetChild(i).GetComponent<MeshRenderer>().material;
+                                mat.DisableKeyword("_EMISSION");
+                                mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.EmissiveIsBlack;
+                                mat.SetColor("_EmissionColor", Color.black);
+                            }
+                        }
+                        realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
+                        realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
+                        listPicker++;
+
+                        rotateChange = 1;
+
+                    }
+                }
+
             }
             else
             {
-                previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
+                if (rotateChange < 2)
+                {
+                    realobjects[listPicker].GetComponent<SpinningScript>().changeSpinDirection();
+                    rotateChange++;
+                }
+                else
+                {
+                    previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
+                    for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
+                    {
+                        if (realobjects[listPicker].transform.GetChild(i).GetComponent<face>())
+                        {
+                            Material mat = realobjects[listPicker].transform.GetChild(i).GetComponent<MeshRenderer>().material;
+                            mat.DisableKeyword("_EMISSION");
+                            mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.EmissiveIsBlack;
+                            mat.SetColor("_EmissionColor", Color.black);
+                        }
+                    }
+                    realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
+                    realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
+                    listPicker++;
+                    rotateChange = 1;
 
-                realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
-                realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
-                listPicker++;
+
+                }
+
+
             }
 
         }

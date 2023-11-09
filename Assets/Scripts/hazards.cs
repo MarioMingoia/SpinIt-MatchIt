@@ -59,31 +59,47 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                        if (hazardFace.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                            }
+                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
 
-                        }
+                            }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
-                                        { 
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
+                                        {
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
-                                    }
+                                    }                                    
                                 }
                             }
                         }
@@ -95,7 +111,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -106,17 +122,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -135,7 +167,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -146,17 +178,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -171,7 +219,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -182,17 +230,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -210,7 +274,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -221,17 +285,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -246,7 +326,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -257,17 +337,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -285,7 +381,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -296,17 +392,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -321,7 +433,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -332,17 +444,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -360,7 +488,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -371,17 +499,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -396,7 +540,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -407,17 +551,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -435,7 +595,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -446,17 +606,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -471,7 +647,7 @@ public class hazards : MonoBehaviour
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0)
+                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                             }
@@ -482,17 +658,33 @@ public class hazards : MonoBehaviour
                             }
                             else
                             {
+                                int i = 0;
+                                int x = 0;
                                 foreach (Character a in hazardFace)
                                 {
-                                    foreach (Position b in positionshzd)
+                                    if (a != ss.frontFaceHzd.character)
                                     {
-                                        int indA = hazardFace.IndexOf(a);
-                                        int indB = positionshzd.IndexOf(b);
-                                        if (indA == indB)
+                                        i++;
+                                        if (i > hazardFace.Count - 1)
+                                            i = 0;
+                                    }
+                                    else
+                                    {
+                                        foreach (Position b in positionshzd)
                                         {
-                                            if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                            if (ss.frontFaceHzd.position != b)
                                             {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                x++;
+                                                if (x > positionshzd.Count - 1)
+                                                    x = 0;
+                                            }
+                                            else
+                                            {
+                                                if (i == x)
+                                                {
+                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                                }
                                             }
                                         }
                                     }
@@ -511,7 +703,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (hazardFace.Count == 0)
+                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
                         {
                             parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                         }
@@ -522,17 +714,33 @@ public class hazards : MonoBehaviour
                         }
                         else
                         {
+                            int i = 0;
+                            int x = 0;
                             foreach (Character a in hazardFace)
                             {
-                                foreach (Position b in positionshzd)
+                                if (a != ss.frontFaceHzd.character)
                                 {
-                                    int indA = hazardFace.IndexOf(a);
-                                    int indB = positionshzd.IndexOf(b);
-                                    if (indA == indB)
+                                    i++;
+                                    if (i > hazardFace.Count - 1)
+                                        i = 0;
+                                }
+                                else
+                                {
+                                    foreach (Position b in positionshzd)
                                     {
-                                        if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                        if (ss.frontFaceHzd.position != b)
                                         {
-                                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            x++;
+                                            if (x > positionshzd.Count - 1)
+                                                x = 0;
+                                        }
+                                        else
+                                        {
+                                            if (i == x)
+                                            {
+                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            }
                                         }
                                     }
                                 }
@@ -544,7 +752,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (hazardFace.Count == 0)
+                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
                         {
                             parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                         }
@@ -555,17 +763,33 @@ public class hazards : MonoBehaviour
                         }
                         else
                         {
+                            int i = 0;
+                            int x = 0;
                             foreach (Character a in hazardFace)
                             {
-                                foreach (Position b in positionshzd)
+                                if (a != ss.frontFaceHzd.character)
                                 {
-                                    int indA = hazardFace.IndexOf(a);
-                                    int indB = positionshzd.IndexOf(b);
-                                    if (indA == indB)
+                                    i++;
+                                    if (i > hazardFace.Count - 1)
+                                        i = 0;
+                                }
+                                else
+                                {
+                                    foreach (Position b in positionshzd)
                                     {
-                                        if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                        if (ss.frontFaceHzd.position != b)
                                         {
-                                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            x++;
+                                            if (x > positionshzd.Count - 1)
+                                                x = 0;
+                                        }
+                                        else
+                                        {
+                                            if (i == x)
+                                            {
+                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            }
                                         }
                                     }
                                 }
@@ -580,7 +804,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (hazardFace.Count == 0)
+                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
                         {
                             parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                         }
@@ -591,17 +815,33 @@ public class hazards : MonoBehaviour
                         }
                         else
                         {
+                            int i = 0;
+                            int x = 0;
                             foreach (Character a in hazardFace)
                             {
-                                foreach (Position b in positionshzd)
+                                if (a != ss.frontFaceHzd.character)
                                 {
-                                    int indA = hazardFace.IndexOf(a);
-                                    int indB = positionshzd.IndexOf(b);
-                                    if (indA == indB)
+                                    i++;
+                                    if (i > hazardFace.Count - 1)
+                                        i = 0;
+                                }
+                                else
+                                {
+                                    foreach (Position b in positionshzd)
                                     {
-                                        if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                        if (ss.frontFaceHzd.position != b)
                                         {
-                                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            x++;
+                                            if (x > positionshzd.Count - 1)
+                                                x = 0;
+                                        }
+                                        else
+                                        {
+                                            if (i == x)
+                                            {
+                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            }
                                         }
                                     }
                                 }
@@ -613,7 +853,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (hazardFace.Count == 0)
+                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
                         {
                             parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                         }
@@ -624,17 +864,33 @@ public class hazards : MonoBehaviour
                         }
                         else
                         {
+                            int i = 0;
+                            int x = 0;
                             foreach (Character a in hazardFace)
                             {
-                                foreach (Position b in positionshzd)
+                                if (a != ss.frontFaceHzd.character)
                                 {
-                                    int indA = hazardFace.IndexOf(a);
-                                    int indB = positionshzd.IndexOf(b);
-                                    if (indA == indB)
+                                    i++;
+                                    if (i > hazardFace.Count - 1)
+                                        i = 0;
+                                }
+                                else
+                                {
+                                    foreach (Position b in positionshzd)
                                     {
-                                        if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                        if (ss.frontFaceHzd.position != b)
                                         {
-                                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            x++;
+                                            if (x > positionshzd.Count - 1)
+                                                x = 0;
+                                        }
+                                        else
+                                        {
+                                            if (i == x)
+                                            {
+                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            }
                                         }
                                     }
                                 }
@@ -649,7 +905,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (hazardFace.Count == 0)
+                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
                         {
                             parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                         }
@@ -660,17 +916,33 @@ public class hazards : MonoBehaviour
                         }
                         else
                         {
+                            int i = 0;
+                            int x = 0;
                             foreach (Character a in hazardFace)
                             {
-                                foreach (Position b in positionshzd)
+                                if (a != ss.frontFaceHzd.character)
                                 {
-                                    int indA = hazardFace.IndexOf(a);
-                                    int indB = positionshzd.IndexOf(b);
-                                    if (indA == indB)
+                                    i++;
+                                    if (i > hazardFace.Count - 1)
+                                        i = 0;
+                                }
+                                else
+                                {
+                                    foreach (Position b in positionshzd)
                                     {
-                                        if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                        if (ss.frontFaceHzd.position != b)
                                         {
-                                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            x++;
+                                            if (x > positionshzd.Count - 1)
+                                                x = 0;
+                                        }
+                                        else
+                                        {
+                                            if (i == x)
+                                            {
+                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            }
                                         }
                                     }
                                 }
@@ -682,7 +954,7 @@ public class hazards : MonoBehaviour
                 {
                     if (ss.frontFaceHzd.character != character)
                     {
-                        if (hazardFace.Count == 0)
+                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
                         {
                             parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
                         }
@@ -693,17 +965,33 @@ public class hazards : MonoBehaviour
                         }
                         else
                         {
+                            int i = 0;
+                            int x = 0;
                             foreach (Character a in hazardFace)
                             {
-                                foreach (Position b in positionshzd)
+                                if (a != ss.frontFaceHzd.character)
                                 {
-                                    int indA = hazardFace.IndexOf(a);
-                                    int indB = positionshzd.IndexOf(b);
-                                    if (indA == indB)
+                                    i++;
+                                    if (i > hazardFace.Count - 1)
+                                        i = 0;
+                                }
+                                else
+                                {
+                                    foreach (Position b in positionshzd)
                                     {
-                                        if (a == ss.frontFaceHzd.character && ss.frontFaceHzd.position == b)
+
+                                        if (ss.frontFaceHzd.position != b)
                                         {
-                                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            x++;
+                                            if (x > positionshzd.Count - 1)
+                                                x = 0;
+                                        }
+                                        else
+                                        {
+                                            if (i == x)
+                                            {
+                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                                            }
                                         }
                                     }
                                 }

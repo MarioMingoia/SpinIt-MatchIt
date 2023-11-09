@@ -12,6 +12,12 @@ public class SpinningScript : MonoBehaviour
     public float rotateY;
 
     [SerializeField]
+    float newRX;
+
+    [SerializeField]
+    float newRY;
+
+    [SerializeField]
     float speed;
 
     bool enterPressed;
@@ -63,6 +69,8 @@ public class SpinningScript : MonoBehaviour
 
     AudioSource source;
     [SerializeField] AudioSource charMusicSource;
+
+    public    bool changeRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -97,19 +105,31 @@ public class SpinningScript : MonoBehaviour
 
         if (!enterPressed)
         {
-            if (ranX)
-                rotateX = speed * -1;
+            if (changeRotation)
+            {
+                if (ranX)
+                    rotateX = speed * -1;
+                else
+                {
+                    rotateX = speed;
+                }
+                newRY = 0;
+                newRX = rotateX;
+            }
             else
             {
-                rotateX = speed;
+                if (ranY)
+                    rotateY = speed * -1;
+                else
+                {
+                    rotateY = speed;
+                }
+                newRX = 0;
+                newRY = rotateY;
             }
-            if (ranY)
-                rotateY = speed * -1;
-            else
-            {
-                rotateY = speed;
-            }
-            transform.Rotate(rotateX, rotateY, 0, Space.World);
+            
+
+            transform.Rotate(newRX, newRY, 0, Space.World);
         }
 
     }
@@ -192,6 +212,12 @@ public class SpinningScript : MonoBehaviour
         charMusicSource.clip = charMusic[int.Parse(ID)];
         charMusicSource.Play();
     }
+
+    public void changeSpinDirection()
+    {
+        changeRotation = true;
+
+    }
     public void setTrue()
     {
 
@@ -219,13 +245,11 @@ public class SpinningScript : MonoBehaviour
             if (x < y && reduced)
             {
                 roundedangle.y = 0;
-                print("x less than y");
                 reduced = false;
             }
             else if (x > y && reduced)
             {
                 roundedangle.x = 0;
-                print("y less than x");
                 reduced = false;
             }
             roundedangle.y = Mathf.Clamp(roundedangle.y, 0, 360);
@@ -274,17 +298,13 @@ public class SpinningScript : MonoBehaviour
                 ran = 1;
                 changeAngle = false;
             }
-            else
-            {
-                //top face
-                ran = 2;
-                changeAngle = false;
 
-            }
         }
 
         timer = 0;
         StartCoroutine(StopPiece(possibleRotations[ran].rotation));
+
+        changeRotation = false;
     }
 
     IEnumerator StopPiece(Vector3 rotation)

@@ -167,7 +167,6 @@ public class achievementManager : MonoBehaviour
                         achievementCounter.Add(achievementNoHazard);
                         achievementNoHazard.GetComponent<moveAchievementsUp>().speed = speed;
                     }
-                    print("achievement SAFE GAME Found");
                 }
                 //having a perfect image
                 if (countofBackFace.Count == 9 || countofBottomFace.Count == 9 || countofFrontFace.Count == 9 || countofTopFace.Count == 9 || countofLeftFace.Count == 9 || countofRightFace.Count == 9)
@@ -179,7 +178,6 @@ public class achievementManager : MonoBehaviour
                         achievementCounter.Add(achievementPerfect);
                         achievementPerfect.GetComponent<moveAchievementsUp>().speed = speed;
                     }
-                    print("achievement PERFECT IMAGE Found");
                 }
                 //having an image with max 50% of same type
                 if (countofBackFace.Count <= 5 && countofBottomFace.Count <= 5 && countofFrontFace.Count <= 5 && countofTopFace.Count <= 5 && countofLeftFace.Count <= 5 && countofRightFace.Count <= 5)
@@ -191,7 +189,6 @@ public class achievementManager : MonoBehaviour
                         achievementCounter.Add(achievement5050);
                         achievement5050.GetComponent<moveAchievementsUp>().speed = speed;
                     }
-                    print("5050");
                 }
             }
 
@@ -217,7 +214,6 @@ public class achievementManager : MonoBehaviour
                             achievementCounter.Add(achievementTwiceInARow);
                             achievementTwiceInARow.GetComponent<moveAchievementsUp>().speed = speed;
                         }
-                        print("double troube");
                     }
                 }
             }
