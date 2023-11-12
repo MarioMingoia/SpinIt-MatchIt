@@ -92,6 +92,22 @@ public class reRollandStop : MonoBehaviour
                     reRollX = 0;
                 }
                 chosenObj.gameObject.transform.Rotate(reRollX, reRollY, 0, Space.World);
+
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                Debug.DrawRay(Camera.main.transform.position, Vector3.forward * 1000, Color.green);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, 1000, ~chosenObj.ignore))
+                {
+                    Debug.Log(hit.transform.name);
+
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        print("select");
+                        chosenObj.selectedFace = hit.transform.GetComponent<face>();
+                        print(selectedFace.name);
+                    }
+                }
             }
 
             if (Input.GetMouseButtonUp(0) && stopSpinning)

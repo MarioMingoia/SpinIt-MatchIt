@@ -49,8 +49,6 @@ public class SpinningScript : MonoBehaviour
     bool ranX;
     bool ranY;
 
-    bool reduced;
-
     [SerializeField]
     GameObject particleSparks;
 
@@ -71,6 +69,10 @@ public class SpinningScript : MonoBehaviour
     [SerializeField] AudioSource charMusicSource;
 
     public    bool changeRotation;
+    
+    public face selectedFace;
+
+    public    LayerMask ignore;
     // Start is called before the first frame update
     void Start()
     {
@@ -130,6 +132,19 @@ public class SpinningScript : MonoBehaviour
             
 
             transform.Rotate(newRX, newRY, 0, Space.World);
+        }
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        Debug.DrawRay(Camera.main.transform.position, Vector3.forward * 1000, Color.green);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, 1000, ~ignore))
+        {
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                selectedFace = hit.transform.GetComponent<face>();
+            }
         }
 
     }
@@ -223,7 +238,6 @@ public class SpinningScript : MonoBehaviour
 
         enterPressed = true;
         changeAngle = true;
-        reduced = true;
 
         for (int i = 0; i < particleSparks.transform.childCount; i++)
         {
@@ -232,77 +246,10 @@ public class SpinningScript : MonoBehaviour
             p.enableEmission = true;
         }
 
-        Vector3 originalvalue = transform.eulerAngles;
-
-        Vector3 roundedangle = new Vector3(Mathf.Abs(Mathf.Round(originalvalue.x / 90) * 90), Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90), Mathf.Abs(Mathf.Round(originalvalue.y / 90) * 90));
-
-        float x = Mathf.Abs(roundedangle.x - originalvalue.x);
-        float y = Mathf.Abs(roundedangle.y - originalvalue.y);
-
-        if (changeAngle)
-        {
-
-            if (x < y && reduced)
-            {
-                roundedangle.y = 0;
-                reduced = false;
-            }
-            else if (x > y && reduced)
-            {
-                roundedangle.x = 0;
-                reduced = false;
-            }
-            roundedangle.y = Mathf.Clamp(roundedangle.y, 0, 360);
-            roundedangle.x = Mathf.Clamp(roundedangle.x, 0, 360);
-
-            roundedangle = new Vector3(roundedangle.x, roundedangle.y, 0);
-
-            if (Vector3.Equals(roundedangle, new Vector3(90,0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(270, 180, roundedangle.z)))
-            {
-                //back face
-                ran = 5;
-                changeAngle = false;
-
-            }
-            else if (Vector3.Equals(roundedangle, new Vector3(180, 0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(0, 180, roundedangle.z)))
-            {
-                //top face
-                ran = 2;
-                changeAngle = false;
-
-            }
-            else if (Vector3.Equals(roundedangle, new Vector3(270, 0, roundedangle.z)) ||  Vector3.Equals(roundedangle, new Vector3(90, 180, roundedangle.z)))
-            {
-                //front face
-                ran = 4;
-                changeAngle = false;
-
-            }
-            else if (Vector3.Equals(roundedangle, new Vector3(0, 90, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(180, 90, roundedangle.z)) ||  Vector3.Equals(roundedangle, new Vector3(90, 90, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(270, 90, roundedangle.z)))
-            {
-                //right face
-                ran = 0;
-                changeAngle = false;
-
-            }
-            else if (Vector3.Equals(roundedangle, new Vector3(0, 270, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(90, 270, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(180, 270, roundedangle.z)))
-            {
-                //left face
-                ran = 3;
-                changeAngle = false;
-
-            }
-            else if (Vector3.Equals(roundedangle, new Vector3(0, 0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(360, 0, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(0, 360, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(360, 360, roundedangle.z)) || Vector3.Equals(roundedangle, new Vector3(180, 180, roundedangle.z)))
-            {
-                //bottom face
-                ran = 1;
-                changeAngle = false;
-            }
-
-        }
+       
 
         timer = 0;
-        StartCoroutine(StopPiece(possibleRotations[ran].rotation));
+        StartCoroutine(StopPiece(selectedFace.rotation));
 
         changeRotation = false;
     }
@@ -318,7 +265,7 @@ public class SpinningScript : MonoBehaviour
 
             getFrontFace();
             AddOnCharacters();
-            thisFace = possibleRotations[ran];
+            thisFace = selectedFace;
             StartCoroutine(sparklesHide());
             onstop();
             stoppedSpinning = true;
