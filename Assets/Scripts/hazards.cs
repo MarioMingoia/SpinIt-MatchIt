@@ -50,956 +50,244 @@ public class hazards : MonoBehaviour
     {
         foreach (SpinningScript ss in neighbours)
         {
-
-            if(position== Position.BotLeft)
+            if (hazardFace.Count == 0 || positionshzd.Count == 0 || !hazardFace.Contains(ss.frontFaceHzd.character) || !positionshzd.Contains(ss.frontFaceHzd.position))
             {
-                if(ss.frontFaceHzd.position == Position.MidLeft)
+                print("pose hazards");
+
+                if (position == Position.BotLeft)
                 {
-                    if(ss.frontFaceHzd.poses != poses)
+                    if (ss.frontFaceHzd.position == Position.MidLeft)
                     {
-                        if (ss.frontFaceHzd.character != character)
+                        if (ss.frontFaceHzd.poses != poses)
                         {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
+                            if (ss.frontFaceHzd.character != character)
                             {
                                 parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
 
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
 
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }                                    
-                                }
+                            }
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.TopLeft)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+
                             }
                         }
                     }
                 }
-                if (ss.frontFaceHzd.position == Position.TopLeft)
+                if (position == Position.BotRight)
                 {
-                    if (ss.frontFaceHzd.poses != poses)
+                    if (ss.frontFaceHzd.position == Position.MidRight)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.TopRight)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                }
+                if (position == Position.MidLeft)
+                {
+                    if (ss.frontFaceHzd.position == Position.BotLeft)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.TopLeft)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                }
+                if (position == Position.MidRight)
+                {
+                    if (ss.frontFaceHzd.position == Position.BotRight)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.TopRight)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                }
+                if (position == Position.TopLeft)
+                {
+                    if (ss.frontFaceHzd.position == Position.MidLeft)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotLeft)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                }
+                if (position == Position.TopRight)
+                {
+                    if (ss.frontFaceHzd.position == Position.MidRight)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotRight)
+                    {
+                        if (ss.frontFaceHzd.poses != poses)
+                        {
+                            if (ss.frontFaceHzd.character != character)
+                            {
+                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                            }
+                        }
+                    }
+                }
+
+
+
+                if (position == Position.TopMid)
+                {
+                    if (ss.frontFaceHzd.position == Position.Mid)
                     {
                         if (ss.frontFaceHzd.character != character)
                         {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
 
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotMid)
+                    {
+                        if (ss.frontFaceHzd.character != character)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
 
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        
+                        }
+                    }
+                }
+                if (position == Position.Mid)
+                {
+                    if (ss.frontFaceHzd.position == Position.TopMid)
+                    {
+                        if (ss.frontFaceHzd.character != character)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotMid)
+                    {
+                        if (ss.frontFaceHzd.character != character)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                        }
+                    }
+                }
+                if (position == Position.BotMid)
+                {
+                    if (ss.frontFaceHzd.position == Position.TopMid)
+                    {
+                        if (ss.frontFaceHzd.character != character)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.Mid)
+                    {
+                        if (ss.frontFaceHzd.character != character)
+                        {
+                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+
                         }
                     }
                 }
             }
-            if (position == Position.BotRight)
+            else
             {
-                if (ss.frontFaceHzd.position == Position.MidRight)
+                print("unique hazards");
+
+                foreach (Character a in hazardFace)
                 {
-                    if (ss.frontFaceHzd.poses != poses)
+                    foreach (Position b in positionshzd)
                     {
-                        if (ss.frontFaceHzd.character != character)
+
+                        if (hazardFace.IndexOf(a) == positionshzd.IndexOf(b))
                         {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
+                            if (ss.frontFaceHzd.position == b && ss.frontFaceHzd.character == a)
                             {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
+                                parent.findSafestFace2(a.ToString());
 
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.TopRight)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            if (position == Position.MidLeft)
-            {
-                if (ss.frontFaceHzd.position == Position.BotLeft)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.TopLeft)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            if (position == Position.MidRight)
-            {
-                if (ss.frontFaceHzd.position == Position.BotRight)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.TopRight)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            if (position == Position.TopLeft)
-            {
-                if (ss.frontFaceHzd.position == Position.MidLeft)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.BotLeft)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            if (position == Position.TopRight)
-            {
-                if (ss.frontFaceHzd.position == Position.MidRight)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.BotRight)
-                {
-                    if (ss.frontFaceHzd.poses != poses)
-                    {
-                        if (ss.frontFaceHzd.character != character)
-                        {
-                            if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                            }
-                            else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                            {
-                                parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                            }
-                            else
-                            {
-                                int i = 0;
-                                int x = 0;
-                                foreach (Character a in hazardFace)
-                                {
-                                    if (a != ss.frontFaceHzd.character)
-                                    {
-                                        i++;
-                                        if (i > hazardFace.Count - 1)
-                                            i = 0;
-                                    }
-                                    else
-                                    {
-                                        foreach (Position b in positionshzd)
-                                        {
-
-                                            if (ss.frontFaceHzd.position != b)
-                                            {
-                                                x++;
-                                                if (x > positionshzd.Count - 1)
-                                                    x = 0;
-                                            }
-                                            else
-                                            {
-                                                if (i == x)
-                                                {
-                                                    parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
                             }
                         }
                     }
                 }
             }
 
-
-
-            if (position == Position.TopMid)
-            {
-                if (ss.frontFaceHzd.position == Position.Mid)
-                {
-                    if (ss.frontFaceHzd.character != character)
-                    {
-                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                        }
-                        else
-                        {
-                            int i = 0;
-                            int x = 0;
-                            foreach (Character a in hazardFace)
-                            {
-                                if (a != ss.frontFaceHzd.character)
-                                {
-                                    i++;
-                                    if (i > hazardFace.Count - 1)
-                                        i = 0;
-                                }
-                                else
-                                {
-                                    foreach (Position b in positionshzd)
-                                    {
-
-                                        if (ss.frontFaceHzd.position != b)
-                                        {
-                                            x++;
-                                            if (x > positionshzd.Count - 1)
-                                                x = 0;
-                                        }
-                                        else
-                                        {
-                                            if (i == x)
-                                            {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.BotMid)
-                {
-                    if (ss.frontFaceHzd.character != character)
-                    {
-                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                        }
-                        else
-                        {
-                            int i = 0;
-                            int x = 0;
-                            foreach (Character a in hazardFace)
-                            {
-                                if (a != ss.frontFaceHzd.character)
-                                {
-                                    i++;
-                                    if (i > hazardFace.Count - 1)
-                                        i = 0;
-                                }
-                                else
-                                {
-                                    foreach (Position b in positionshzd)
-                                    {
-
-                                        if (ss.frontFaceHzd.position != b)
-                                        {
-                                            x++;
-                                            if (x > positionshzd.Count - 1)
-                                                x = 0;
-                                        }
-                                        else
-                                        {
-                                            if (i == x)
-                                            {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }  
-            if (position == Position.Mid)
-            {
-                if (ss.frontFaceHzd.position == Position.TopMid)
-                {
-                    if (ss.frontFaceHzd.character != character)
-                    {
-                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                        }
-                        else
-                        {
-                            int i = 0;
-                            int x = 0;
-                            foreach (Character a in hazardFace)
-                            {
-                                if (a != ss.frontFaceHzd.character)
-                                {
-                                    i++;
-                                    if (i > hazardFace.Count - 1)
-                                        i = 0;
-                                }
-                                else
-                                {
-                                    foreach (Position b in positionshzd)
-                                    {
-
-                                        if (ss.frontFaceHzd.position != b)
-                                        {
-                                            x++;
-                                            if (x > positionshzd.Count - 1)
-                                                x = 0;
-                                        }
-                                        else
-                                        {
-                                            if (i == x)
-                                            {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.BotMid)
-                {
-                    if (ss.frontFaceHzd.character != character)
-                    {
-                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                        }
-                        else
-                        {
-                            int i = 0;
-                            int x = 0;
-                            foreach (Character a in hazardFace)
-                            {
-                                if (a != ss.frontFaceHzd.character)
-                                {
-                                    i++;
-                                    if (i > hazardFace.Count - 1)
-                                        i = 0;
-                                }
-                                else
-                                {
-                                    foreach (Position b in positionshzd)
-                                    {
-
-                                        if (ss.frontFaceHzd.position != b)
-                                        {
-                                            x++;
-                                            if (x > positionshzd.Count - 1)
-                                                x = 0;
-                                        }
-                                        else
-                                        {
-                                            if (i == x)
-                                            {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            if (position == Position.BotMid)
-            {
-                if (ss.frontFaceHzd.position == Position.TopMid)
-                {
-                    if (ss.frontFaceHzd.character != character)
-                    {
-                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                        }
-                        else
-                        {
-                            int i = 0;
-                            int x = 0;
-                            foreach (Character a in hazardFace)
-                            {
-                                if (a != ss.frontFaceHzd.character)
-                                {
-                                    i++;
-                                    if (i > hazardFace.Count - 1)
-                                        i = 0;
-                                }
-                                else
-                                {
-                                    foreach (Position b in positionshzd)
-                                    {
-
-                                        if (ss.frontFaceHzd.position != b)
-                                        {
-                                            x++;
-                                            if (x > positionshzd.Count - 1)
-                                                x = 0;
-                                        }
-                                        else
-                                        {
-                                            if (i == x)
-                                            {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                if (ss.frontFaceHzd.position == Position.Mid)
-                {
-                    if (ss.frontFaceHzd.character != character)
-                    {
-                        if (hazardFace.Count == 0 || positionshzd.Count == 0)
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-                        }
-                        else if (!hazardFace.Contains(ss.frontFaceHzd.character) && !positionshzd.Contains(ss.frontFaceHzd.position))
-                        {
-                            parent.findSafestFace(ss.frontFaceHzd.poses.ToString());
-
-                        }
-                        else
-                        {
-                            int i = 0;
-                            int x = 0;
-                            foreach (Character a in hazardFace)
-                            {
-                                if (a != ss.frontFaceHzd.character)
-                                {
-                                    i++;
-                                    if (i > hazardFace.Count - 1)
-                                        i = 0;
-                                }
-                                else
-                                {
-                                    foreach (Position b in positionshzd)
-                                    {
-
-                                        if (ss.frontFaceHzd.position != b)
-                                        {
-                                            x++;
-                                            if (x > positionshzd.Count - 1)
-                                                x = 0;
-                                        }
-                                        else
-                                        {
-                                            if (i == x)
-                                            {
-                                                parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
 
     }

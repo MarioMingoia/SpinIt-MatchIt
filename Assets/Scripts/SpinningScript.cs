@@ -42,8 +42,6 @@ public class SpinningScript : MonoBehaviour
 
     public bool HazardDetect = false;
 
-    bool changeAngle;
-
     public face thisFace;
 
     bool ranX;
@@ -136,7 +134,7 @@ public class SpinningScript : MonoBehaviour
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-        Debug.DrawRay(Camera.main.transform.position, Vector3.forward * 1000, Color.green);
+        Debug.DrawRay(Input.mousePosition, Vector3.forward * 1000, Color.green);
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, 1000, ~ignore))
         {
@@ -156,7 +154,7 @@ public class SpinningScript : MonoBehaviour
         foreach (hazards item in faces)
         {
             face faceInstance = item.GetComponent<face>();
-            if (faceInstance.getName() == possibleRotations[ran].name)
+            if (faceInstance.getName() == selectedFace.name)
             {
                 frontFaceHzd = item;
                 return faceInstance;
@@ -237,7 +235,6 @@ public class SpinningScript : MonoBehaviour
     {
 
         enterPressed = true;
-        changeAngle = true;
 
         for (int i = 0; i < particleSparks.transform.childCount; i++)
         {
@@ -246,12 +243,8 @@ public class SpinningScript : MonoBehaviour
             p.enableEmission = true;
         }
 
-       
-
         timer = 0;
         StartCoroutine(StopPiece(selectedFace.rotation));
-
-        changeRotation = false;
     }
 
     IEnumerator StopPiece(Vector3 rotation)
