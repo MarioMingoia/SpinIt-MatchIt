@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using System;
 
 public class hazards : MonoBehaviour
 {
@@ -15,16 +14,28 @@ public class hazards : MonoBehaviour
     public enum Character {Treeman, Rockman, Witch, Fairy, Drummer, Barbarian}
     public Character character;
 
-    public List<Character> hazardFace = new List<Character>();
-
-    public List<Position> positionshzd = new List<Position>();
-
     [SerializeField]
     List<SpinningScript> neighbours = new List<SpinningScript>();
 
+    [System.Serializable]
+    public class Hazards
+    {
+        public Character listOfCharacter;
+        public Position listOfPosition;
+        
+
+        public Hazards(Character charter, Position pos)
+        {
+            listOfCharacter = charter;
+            listOfPosition = pos;
+        }
+    }
+
+    public List<Hazards> characterPos = new List<Hazards>();
+
     private void Start()
     {
-
+ 
     }
 
     private void OnEnable()
@@ -32,7 +43,6 @@ public class hazards : MonoBehaviour
         parent = transform.parent.GetComponent<SpinningScript>();
         parent.onstop += findNeighbourCubes;
     }
-
     private void OnDisable()
     {
         parent.onstop -= findNeighbourCubes;
@@ -50,7 +60,7 @@ public class hazards : MonoBehaviour
     {
         foreach (SpinningScript ss in neighbours)
         {
-            if (hazardFace.Count == 0 || positionshzd.Count == 0 || !hazardFace.Contains(ss.frontFaceHzd.character) || !positionshzd.Contains(ss.frontFaceHzd.position))
+            if (characterPos.Count < 1 || characterPos.Exists(t => t.listOfCharacter != ss.frontFaceHzd.character) || characterPos.Exists(t => t.listOfPosition != ss.frontFaceHzd.position))
             {
                 print("pose hazards");
 
@@ -271,19 +281,12 @@ public class hazards : MonoBehaviour
             {
                 print("unique hazards");
 
-                foreach (Character a in hazardFace)
+                foreach (var a in characterPos)
                 {
-                    foreach (Position b in positionshzd)
+                    if (ss.frontFaceHzd.character.ToString() == a.listOfCharacter.ToString() && ss.frontFaceHzd.position.ToString() == a.listOfPosition.ToString())
                     {
-
-                        if (hazardFace.IndexOf(a) == positionshzd.IndexOf(b))
-                        {
-                            if (ss.frontFaceHzd.position == b && ss.frontFaceHzd.character == a)
-                            {
-                                parent.findSafestFace2(a.ToString());
-
-                            }
-                        }
+                        print(a.ToString());
+                        parent.findSafestFace2(a.listOfCharacter.ToString());
                     }
                 }
             }

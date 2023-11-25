@@ -62,7 +62,7 @@ public class positionStopper : MonoBehaviour
     {
         if (listPicker <= realobjects.Count - 1)
         {
-            realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = true;
+            realobjects[listPicker].transform.parent.GetChild(1).gameObject.SetActive(true) ;
 
             for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
             {
@@ -103,6 +103,7 @@ public class positionStopper : MonoBehaviour
                         }
                         realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
                         realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
+                        realobjects[listPicker].transform.parent.GetChild(1).gameObject.SetActive(false);
                         listPicker++;
 
                         rotateChange = 1;
@@ -133,6 +134,7 @@ public class positionStopper : MonoBehaviour
                     }
                     realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
                     realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
+                    realobjects[listPicker].transform.parent.GetChild(1).gameObject.SetActive(false);
                     listPicker++;
                     rotateChange = 1;
 

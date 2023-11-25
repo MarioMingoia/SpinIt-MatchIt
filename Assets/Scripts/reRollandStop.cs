@@ -52,7 +52,6 @@ public class reRollandStop : MonoBehaviour
         possibleRotations.Add(topFace);
         possibleRotations.Add(rightFace);
         possibleRotations.Add(leftFace);
-
     }
 
     // Update is called once per frame
@@ -69,7 +68,7 @@ public class reRollandStop : MonoBehaviour
                 }
             }
 
-            if(spinningCube.Count > 8 && pickRandom)
+            if (spinningCube.Count > 8 && pickRandom)
             {
                 ran = Random.Range(0, spinningCube.Count);
 
@@ -77,6 +76,7 @@ public class reRollandStop : MonoBehaviour
                 if (selectedFace == null)
                     selectedFace = chosenObj.thisFace;
                 pickRandom = false;
+
             }
 
             if (chosenObj != null && stopSpinning)
@@ -103,11 +103,10 @@ public class reRollandStop : MonoBehaviour
 
                     if (Input.GetMouseButtonDown(0))
                     {
-                        print("select");
                         chosenObj.selectedFace = hit.transform.GetComponent<face>();
-                        print(selectedFace.name);
                     }
                 }
+
             }
 
             if (Input.GetMouseButtonUp(0) && stopSpinning)
