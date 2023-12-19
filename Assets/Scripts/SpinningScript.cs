@@ -20,16 +20,19 @@ public class SpinningScript : MonoBehaviour
     [SerializeField]
     float speed;
 
-    bool enterPressed;
+    [SerializeField] bool enterPressed;
 
     public bool stoppedSpinning = false;
     
     [SerializeField] List<face> possibleRotations = new();
+    [SerializeField] List<face> originalpossibleRotations = new();
 
     public int ran;
 
     float timer = 0;
 
+    [SerializeField]
+    List<hazards> posfaces = new List<hazards>();
     [SerializeField]
     List<hazards> faces = new List<hazards>();
 
@@ -71,6 +74,22 @@ public class SpinningScript : MonoBehaviour
     public face selectedFace;
 
     public    LayerMask ignore;
+
+    public Light hzdlight;
+
+    private void Awake()
+    {
+        int x = originalpossibleRotations.Count; // will use for "for loop"
+
+        for (int i = 0; i < x; i++)
+        {
+            int rand = Random.Range(0, originalpossibleRotations.Count);
+            possibleRotations.Add(originalpossibleRotations[rand]);
+            originalpossibleRotations.RemoveAt(rand);
+        }
+
+        hzdlight = transform.parent.transform.GetChild(2).GetComponent<Light>();
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -78,11 +97,20 @@ public class SpinningScript : MonoBehaviour
         for (int i = 0; i < transform.childCount; i++)
         {
             if(transform.GetChild(i).GetComponent<hazards>() != null)
-                faces.Add(transform.GetChild(i).gameObject.GetComponent<hazards>());
+                posfaces.Add(transform.GetChild(i).gameObject.GetComponent<hazards>());
             else
             {
                 particleSparks = transform.GetChild(i).gameObject;
             }
+        }
+
+        int y = posfaces.Count; // will use for "for loop"
+
+        for (int i = 0; i < y; i++)
+        {
+            int rand = Random.Range(0, posfaces.Count);
+            faces.Add(posfaces[rand]);
+            posfaces.RemoveAt(rand);
         }
 
         ranX = Random.value > .5f;
@@ -102,10 +130,22 @@ public class SpinningScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (selectedFace != null)
-            selectedFace.transform.GetChild(0).gameObject.SetActive(false);
-        if (!enterPressed)
+        if (enterPressed == false)
         {
+            foreach (face item in possibleRotations)
+            {
+                if (selectedFace != null)
+                {
+                    if (item.getName() == selectedFace.getName())
+                    {
+                        selectedFace.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+                    else
+                    {
+                        item.transform.GetChild(0).gameObject.SetActive(false);
+                    }
+                }
+            }
             if (changeRotation)
             {
                 if (ranX)
@@ -128,20 +168,7 @@ public class SpinningScript : MonoBehaviour
                 newRX = 0;
                 newRY = rotateY;
             }
-            foreach (face item in possibleRotations)
-            {
-                if (selectedFace != null)
-                {
-                    if (item.getName() == selectedFace.getName())
-                    {
-                        selectedFace.transform.GetChild(0).gameObject.SetActive(true);
-                    }
-                    else
-                    {
-                        item.transform.GetChild(0).gameObject.SetActive(false) ;
-                    }
-                }
-            }
+
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -251,9 +278,6 @@ public class SpinningScript : MonoBehaviour
     {
         enterPressed = true;
 
-        print(selectedFace.getName());
-        selectedFace.transform.GetChild(0).gameObject.SetActive(false);
-
         for (int i = 0; i < particleSparks.transform.childCount; i++)
         {
             ParticleSystem p = particleSparks.transform.GetChild(i).GetComponent<ParticleSystem>();
@@ -274,7 +298,6 @@ public class SpinningScript : MonoBehaviour
         if (timer >= 1)
         {
             transform.eulerAngles = rotation;
-
             getFrontFace();
             AddOnCharacters();
             thisFace = selectedFace;
@@ -314,6 +337,8 @@ public class SpinningScript : MonoBehaviour
             if (face.character.ToString() == hzdFace)
             {
                 item = face;
+
+                hzdlight.gameObject.SetActive(true);
             }
         }
         setTrue(item.GetComponent<face>().rotation);
@@ -326,6 +351,9 @@ public class SpinningScript : MonoBehaviour
             if (face.poses.ToString() == pose)
             {
                 item = face;
+
+                hzdlight.gameObject.SetActive(true);
+
             }
         }
         setTrue(item.GetComponent<face>().rotation);
@@ -340,5 +368,20 @@ public class SpinningScript : MonoBehaviour
         frontFaceHzd = item;
         thisFace = frontFaceHzd.GetComponent<face>();
         item = null;
+
+        StartCoroutine(disableLight());
+    }
+
+    IEnumerator disableLight()
+    {
+        yield return new WaitForFixedUpdate();
+        timer += Time.deltaTime;
+
+        if (timer >= 1)
+        {
+            hzdlight.gameObject.SetActive(false);
+            yield break;
+        }
+        yield return disableLight();
     }
 }

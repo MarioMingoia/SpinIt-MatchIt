@@ -64,15 +64,6 @@ public class positionStopper : MonoBehaviour
         {
             realobjects[listPicker].transform.parent.GetChild(1).gameObject.SetActive(true) ;
 
-            for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
-            {
-                if (realobjects[listPicker].transform.GetChild(i).GetComponent<face>())
-                {
-                    Material mat = realobjects[listPicker].transform.GetChild(i).GetComponent<MeshRenderer>().material;
-                    mat.EnableKeyword("_EMISSION");
-                    mat.SetColor("_EmissionColor", Color.white);
-                }
-            }
 
         }
 
@@ -91,20 +82,21 @@ public class positionStopper : MonoBehaviour
                     {
                         previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
 
-                        for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
-                        {
-                            if (realobjects[listPicker].transform.GetChild(i).GetComponent<face>())
-                            {
-                                Material mat = realobjects[listPicker].transform.GetChild(i).GetComponent<MeshRenderer>().material;
-                                mat.DisableKeyword("_EMISSION");
-                                mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.EmissiveIsBlack;
-                                mat.SetColor("_EmissionColor", Color.black);
-                            }
-                        }
-                        realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
+
+                        previousCube.GetComponent<SpinningScript>().setTrue();
                         realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
                         realobjects[listPicker].transform.parent.GetChild(1).gameObject.SetActive(false);
                         listPicker++;
+
+
+                        for (int i = 0; i < previousCube.transform.childCount; i++)
+                        {
+                            if (previousCube.transform.GetChild(i).GetComponent<face>())
+                            {
+                                previousCube.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                                previousCube.transform.GetChild(i).gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = false ;
+                            }
+                        }
 
                         rotateChange = 1;
 
@@ -122,20 +114,22 @@ public class positionStopper : MonoBehaviour
                 else
                 {
                     previousCube = realobjects[listPicker].GetComponent<SpinningScript>();
-                    for (int i = 0; i < realobjects[listPicker].transform.childCount; i++)
-                    {
-                        if (realobjects[listPicker].transform.GetChild(i).GetComponent<face>())
-                        {
-                            Material mat = realobjects[listPicker].transform.GetChild(i).GetComponent<MeshRenderer>().material;
-                            mat.DisableKeyword("_EMISSION");
-                            mat.globalIlluminationFlags = MaterialGlobalIlluminationFlags.EmissiveIsBlack;
-                            mat.SetColor("_EmissionColor", Color.black);
-                        }
-                    }
-                    realobjects[listPicker].GetComponent<SpinningScript>().setTrue();
+
+                    previousCube.GetComponent<SpinningScript>().setTrue();
                     realobjects[listPicker].transform.parent.GetComponent<MeshRenderer>().enabled = false;
                     realobjects[listPicker].transform.parent.GetChild(1).gameObject.SetActive(false);
                     listPicker++;
+
+                    for (int i = 0; i < previousCube.transform.childCount; i++)
+                    {
+                        if (previousCube.transform.GetChild(i).GetComponent<face>())
+                        {
+
+                            previousCube.transform.GetChild(i).gameObject.transform.GetChild(0).gameObject.SetActive(false);
+                            previousCube.transform.GetChild(i).gameObject.transform.GetChild(0).GetComponent<Renderer>().enabled = false;
+
+                        }
+                    }
                     rotateChange = 1;
 
 

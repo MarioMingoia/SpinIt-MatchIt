@@ -61,9 +61,9 @@ public class reRollandStop : MonoBehaviour
         {
             for (int i = 0; i < transform.childCount; i++)
             {
-                if (!spinningCube.Contains(transform.GetChild(i).GetComponent<SpinningScript>()))
+                if (!spinningCube.Contains(transform.GetChild(i).transform.GetChild(0).GetComponent<SpinningScript>()))
                 {
-                    spinningCube.Add(transform.GetChild(i).GetComponent<SpinningScript>());
+                    spinningCube.Add(transform.GetChild(i).transform.GetChild(0).GetComponent<SpinningScript>());
                     
                 }
             }

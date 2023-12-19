@@ -26,18 +26,21 @@ public class findCamera : MonoBehaviour
 
         if (isSeen)
         {
-            if (!transform.parent.CompareTag("bringFaceTogether"))
-            {
-                transform.parent = null;
-                transform.parent = newParent.transform;
-            }
+            //if (!transform.parent.CompareTag("bringFaceTogether"))
+            //{
+            //    transform.parent = null;
+            //    transform.parent = newParent.transform;
+            //}
 
-            else
-            {
-                GetComponent<ComingTogether>().bringEverythingTogether(targetpos);
-            }
+            //else
+            //{
+            //    GetComponent<ComingTogether>().bringEverythingTogether(targetpos);
+            //}
+
+            transform.parent.transform.parent = newParent.transform;
+            transform.parent.GetComponent<ComingTogether>().bringEverythingTogether(targetpos);
         }
 
-        
+
     }
 }
