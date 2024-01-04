@@ -57,7 +57,6 @@ public class achievementManager : MonoBehaviour
 
     [SerializeField]
     SpinningScript reRolledSS;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -74,34 +73,21 @@ public class achievementManager : MonoBehaviour
                 if (spin.HazardDetect)
                 {
                     hasThereBeenHazard++;
+                    spin.HazardDetect = false;
+                }
 
-                    if (spin.item != null)
+
+
+                if (spin.item != null)
+                {
+                    for (int i = 0; i < faces.Count; i++)
                     {
-                        for (int i = 0; i < faces.Count; i++)
+                        if (faces[i] == spin.item.GetComponent<face>())
                         {
-                            if (faces[i] == spin.item.GetComponent<face>())
-                            {
-                                faces[i] = null;
-                                faces[i] = spin.item.GetComponent<face>();
-                                spin.HazardDetect = false;
-                                spin.item = null;
-
-                                    if (!countofRightFace.Contains(spin.item.GetComponent<face>()))
-                                        countofRightFace.Add(spin.item.GetComponent<face>());
-                                    if (!countofBottomFace.Contains(spin.item.GetComponent<face>()))
-                                        countofBottomFace.Add(spin.item.GetComponent<face>());
-                                    if (!countofFrontFace.Contains(spin.item.GetComponent<face>()))
-                                        countofFrontFace.Add(spin.item.GetComponent<face>());
-                                    if (!countofLeftFace.Contains(spin.item.GetComponent<face>()))
-                                        countofLeftFace.Add(spin.item.GetComponent<face>());
-                                    if (!countofBackFace.Contains(spin.item.GetComponent<face>()))
-                                        countofBackFace.Add(spin.item.GetComponent<face>());
-                                    if (!countofTopFace.Contains(spin.item.GetComponent<face>()))
-                                        countofTopFace.Add(spin.item.GetComponent<face>());
-                                
-                            }
+                            faces[i] = null;
+                            faces[i] = spin.item.GetComponent<face>();
+                            spin.item = null;
                         }
-
                     }
 
                 }

@@ -73,8 +73,11 @@ public class positionStopper : MonoBehaviour
             {
                 if (rotateChange < 2)
                 {
-                    realobjects[listPicker].GetComponent<SpinningScript>().changeSpinDirection();
-                    rotateChange++;
+                    if (realobjects[listPicker].GetComponent<SpinningScript>().selectedFace != null)
+                    {
+                        realobjects[listPicker].GetComponent<SpinningScript>().changeSpinDirection();
+                        rotateChange++;
+                    }
                 }
                 else
                 {
@@ -108,8 +111,11 @@ public class positionStopper : MonoBehaviour
             {
                 if (rotateChange < 2)
                 {
-                    realobjects[listPicker].GetComponent<SpinningScript>().changeSpinDirection();
-                    rotateChange++;
+                    if (realobjects[listPicker].GetComponent<SpinningScript>().selectedFace != null)
+                    {
+                        realobjects[listPicker].GetComponent<SpinningScript>().changeSpinDirection();
+                        rotateChange++;
+                    }
                 }
                 else
                 {
