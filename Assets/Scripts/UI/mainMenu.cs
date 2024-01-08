@@ -37,7 +37,7 @@ public class mainMenu : MonoBehaviour
     IEnumerator fadeOut()
     {
         yield return new WaitForFixedUpdate();
-        panel.GetComponent<CanvasGroup>().alpha -= Time.deltaTime * 2;
+        panel.GetComponent<CanvasGroup>().alpha -= 0.001f;
 
         if (panel.GetComponent<CanvasGroup>().alpha == 0)
         {
