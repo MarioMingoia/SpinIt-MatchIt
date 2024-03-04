@@ -77,7 +77,8 @@ public class hazards : MonoBehaviour
     }
     void findNeighbourCubes()
     {
-        foreach (SpinningScript ss in myneighbours.Where(ss => ss.stoppedSpinning == true))
+        //
+        foreach (SpinningScript ss in FindObjectsOfType<SpinningScript>().Where(ss => ss.stoppedSpinning == true))
         {
             neighbours.Add(ss);
 
@@ -373,6 +374,14 @@ public class hazards : MonoBehaviour
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
+                    if (ss.frontFaceHzd.position == Position.TopMid)
+                    {
+                        if (tm.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
                 }
                 if (position == Position.MidLeft)
                 {
@@ -390,6 +399,14 @@ public class hazards : MonoBehaviour
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
+                    if (ss.frontFaceHzd.position == Position.Mid)
+                    {
+                        if (m.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
                 }
                 if (position == Position.BotLeft)
                 {
@@ -404,6 +421,14 @@ public class hazards : MonoBehaviour
                     {
                         if (tl.posCharacter.Contains(ss.frontFaceHzd.character))
                         {
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotMid)
+                    {
+                        if (bm.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
@@ -426,6 +451,22 @@ public class hazards : MonoBehaviour
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
+                    if (ss.frontFaceHzd.position == Position.TopRight)
+                    {
+                        if (tr.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.TopLeft)
+                    {
+                        if (tl.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
                 }
                 if (position == Position.BotMid)
                 {
@@ -443,6 +484,22 @@ public class hazards : MonoBehaviour
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
+                    if (ss.frontFaceHzd.position == Position.BotLeft)
+                    {
+                        if (bl.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotRight)
+                    {
+                        if (br.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
                 }
                 if (position == Position.Mid)
                 {
@@ -457,6 +514,22 @@ public class hazards : MonoBehaviour
                     {
                         if (bm.posCharacter.Contains(ss.frontFaceHzd.character))
                         {
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.MidLeft)
+                    {
+                        if (ml.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.MidRight)
+                    {
+                        if (mr.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            //if the script contains this character, rotate to the character
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
@@ -479,6 +552,13 @@ public class hazards : MonoBehaviour
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
+                    if (ss.frontFaceHzd.position == Position.TopMid)
+                    {
+                        if (tm.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
                 }
                 if (position == Position.MidRight)
                 {
@@ -496,6 +576,13 @@ public class hazards : MonoBehaviour
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
                     }
+                    if (ss.frontFaceHzd.position == Position.Mid)
+                    {
+                        if (m.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
                 }
                 if (position == Position.BotRight)
                 {
@@ -509,6 +596,13 @@ public class hazards : MonoBehaviour
                     if (ss.frontFaceHzd.position == Position.MidRight)
                     {
                         if (mr.posCharacter.Contains(ss.frontFaceHzd.character))
+                        {
+                            parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
+                        }
+                    }
+                    if (ss.frontFaceHzd.position == Position.BotMid)
+                    {
+                        if (bm.posCharacter.Contains(ss.frontFaceHzd.character))
                         {
                             parent.findSafestFace2(ss.frontFaceHzd.character.ToString());
                         }
